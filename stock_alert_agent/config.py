@@ -127,6 +127,24 @@ class AppConfig:
 config = AppConfig()
 
 
+def validate_config() -> list[str]:
+    """Return a list of human-readable warnings about missing / misconfigured settings."""
+    warnings: list[str] = []
+    if not config.email.sender_email:
+        warnings.append("SENDER_EMAIL is not set — email alerts will be disabled.")
+    if not config.email.sender_password:
+        warnings.append("SENDER_PASSWORD is not set — email alerts will be disabled.")
+    if not config.twilio.account_sid:
+        warnings.append("TWILIO_ACCOUNT_SID is not set — SMS alerts will be disabled.")
+    if not config.twilio.auth_token:
+        warnings.append("TWILIO_AUTH_TOKEN is not set — SMS alerts will be disabled.")
+    if not config.twilio.from_number:
+        warnings.append("TWILIO_FROM_NUMBER is not set — SMS alerts will be disabled.")
+    if not config.twilio.to_number:
+        warnings.append("TWILIO_TO_NUMBER is not set — SMS alerts will be disabled.")
+    return warnings
+
+
 # ---------------------------------------------------------------------------
 # Ticker universe: ~200 high-volatility, high-liquidity names
 # Includes S&P 500 mega-caps, NASDAQ 100 names, high-beta tech, biotech,
