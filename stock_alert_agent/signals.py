@@ -494,18 +494,18 @@ def _compute_score(
     score = 0
 
     if "PRE_MARKET_SURGE" in signals:
-        # Scale: 5% → 10 pts, 10% → 20 pts, 20%+ → 30 pts (max)
-        score += min(SIGNAL_SCORES["PRE_MARKET_SURGE"], int(premarket_pct * 1.5))
+        # Scale: 2% → 10 pts, 5% → 20 pts, 10%+ → 30 pts (max)
+        score += min(SIGNAL_SCORES["PRE_MARKET_SURGE"], int(premarket_pct * 3.0))
 
     if "UNUSUAL_VOLUME" in signals:
         ratio = details.get("volume_ratio", vol_ratio)
-        # 3x → 10 pts, 6x → 20 pts
-        score += min(SIGNAL_SCORES["UNUSUAL_VOLUME"], int(ratio * 3.5))
+        # 2x → 10 pts, 4x → 20 pts
+        score += min(SIGNAL_SCORES["UNUSUAL_VOLUME"], int(ratio * 5.0))
 
     if "GAP_UP" in signals:
         gap = details.get("gap_pct", gap_pct)
-        # 3% → 6 pts, 10% → 20 pts
-        score += min(SIGNAL_SCORES["GAP_UP"], int(abs(gap) * 2))
+        # 2% → 8 pts, 5% → 20 pts
+        score += min(SIGNAL_SCORES["GAP_UP"], int(abs(gap) * 4))
 
     if "52W_HIGH_BREAKOUT" in signals:
         score += SIGNAL_SCORES["52W_HIGH_BREAKOUT"]
@@ -513,16 +513,16 @@ def _compute_score(
     if "SHORT_SQUEEZE_SETUP" in signals:
         dtc = details.get("days_to_cover", 0)
         short_pct = details.get("short_pct_float", 0)
-        score += min(SIGNAL_SCORES["SHORT_SQUEEZE_SETUP"], int(dtc * 1.5 + short_pct * 0.3))
+        score += min(SIGNAL_SCORES["SHORT_SQUEEZE_SETUP"], int(dtc * 2.0 + short_pct * 0.5))
 
     if "NEWS_CATALYST" in signals:
         hits = details.get("catalyst_keyword_hits", 1)
-        score += min(SIGNAL_SCORES["NEWS_CATALYST"], 5 + hits * 5)
+        score += min(SIGNAL_SCORES["NEWS_CATALYST"], 8 + hits * 7)
 
     if "EARNINGS_BEAT" in signals:
         ep = abs(details.get("earnings_day_change_pct", 5.0))
-        # 3% → 5 pts, 10% → 20 pts, 20%+ → 25 pts
-        score += min(SIGNAL_SCORES["EARNINGS_BEAT"], int(ep * 1.2))
+        # 2% → 5 pts, 5% → 15 pts, 15%+ → 25 pts
+        score += min(SIGNAL_SCORES["EARNINGS_BEAT"], int(ep * 1.8))
 
     if "OPTIONS_FLOW_SIGNAL" in signals:
         score += SIGNAL_SCORES["OPTIONS_FLOW_SIGNAL"]
