@@ -163,19 +163,19 @@ WATCHLIST_TICKERS = [
     "ON", "WOLF", "SWKS", "MPWR", "ENPH", "SEDG", "FSLR",
     # Cloud / SaaS
     "CRM", "NOW", "ADBE", "WDAY", "VEEV", "ZM", "OKTA", "TWLO", "DOCU", "BOX",
-    "ESTC", "SPLK", "APPN", "ALTR", "BRZE", "CFLT", "DOMO",
+    "ESTC", "APPN", "BRZE", "DOMO", "GTLB", "BILL", "HUBS",
     # Fintech / Payments
     "SQ", "PYPL", "V", "MA", "FIS", "GPN", "AFRM", "UPST", "LC", "SOFI",
     "OPEN", "OPFI", "DAVE",
     # Biotech / Pharma high-movers
     "MRNA", "BNTX", "NVAX", "SGEN", "BMRN", "ALNY", "IONS", "SRPT", "RARE",
-    "ACAD", "INCY", "EXAS", "NKTR", "ARWR", "BEAM", "EDIT", "CRSP", "NTLA",
+    "ACAD", "INCY", "NKTR", "ARWR", "BEAM", "EDIT", "CRSP", "NTLA",
     "FATE", "VRTX", "REGN", "BIIB", "GILD", "ILMN", "IDXX", "DXCM",
     # EV / Clean Energy
-    "RIVN", "LCID", "NIO", "XPEV", "LI", "FSR", "GOEV", "WKHS", "RIDE",
+    "RIVN", "LCID", "NIO", "XPEV", "LI", "WKHS", "ACHR", "JOBY",
     "CHPT", "BLNK", "EVGO", "PLUG", "BE", "FCEL", "BLDP",
     # Meme / High-short-interest
-    "GME", "AMC", "BBBY", "CLOV", "WISH", "SPCE", "WOOF", "PRTY",
+    "GME", "AMC", "CLOV", "SPCE", "WOOF", "RDDT", "APP",
     "TLRY", "SNDL", "HEXO", "APHA", "CGC", "ACB", "OGI",
     # ETFs (leveraged - used for market-wide spike detection)
     "TQQQ", "SQQQ", "SPXL", "UPRO", "TECL", "SOXL",
@@ -186,17 +186,17 @@ WATCHLIST_TICKERS = [
     # Financials
     "JPM", "BAC", "GS", "MS", "C", "WFC", "BLK", "SCHW",
     # Consumer / Retail disruptors
-    "AMZN", "WMT", "COST", "TGT", "ETSY", "W", "CVNA", "CARVANA",
+    "AMZN", "WMT", "COST", "TGT", "ETSY", "W", "CVNA",
     # Healthcare
-    "UNH", "CVS", "CI", "HUM", "TDOC", "HIMS", "ACCD",
+    "UNH", "CVS", "CI", "HUM", "TDOC", "HIMS",
     # Crypto / Bitcoin proxies
-    "MARA", "RIOT", "HUT", "BTBT", "CLSK", "BITF", "CIFR",
+    "MARA", "RIOT", "HUT", "BTBT", "CLSK", "CIFR", "IREN",
     # Recent high-activity names
     "ARM", "SMCI", "HPE", "DELL", "LUMN", "CLFD", "VIAV", "CSCO",
-    "ANET", "JNPR", "NTAP", "PSTG", "NTNX", "NFLX", "DIS", "PARA",
-    "WBD", "SNAP", "PINS", "TWTR", "LYFT", "UBER", "DASH", "ABNB",
+    "ANET", "NTAP", "PSTG", "NTNX", "NFLX", "DIS", "WBD",
+    "SNAP", "PINS", "LYFT", "UBER", "DASH", "ABNB",
     "EXPE", "BKNG", "TRIP", "CCL", "RCL", "NCLH", "AAL", "UAL", "DAL",
-    "LUV", "SAVE", "HA",
+    "LUV", "HA", "IONQ", "RKLB", "LUNR", "ASTS", "CELH",
 ]
 
 # Deduplicate while preserving order
