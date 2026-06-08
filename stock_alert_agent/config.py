@@ -47,11 +47,11 @@ class TwilioConfig:
 class AlertThresholds:
     # Minimum spike_probability_score to trigger any alert
     min_score_for_alert: int = field(
-        default_factory=lambda: int(os.getenv("MIN_SCORE_FOR_ALERT", "65"))
+        default_factory=lambda: int(os.getenv("MIN_SCORE_FOR_ALERT", "40"))
     )
     # Minimum score to also send SMS (on top of email)
     min_score_for_sms: int = field(
-        default_factory=lambda: int(os.getenv("MIN_SCORE_FOR_SMS", "80"))
+        default_factory=lambda: int(os.getenv("MIN_SCORE_FOR_SMS", "60"))
     )
     # Hours to wait before re-alerting the same ticker
     alert_cooldown_hours: int = field(
@@ -59,15 +59,15 @@ class AlertThresholds:
     )
     # Pre-market move % to flag as a signal
     premarket_move_pct: float = field(
-        default_factory=lambda: float(os.getenv("PREMARKET_MOVE_PCT", "5.0"))
+        default_factory=lambda: float(os.getenv("PREMARKET_MOVE_PCT", "2.0"))
     )
     # Volume multiple vs 20-day avg to flag as unusual
     unusual_volume_multiplier: float = field(
-        default_factory=lambda: float(os.getenv("UNUSUAL_VOLUME_MULTIPLIER", "3.0"))
+        default_factory=lambda: float(os.getenv("UNUSUAL_VOLUME_MULTIPLIER", "2.0"))
     )
     # Gap-up % at open to flag
     gap_up_pct: float = field(
-        default_factory=lambda: float(os.getenv("GAP_UP_PCT", "3.0"))
+        default_factory=lambda: float(os.getenv("GAP_UP_PCT", "2.0"))
     )
     # % within 52-week high to flag breakout
     breakout_nearness_pct: float = field(
