@@ -1,0 +1,6 @@
+anthropic>=0.116.0
+pyyaml>=6.0
+requests>=2.31
+
+# Optional: only needed if you configure rss_feeds in preferences.yaml
+# feedparser>=6.0

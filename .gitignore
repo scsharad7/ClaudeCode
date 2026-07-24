@@ -30,3 +30,6 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+output/
+jobs.json
+__pycache__/

@@ -1,0 +1,35 @@
+# Job search preferences — used for ingestion filtering and fit scoring.
+target_titles:
+  - Senior Product Manager
+  - Principal Product Manager
+  - Group Product Manager
+  - Product Management Lead
+  - Director of Product Management
+
+target_domains:
+  - cloud infrastructure
+  - virtualization / VDI / DaaS
+  - GPU / AI infrastructure
+  - enterprise B2B SaaS
+  - developer platforms
+
+target_companies:          # optional boost list
+  - AMD
+  - NVIDIA
+  - Google
+  - Microsoft
+  - Nutanix
+  - HPE
+
+locations:
+  - Remote (US)
+  - "[FILL: your city]"
+
+min_fit_score: 70          # jobs below this score are excluded from the digest
+max_jobs_per_run: 25       # cap Claude calls per run
+
+# RSS/Atom feeds or Greenhouse/Lever board tokens to poll.
+sources:
+  greenhouse_boards: []    # e.g. ["nvidia"] -> boards-api.greenhouse.io
+  lever_companies: []      # e.g. ["scaleai"] -> api.lever.co
+  rss_feeds: []            # any job RSS/Atom feed URLs

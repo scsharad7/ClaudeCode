@@ -1,0 +1,52 @@
+# Candidate profile — the matching context for scoring, tailoring, and drafting.
+# This file is rendered into a STABLE system-prompt block and prompt-cached,
+# so edit deliberately: any byte change invalidates the cache prefix.
+name: Sharad Tuli
+headline: Senior Product Manager — Multi-Cloud & Hybrid VDI / DaaS
+email: steverorgers12@gmail.com
+linkedin: linkedin.com/in/sharad-tuli
+location: "[FILL: location]"
+
+summary: >
+  Product Manager with 7+ years in virtualization and cloud desktop solutions,
+  owning the Horizon product line across VMware -> Broadcom -> Omnissa.
+  Specializes in multi-cloud and hybrid VDI/DaaS across AWS, GCP, Azure,
+  Nutanix, HPE, and Google Distributed Cloud, with a signature
+  "VDI as AI Infrastructure" thesis. Drives products end-to-end: strategy,
+  requirements, beta programs, partner alignment, field enablement, GTM launch.
+
+experience:
+  - title: Senior Product Manager
+    company: Omnissa (spun out of VMware End-User Computing)
+    dates: "[FILL: 2024 - Present]"
+    highlights:
+      - Own a six-area Horizon platform portfolio spanning cloud, hybrid, sovereign, and on-premises deployment models.
+      - Led Horizon Cloud on Nutanix AHV from concept to Tech Preview (Dec 2025); reset and re-baselined LA/GA scope; positioned as primary Citrix DaaS and Broadcom/vSphere displacement path.
+      - Lead PM for Horizon Cloud on GCP (Beta); authored UX requirements across 8 product initiatives.
+      - Defined requirements for Horizon 8 on Google Distributed Cloud targeting sovereign/air-gapped (IL5/IL6/TS) deployments.
+      - Drove Horizon 8 on HPE VM Essentials — first automated HPE integration; ~90% VM licensing cost reduction vs vSphere; built HPE Discover demo materials.
+      - Shipped to GA: Manual Desktop Pools, Linux Desktops on Horizon Cloud on Azure, Horizon Cloud on Amazon WorkSpaces Core.
+      - Direct PM-level partner relationships with Nutanix, HPE, AWS, and Google.
+  - title: Product Manager
+    company: Broadcom / VMware End-User Computing (Horizon)
+    dates: "[FILL]"
+    highlights:
+      - Owned Horizon Cloud / Horizon 8 integrations through the VMware-to-Broadcom transition.
+      - Delivered AWS Marketplace listing, WorkSpaces Core integration, Intelligent Power Management, Heterogeneous Pool Groups.
+
+education:
+  - "MBA + MS, Digital Technologies — Boston University (Questrom), May 2022"
+  - "B.Tech, [FILL: field / university]"
+
+publications:
+  - "Cost-per-Session: A Vendor-Neutral Unit-Economics Model and Reproducible Benchmark for Hybrid Multi-Cloud VDI (IEEE/UCC submission, in progress)"
+  - "6 product publications"
+
+skills:
+  - Multi-Cloud VDI/DaaS
+  - Product Strategy & Roadmap
+  - GTM & Partner Management
+  - GPU / AI-Compute Enablement
+  - Beta Program Leadership
+  - Enterprise B2B SaaS
+  - Competitive Positioning (Citrix / Broadcom displacement)
