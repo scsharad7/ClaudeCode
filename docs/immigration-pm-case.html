@@ -1,4 +1,4 @@
-<title>Passage Product Case</title>
+<title>Landed Product Case</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
@@ -116,6 +116,7 @@
     gap: 20px 32px;
     border-top: 1px solid var(--rule);
     padding-top: 24px;
+    margin: 0;
   }
 
   .meta dt {
@@ -128,6 +129,35 @@
   }
 
   .meta dd { margin: 0; font-size: 14.5px; }
+
+  /* ---------- provenance chips ---------- */
+
+  .src {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    white-space: nowrap;
+    vertical-align: 1px;
+  }
+  .src-deck { background: var(--patina-soft); color: var(--patina); }
+  .src-brief { background: var(--copper-soft); color: var(--copper); }
+  .src-an { border: 1px solid var(--rule); color: var(--muted); }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    margin: 0 0 28px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .legend span.item { display: inline-flex; align-items: center; gap: 7px; }
 
   /* ---------- table of contents rail ---------- */
 
@@ -225,7 +255,8 @@
     border-left: 3px solid var(--patina);
     max-width: var(--measure);
   }
-  blockquote p { font-family: var(--f-display); font-size: 1.15rem; line-height: 1.5; margin: 0; }
+  blockquote p { font-family: var(--f-display); font-size: 1.12rem; line-height: 1.5; margin: 0; }
+  blockquote p + p { margin-top: 12px; }
 
   .note {
     margin: 0 0 22px;
@@ -236,6 +267,7 @@
     font-size: 14.5px;
   }
   .note p { margin: 0; }
+  .note p + p { margin-top: 10px; }
   .note .tag {
     font-family: var(--f-mono);
     font-size: 10.5px;
@@ -292,6 +324,7 @@
   }
   tbody tr:last-child td { border-bottom: none; }
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.rank { font-family: var(--f-mono); color: var(--copper); text-align: center; }
   tr.total td { font-weight: 600; background: var(--patina-soft); border-top: 2px solid var(--patina); }
 
   code, .mono { font-family: var(--f-mono); font-size: 0.88em; }
@@ -319,13 +352,13 @@
 <div class="shell">
 
   <header class="masthead">
-    <p class="eyebrow">Product case &middot; Draft v0.1 &middot; 19 August 2026</p>
-    <h1>Passage</h1>
-    <p class="standfirst">The immigrant's own system of record — a lifetime case file that reads your documents, watches your deadlines, answers with citations, and hands a complete packet to a licensed attorney when it's time to file.</p>
+    <p class="eyebrow">Product case &middot; Draft v0.2 &middot; 19 August 2026</p>
+    <h1>Landed</h1>
+    <p class="standfirst">Reconciling Prathma's <em>ImmigrantConnect</em> venture plan with the <em>Landed</em> product brief into one product, one wedge, and one plan — real answers about visa, daily life and community, from AI that knows the basics and people who've lived your exact situation.</p>
     <dl class="meta">
-      <div><dt>Status</dt><dd>Draft for review — Sharad &amp; Prathma</dd></div>
+      <div><dt>Status</dt><dd>Draft v0.2 — first version written from the source folder</dd></div>
       <div><dt>Owner</dt><dd>Sharad Tuli</dd></div>
-      <div><dt>Working name</dt><dd>"Passage" — placeholder</dd></div>
+      <div><dt>Source</dt><dd>Drive → <em>Immigrants Idea WORK</em></dd></div>
       <div><dt>Role of this doc</dt><dd>Single source of truth. Deck, model and PRD derive from it.</dd></div>
     </dl>
   </header>
@@ -333,341 +366,355 @@
   <nav class="rail" aria-label="Contents">
     <h2>Contents</h2>
     <ol>
-      <li><a href="#s0"><span>00</span>Provenance</a></li>
-      <li><a href="#s1"><span>01</span>Thesis</a></li>
-      <li><a href="#s2"><span>02</span>The problem</a></li>
-      <li><a href="#s3"><span>03</span>Why now</a></li>
-      <li><a href="#s4"><span>04</span>Market opportunity</a></li>
-      <li><a href="#s5"><span>05</span>What we build</a></li>
-      <li><a href="#s6"><span>06</span>Business model</a></li>
-      <li><a href="#s7"><span>07</span>Go-to-market</a></li>
-      <li><a href="#s8"><span>08</span>Moat</a></li>
+      <li><a href="#s0"><span>00</span>What changed</a></li>
+      <li><a href="#s1"><span>01</span>What's in the folder</a></li>
+      <li><a href="#s2"><span>02</span>The recommendation</a></li>
+      <li><a href="#s3"><span>03</span>The problem</a></li>
+      <li><a href="#s4"><span>04</span>Why now</a></li>
+      <li><a href="#s5"><span>05</span>The users</a></li>
+      <li><a href="#s6"><span>06</span>What we build</a></li>
+      <li><a href="#s7"><span>07</span>Market</a></li>
+      <li><a href="#s8"><span>08</span>Business model</a></li>
       <li><a href="#s9"><span>09</span>Competition</a></li>
-      <li><a href="#s10"><span>10</span>Constraints</a></li>
-      <li><a href="#s11"><span>11</span>Metrics</a></li>
-      <li><a href="#s12"><span>12</span>Roadmap</a></li>
-      <li><a href="#s13"><span>13</span>Open questions</a></li>
+      <li><a href="#s10"><span>10</span>Trust &amp; legal</a></li>
+      <li><a href="#s11"><span>11</span>Risks</a></li>
+      <li><a href="#s12"><span>12</span>Metrics</a></li>
+      <li><a href="#s13"><span>13</span>Roadmap</a></li>
+      <li><a href="#s14"><span>14</span>Open decisions</a></li>
       <li><a href="#src"><span>—</span>Sources</a></li>
     </ol>
   </nav>
 
   <main>
 
+    <p class="legend">
+      <span class="item"><span class="src src-deck">deck</span> ImmigrantConnect venture plan</span>
+      <span class="item"><span class="src src-brief">brief</span> Landed product brief &amp; architecture</span>
+      <span class="item"><span class="src src-an">analysis</span> Added here, not in the folder</span>
+    </p>
+
     <section id="s0">
-      <div class="sec-head"><span class="sec-num">00</span><h2 class="sec-title">Provenance — and what is unverified</h2></div>
-      <p>This document was assembled <strong>without access to the source folder</strong>. The Google Drive folder <em>"Immigrants Idea WORK"</em> (shared 19 Aug 2026 from sharad.tuli77@gmail.com) went to <span class="mono">scsharad7@gmail.com</span>; the Drive connector available here is authenticated as <span class="mono">steverorgers12@gmail.com</span>, and <span class="mono">drive.google.com</span> is blocked from direct fetch in this environment. <strong>Prathma's presentation has not been read.</strong></p>
-      <ul>
-        <li><strong>Sections 1–3 and 5–8 are a reasoned hypothesis</strong>, not a transcription of your idea. Each carries an assumption marker where it infers.</li>
-        <li><strong>Sections 4, 9, 10 and the sources are externally verifiable</strong> and stand regardless of what the deck says.</li>
-        <li>To close the gap: share the folder with <span class="mono">steverorgers12@gmail.com</span>, or paste the deck into the thread. Section 13 lists exactly which claims flip.</li>
-      </ul>
+      <div class="sec-head"><span class="sec-num">00</span><h2 class="sec-title">What changed from v0.1</h2></div>
+      <p>v0.1 was written blind — the Drive folder wasn't reachable and the product definition in it was my inference. <strong>It was wrong.</strong> I had guessed at a case-file and filing-workflow product for high-skilled immigrants. The actual idea is a <strong>trusted peer community with an AI router</strong> — a different product, a different buyer, and a different set of risks.</p>
+      <p>This version is built from the six files in the folder. Everything below is drawn from those documents, tagged by which one, or is my own analysis, tagged as such. External figures carry a source link.</p>
     </section>
 
     <section id="s1">
-      <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">Thesis</h2></div>
-      <blockquote><p>The United States asks skilled immigrants to run a 10–15 year, multi-employer, multi-agency legal process with no system of record, no continuity, and no one accountable for the whole path. Every existing product owns a slice — one filing, one employer, one firm. We own the person's file for the length of their journey.</p></blockquote>
-      <ol>
-        <li><strong>The unit of value is the case history, not the filing.</strong> A filing is a transaction that ends. A person's status history — every I-797, I-94, priority date, travel record, employer change, dependent — compounds in value for a decade and is demanded, in fragments, at every future step. Today it lives in a Gmail folder and a shoebox.</li>
-        <li><strong>Employer-owned tools structurally cannot hold it.</strong> Every HRIS-attached mobility product is scoped to the employment relationship. The moment you change jobs — which the average H-1B holder does two to four times during a 12-year green card queue — the record resets. The need outlives every employer the person will have.</li>
-        <li><strong>The error cost just went up, which makes correctness purchasable.</strong> USCIS has stated it may deny a request outright, without first issuing a Request for Evidence or Notice of Intent to Deny, where initial evidence is missing. First-time-correct used to be cheaper. It is now sometimes the only chance.</li>
-      </ol>
+      <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">What's actually in the folder</h2></div>
+      <p>Six files, created across two separate efforts, describing <strong>two different products that share one idea</strong>.</p>
+      <div class="tw">
+        <table>
+          <thead><tr><th>File</th><th>What it is</th><th>Shape of the product</th></tr></thead>
+          <tbody>
+            <tr><td><span class="mono">ImmigrantConnect_Venture_Plan.pptx</span></td><td>Prathma Rastogi's CAP600 Applied Methods capstone, with full speaker notes</td><td>Broad: all US immigrants, four states, identity-verified category community, freemium two-sided marketplace, VC-funded</td></tr>
+            <tr><td><span class="mono">Landed_Product_Brief</span></td><td>Product brief and 7-phase build roadmap</td><td>Narrow: Indian tech workers in the Bay Area, agentic AI Q&amp;A plus human matching, web only, no monetization in v1</td></tr>
+            <tr><td><span class="mono">Landed_System_Design</span></td><td>Architecture, request lifecycle, 7-table schema</td><td>Next.js → FastAPI → Supabase/pgvector → Claude</td></tr>
+            <tr><td><span class="mono">Landed_Agent_Architecture</span></td><td>Five agents, typed inputs and outputs, test strategy</td><td>Classifier → router → answer / safety / matching, plus feedback loop</td></tr>
+            <tr><td><span class="mono">Action Items</span></td><td>Weekend list</td><td>Talk to 5 immigrants, pick a name, buy the domain, set up the repo, draft landing copy</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>The two are not the same product.</strong> They share a problem statement almost word for word — <em>"Is this rent fair? Is this visa notice real? Where do I find food that tastes like home?"</em> <span class="src src-deck">deck</span> against Landed's ten hyper-specific questions <span class="src src-brief">brief</span> — then diverge completely on scope, sequencing, and how big year one is.</p>
+
+      <h3>The contradictions <span class="src src-an">analysis</span></h3>
+      <p>These aren't nitpicks. Each is a fork the plan cannot take both sides of.</p>
+      <div class="tw">
+        <table>
+          <thead><tr><th class="num">#</th><th>ImmigrantConnect</th><th>Landed</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td class="rank">1</td><td>51.9M foreign-born; all immigrants; CA/TX/FL/NY</td><td>Indian tech workers, Bay Area only</td><td>Determines whether matching works at all</td></tr>
+            <tr><td class="rank">2</td><td><strong>100,000</strong> registrations in Year 1</td><td><strong>100</strong> active users in 30 days</td><td>Three orders of magnitude apart</td></tr>
+            <tr><td class="rank">3</td><td>10,000 active users / 3 metros / 18 months <em>(strategy slide)</em></td><td>—</td><td>Conflicts with the deck's own 100k Year 1 target</td></tr>
+            <tr><td class="rank">4</td><td>Identity verification is the core product</td><td>Anonymous posting is in v1</td><td>Directly opposed defaults</td></tr>
+            <tr><td class="rank">5</td><td>Pilot hubs: NYC, LA, Houston, <strong>Toronto</strong></td><td>One city, then Seattle</td><td>Toronto puts a second country's privacy regime in scope in Year 1 — against a plan that names cross-border exposure as a top-four risk</td></tr>
+            <tr><td class="rank">6</td><td>Y1 $1.2M, Y5 $21M, $17M raised</td><td>No monetization until PMF</td><td>See §8 — the deck disagrees with itself here too</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="s2">
-      <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">The problem</h2></div>
-
-      <h3>Who hurts</h3>
-      <div class="tw">
-        <table>
-          <thead><tr><th>Segment</th><th>Size (US, est.)</th><th>What breaks</th></tr></thead>
-          <tbody>
-            <tr><td><strong>In a status chain</strong><br>F-1 → OPT → H-1B → O-1/EB-1A/NIW → I-485</td><td>~600k H-1B principals</td><td>No consolidated timeline; every job change, trip or dependent's birthday raises a question nobody owns</td></tr>
-            <tr><td><strong>In the green card queue</strong></td><td>&gt;1M Indian nationals; EB-2 India final action ~July 2014, EB-3 ~Jan 2014</td><td>Decade-long uncertainty, no planning tool, and the plan shifts with each monthly visa bulletin</td></tr>
-            <tr><td><strong>International students</strong></td><td>~1.1M F-1/M-1</td><td>Highest-stakes timing decisions (CPT/OPT, STEM extension, cap-gap) with the least information and no budget for counsel</td></tr>
-            <tr><td><strong>Founders &amp; researchers</strong><br>O-1A, EB-1A, NIW</td><td>Small, high value</td><td>An evidence-assembly problem, not a form problem: $5k–$15k+ and months of effort against opaque criteria</td></tr>
-            <tr><td><strong>Employers, 10–500 people</strong></td><td>Tens of thousands</td><td>Too small for Fragomen/BAL service levels, too exposed to skip compliance</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>What actually goes wrong</h3>
-      <ul>
-        <li><strong>Nobody holds the timeline.</strong> The attorney holds the matter, the employer holds the employment, the person holds the anxiety. No party holds the ten-year path.</li>
-        <li><strong>Documents are scattered; extraction is manual.</strong> Receipt numbers, priority dates, I-94 expiry, LCA validity, stamp dates — PDFs and phone photos, re-typed by a paralegal at billable rates, every single time.</li>
-        <li><strong>Advice is expensive and lumpy.</strong> Flat fees run <strong>$2,000–$15,000</strong> per matter, hourly <strong>$150–$500+</strong>, consultations <strong>$100–$400</strong> — which prices out exactly the questions that are cheap to answer and catastrophic to get wrong ("can I travel in December?").</li>
-        <li><strong>Self-filing is real and badly served.</strong> An estimated <strong>50–80% of non-citizens have unmet legal needs</strong>. Boundless found RFE rates of <strong>22–29%</strong> on marriage-based adjustment; pro se filers skew worse, and the RFE-optional denial policy removes the safety net.</li>
-        <li><strong>The rules move faster than the advice.</strong> See section 3.</li>
-      </ul>
-
-      <div class="note"><span class="tag">Assumption</span><p>The beachhead pain is <em>coordination and correctness across a long timeline</em>, not <em>cheaper form filling</em>. If the deck's core insight is price disruption of legal fees, section 5 changes materially.</p></div>
-    </section>
-
-    <section id="s3">
-      <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Why now — 2026</h2></div>
-
-      <div class="stats">
-        <div class="stat"><span class="fig">11.3M</span><span class="lab">Cases pending at USCIS, end of FY2026 Q1 — up 17% YoY</span></div>
-        <div class="stat"><span class="fig">6.3M</span><span class="lab">Net backlog, from under 4.3M a year earlier</span></div>
-        <div class="stat"><span class="fig">86</span><span class="lab">Cases completed per 100 received — 11th straight quarter below break-even</span></div>
-        <div class="stat"><span class="fig">12–13 yr</span><span class="lab">EB-2 / EB-3 queue for Indian nationals at current cut-off dates</span></div>
-      </div>
-
-      <p><strong>1. The system is visibly failing at scale.</strong> USCIS completed <strong>1.8M cases in Q1, down 41%</strong> year over year while receipts kept arriving. A backlog that compounds is a permanent demand signal for tools that help people wait intelligently.</p>
-
-      <p><strong>2. Policy volatility became the norm.</strong> The $100,000 H-1B fee proclamation was signed <strong>19 Sept 2025</strong>, applied from <strong>21 Sept 2025</strong>, <strong>struck down 8 June 2026</strong>, and the First Circuit declined to stay that ruling — leaving employers who budgeted for it and candidates who declined offers over it with a year of decisions made against a rule that no longer exists. Separately, FY2027 replaced the random lottery with <strong>wage-weighted selection</strong> (Level IV offers get four entries, Level I gets one) against <strong>211,600 registrations for 85,000 slots</strong>, a ~40% selection rate. Volatility is the opportunity: a versioned, diff-able policy corpus with a personalised change feed is something no PDF-and-blog incumbent can match.</p>
-
-      <p><strong>3. The error cost rose.</strong> USCIS's move to deny without first issuing an RFE or NOID converts "complete and correct on first submission" from good practice into the entire game.</p>
-
-      <p><strong>4. The technology finally fits.</strong> Extraction across messy scans, long-context reasoning over a full history, and retrieval grounded in primary sources are now reliable enough to build on — <em>provided</em> the system answers only from the user's own record plus a cited corpus, and routes everything else to a licensed attorney (section 10).</p>
-    </section>
-
-    <section id="s4">
-      <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Market opportunity</h2></div>
-
-      <h3>Top-down</h3>
-      <div class="tw">
-        <table>
-          <thead><tr><th>Measure</th><th class="num">Value</th><th>Source</th></tr></thead>
-          <tbody>
-            <tr><td>US immigration lawyers &amp; attorneys</td><td class="num"><strong>$10.6B</strong> (2026, +2.5%)</td><td>IBISWorld</td></tr>
-            <tr><td>Global immigration legal services</td><td class="num"><strong>$23.3B</strong> → $29.7B (2030)</td><td>TBRC / NLR</td></tr>
-            <tr><td>US legal services overall</td><td class="num">~$488B by 2035</td><td>Precedence</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p>The frame is not "take share from law firms." It is that <strong>$10.6B a year of US spend already flows through the workflow we intend to own</strong> — most of it paying for intake, document handling, status tracking and form assembly, none of which requires a JD.</p>
-
-      <h3>Bottom-up — the number to defend</h3>
-      <div class="note"><span class="tag">Assumption</span><p>Population figures are public-source estimates; per-unit prices are ours and must be pressure-tested against real willingness to pay.</p></div>
-
-      <div class="tw">
-        <table>
-          <thead><tr><th>Pool</th><th>Driver</th><th class="num">Size</th></tr></thead>
-          <tbody>
-            <tr><td rowspan="2"><strong>Consumer subscription</strong></td><td>~3.0–3.5M addressable individuals (H-1B + dependents, F-1/M-1 students, EB queue principals and derivatives, de-duplicated)</td><td class="num">—</td></tr>
-            <tr><td>× $240/yr</td><td class="num"><strong>$720–840M</strong></td></tr>
-            <tr><td rowspan="2"><strong>Filing services</strong></td><td>~1.2M employment-based filings/yr × ~$2,500 avg legal fee = ~$3.0B</td><td class="num">—</td></tr>
-            <tr><td>× ~35% addressable by an attorney-of-record model</td><td class="num"><strong>~$1.05B</strong></td></tr>
-            <tr><td><strong>Employer</strong></td><td>~25k sponsoring employers in the 10–500 band × $12k ACV</td><td class="num"><strong>~$300M</strong></td></tr>
-            <tr class="total"><td>SAM</td><td>Against a US TAM of $10.6B</td><td class="num">$1.5–1.9B</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>SOM — a model, not a forecast</h3>
-      <div class="tw">
-        <table>
-          <thead><tr><th>Year 3 line</th><th class="num">Volume</th><th class="num">Net revenue</th></tr></thead>
-          <tbody>
-            <tr><td>Free users (system of record)</td><td class="num">150,000</td><td class="num">—</td></tr>
-            <tr><td>Paid subscribers (8% conversion)</td><td class="num">12,000</td><td class="num">$2.9M</td></tr>
-            <tr><td>Filings via partner attorneys</td><td class="num">4,000 @ $900 net</td><td class="num">$3.6M</td></tr>
-            <tr><td>Employer accounts</td><td class="num">120 @ $18k</td><td class="num">$2.2M</td></tr>
-            <tr class="total"><td>Total</td><td class="num"></td><td class="num">~$8.7M ARR</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Every figure has a named driver, so each is falsifiable in beta (section 11). These are bets, not projections.</p>
-    </section>
-
-    <section id="s5">
-      <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">What we're building</h2></div>
-
-      <h3>Layer 1 — The case graph <span class="mono" style="color:var(--patina)">(the moat)</span></h3>
-      <p>One structured timeline per person and household: every status, receipt number, priority date, I-94, trip, employer, dependent and deadline, extracted automatically from uploaded documents — I-797, I-94, I-20, EAD, visa stamps, LCA, DS-160 confirmations. This layer is <strong>free forever and portable</strong> across employers and attorneys. It is the thing no employer-owned tool can hold and no firm has an incentive to hand over.</p>
-
-      <h3>Layer 2 — The copilot <span class="mono" style="color:var(--patina)">(the daily habit)</span></h3>
-      <p>Answers grounded in two sources only: your case graph, and a versioned corpus of primary material (USCIS Policy Manual, monthly visa bulletins, the Foreign Affairs Manual, Federal Register notices). Every answer cited to a paragraph and dated. Anything requiring judgment routes to an attorney instead of being guessed at. Plus scenario planning — <em>"if I switch employers in November, what breaks?"</em> — the question people cannot get answered today at any price short of a consult.</p>
-
-      <h3>Layer 3 — Execution rails <span class="mono" style="color:var(--patina)">(the revenue)</span></h3>
-      <p>Evidence checklists mapped to the real regulatory criteria for O-1A / EB-1A / NIW; packet assembly; an RFE response builder; an attorney-of-record marketplace with licensed partner firms; and an employer view for the sponsoring side.</p>
-
-      <h3>Beachhead</h3>
-      <p><strong>Employment-based, high-skilled immigrants in tech</strong>, starting with the F-1 → H-1B → O-1/EB-1A/NIW → I-485 chain: urgency, budget, dense referral networks, repeat filings across a decade, and the highest propensity to try a self-serve product before calling a lawyer.</p>
-
-      <h3>Explicit non-goals for v1</h3>
-      <ul>
-        <li>Asylum, removal defense, humanitarian relief — different risk, different economics, and doing them badly harms people.</li>
-        <li>Family-based immigration — Boundless owns it, and owns it well.</li>
-        <li>Non-US destinations.</li>
-        <li>Being the attorney. We are the record and the rails; licensed partners are the counsel.</li>
-      </ul>
-
-      <div class="note"><span class="tag">Assumption</span><p>All of section 5 is my construction. If the deck defines the product as a marketplace for attorneys, a student advisory service, or an employer compliance tool, sections 5–8 need rewriting — sections 2–4 and 9–10 largely survive.</p></div>
-    </section>
-
-    <section id="s6">
-      <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title">Business model</h2></div>
-      <div class="tw">
-        <table>
-          <thead><tr><th>Tier</th><th class="num">Price</th><th>What it buys</th><th>Why it exists</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Free</strong></td><td class="num">$0</td><td>Case graph, document vault, deadline tracking</td><td>Acquisition and the data asset. Never gate the record.</td></tr>
-            <tr><td><strong>Plus</strong></td><td class="num">$29/mo<br>$240/yr</td><td>Cited copilot, scenario planner, RFE risk review, unlimited extraction</td><td>The recurring habit — the 11 months a year when nothing is due but anxiety is high</td></tr>
-            <tr><td><strong>Filings</strong></td><td class="num">$1,500–$4,500<br>per matter</td><td>Attorney-of-record representation on a pre-assembled packet</td><td>The margin — priced under the $5k–$15k boutique range for O-1/EB-1A</td></tr>
-            <tr><td><strong>Employer</strong></td><td class="num">$12k–$24k ACV</td><td>HR dashboard, sponsorship pipeline, LCA/PAF and I-9 hygiene</td><td>Distribution, plus a second and stickier buyer</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Free makes the record universal, subscription funds the habit between filings, and filing revenue captures the moment of highest willingness to pay — without us ever needing to be a law firm.</p>
-    </section>
-
-    <section id="s7">
-      <div class="sec-head"><span class="sec-num">07</span><h2 class="sec-title">Go-to-market</h2></div>
+      <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">The recommendation</h2></div>
+      <blockquote><p>Build Landed's wedge, aim at ImmigrantConnect's vision, and use one name.</p></blockquote>
+      <p>The two documents aren't competitors — they're the same venture at two altitudes, and each supplies what the other lacks. The deck supplies <strong>the destination and the institutional scaffolding</strong>: mission, market framing, brand values, legal and ethical architecture, ops model, partnership channels, funding story. That work is done, and it's good. The brief supplies <strong>the mechanism and the discipline</strong>: the density principle, a real beachhead, the agent pipeline, an explicit not-in-v1 list, and honest starting metrics.</p>
+      <p>Where they conflict, <strong>the brief wins on sequencing and the deck wins on destination.</strong> Concretely:</p>
       <ol>
-        <li><strong>Community-led, immigrant-first.</strong> This audience already congregates around specific creators, subreddits and WhatsApp groups, and trades screenshots of approval notices. Seed where the screenshots are traded. Organic CAC target <strong>$40–$80</strong>.</li>
-        <li><strong>University ISSO channel.</strong> International student offices are understaffed and legally constrained in what they may advise. A free record-keeping tool for their students is an easy yes, and reaches people at step one of the status chain.</li>
-        <li><strong>Startup employer channel.</strong> Accelerator portfolios — the channel Alma has already validated with YC, Techstars and Pear. Sell the employer tier, acquire the individuals inside it, keep them when they leave.</li>
-        <li><strong>Attorney partners as a channel, not just supply.</strong> Firms hand clients a portal better than their own and receive pre-assembled matters in return.</li>
+        <li><strong>Launch as Landed</strong> — Bay Area, Indian tech workers, one city. Not four states, not 100,000 registrations.</li>
+        <li><strong>Keep ImmigrantConnect's positioning line</strong> — <em>real people, real answers, one trusted community for every step of the immigration journey</em> <span class="src src-deck">deck</span>. It's the best sentence in either document.</li>
+        <li><strong>Verified identity, pseudonymous asking.</strong> This resolves contradiction #4: verify every account, because the deck is right that trust is the product — but let people <em>ask</em> under a handle, because the brief is right that visa fear suppresses honest questions. Verification gates who may <em>answer</em>; anonymity protects who <em>asks</em>.</li>
+        <li><strong>Drop Toronto from Year 1.</strong> It buys a second regulatory regime and no additional density.</li>
+        <li><strong>Pick one name.</strong> My recommendation is <strong>Landed</strong> — short, ownable, trademarkable, and <em>"You landed. Now belong."</em> beats a category description. Honest counter-argument: ImmigrantConnect is the name Prathma has already presented and defended, and it's clearer to a resettlement-agency partner who has never heard of you. <strong>This one is yours and Prathma's to call</strong> — but make it once, this week, and don't carry two names forward.</li>
       </ol>
     </section>
 
-    <section id="s8">
-      <div class="sec-head"><span class="sec-num">08</span><h2 class="sec-title">Moat</h2></div>
+    <section id="s3">
+      <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">The problem</h2></div>
+      <blockquote><p>"Picture landing in a new country with no one to ask: Is this rent fair? Is this visa notice real? Where do I find food that tastes like home? Today, that search happens in unmoderated Facebook groups and WhatsApp chats — full of good intentions, but no verification, no structure, and no accountability."</p><p style="font-family:var(--f-body);font-size:0.8rem;color:var(--muted);">— ImmigrantConnect venture plan</p></blockquote>
+
+      <p>The brief sharpens the same problem into ten questions the product must answer. They're worth keeping verbatim, because they <em>are</em> the product spec <span class="src src-brief">brief</span>:</p>
+      <ul>
+        <li>H-1B transfer filed 3 weeks ago, no receipt notice — normal, or panic?</li>
+        <li>On OPT STEM extension — can I freelance without violating status?</li>
+        <li>Which Santa Clara County DMV has the shortest wait?</li>
+        <li>Where do I find curry leaves and methi in Sunnyvale that aren't $8 a bunch?</li>
+        <li>Weekend badminton group in the South Bay that welcomes newcomers?</li>
+        <li>First US paycheck — credit card, 401k, or pay off the card?</li>
+        <li>Risky to switch jobs 8 months into an H-1B?</li>
+        <li>Landlord wants 3 months' deposit for no credit history — legal in California?</li>
+        <li>Indian young professionals in Seattle who aren't coworkers?</li>
+        <li>Employer mentioned layoffs — what happens to my H-1B, and how many days do I have?</li>
+      </ul>
+
+      <div class="note"><span class="tag">Analysis</span><p>What makes this list strong is that it spans two categories with completely different failure modes. <em>Where do I find curry leaves</em> is cheap to get wrong. <em>How many days do I have after a layoff</em> can end someone's status. <strong>A product that treats those identically is either useless or dangerous.</strong> The routing decision in §6 is the whole product, and this list is why.</p></div>
+
+      <h3>Why existing options fail <span class="src src-brief">brief</span></h3>
       <div class="tw">
         <table>
-          <thead><tr><th>Layer</th><th>Mechanism</th><th>Honest assessment</th></tr></thead>
+          <thead><tr><th>Option</th><th>Why it fails</th></tr></thead>
           <tbody>
-            <tr><td>Case graph</td><td>Switching cost compounds with every document and year</td><td><strong>Strong</strong> — only if we win the record before an incumbent bundles it</td></tr>
-            <tr><td>Policy corpus + change feed</td><td>Expensive to build, cheap to copy once seen</td><td><strong>Medium</strong> — a head start, not a wall</td></tr>
-            <tr><td>Outcome data by evidence pattern</td><td>More cases → better checklists → better outcomes → more cases</td><td><strong>Strong and slow</strong> — the real long-term asset</td></tr>
-            <tr><td>Attorney supply network</td><td>Two-sided, but attorneys multi-home</td><td><strong>Weak</strong></td></tr>
-            <tr><td>Brand as the non-extractive party</td><td>Trust is the scarcest input in this market</td><td><strong>Strong if earned, unrecoverable if lost</strong></td></tr>
+            <tr><td>Google / Reddit</td><td>Generic, outdated, contradictory — can't tell which answer fits your visa + state + employer</td></tr>
+            <tr><td>Immigration lawyers</td><td>$300–500/hr for a 15-minute question; overkill for "is this normal?" anxiety</td></tr>
+            <tr><td>WhatsApp groups</td><td>Closed, need an introduction, chaotic, nobody accountable, memes drown real questions</td></tr>
+            <tr><td>Meetup / Facebook</td><td>Not immigrant-context-aware; "Indian professionals" groups are 90% networking spam</td></tr>
           </tbody>
         </table>
       </div>
+    </section>
+
+    <section id="s4">
+      <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Why now</h2></div>
+      <p>The deck's case is demographic; the brief's is technological. Both are real — and there's a third neither document uses: <strong>the system got measurably worse in the last 18 months, which raises the value of every "is this normal?" answer.</strong> <span class="src src-an">analysis</span></p>
+
+      <div class="stats">
+        <div class="stat"><span class="fig">51.9M</span><span class="lab">Foreign-born US residents, mid-2025 <span class="src src-deck">deck</span></span></div>
+        <div class="stat"><span class="fig">11.3M</span><span class="lab">Cases pending at USCIS, end FY2026 Q1 — up 17% YoY</span></div>
+        <div class="stat"><span class="fig">86</span><span class="lab">Cases completed per 100 received — 11th straight quarter below break-even</span></div>
+        <div class="stat"><span class="fig">211,600</span><span class="lab">FY2027 H-1B registrations for 85,000 slots, newly wage-weighted</span></div>
+      </div>
+
+      <p><strong>Demographics</strong> <span class="src src-deck">deck</span> — 51.9M foreign-born residents; 93M people in immigrant-oriented households; ~70% concentrated in CA, TX, FL and NY. Sources: <a href="https://www.pewresearch.org/short-reads/2025/08/21/key-findings-about-us-immigrants/">Pew Research Center (2025)</a>; <a href="https://www.migrationpolicy.org/article/frequently-requested-statistics-immigrants-and-immigration-united-states">Migration Policy Institute (2025)</a>.</p>
+
+      <p><strong>Technology</strong> <span class="src src-brief">brief</span> — the classifier-router pattern is now reliable enough that an app can decide, per question, whether to answer or fetch a human. That decision is what separates Landed from a chatbot.</p>
+
+      <p><strong>System stress</strong> <span class="src src-an">analysis</span> — the net backlog inside the government's own control went from under 4.3M to <strong>6.3M</strong> in twelve months (<a href="https://www.americanimmigrationcouncil.org/blog/uscis-immigration-processing-trends-2026/">AIC</a>). The $100,000 H-1B fee was signed in September 2025 and <a href="https://www.vorys.com/publication-court-strikes-down-100-000-h-1b-entry-fee-but-fee-still-applies-pending-appeal">struck down in June 2026</a> — a year of career decisions made against a rule that no longer exists. Every one of those is a reason Priya asks Rahul <em>"is this normal?"</em>, and none existed in this form when the last generation of immigrant community apps launched.</p>
+    </section>
+
+    <section id="s5">
+      <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">The users</h2></div>
+      <p>Three personas <span class="src src-brief">brief</span>, and one structural point that governs everything: <strong>the supply side must be seeded first.</strong></p>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Persona</th><th>Who</th><th>The line that matters</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Priya</strong><br><span class="mono">demand</span></td><td>27, Bangalore, SWE, H-1B, Bay Area, 8 months in</td><td><em>"I found a WhatsApp group but it's mostly memes. I just want someone who's been here longer to tell me — is it safe to switch jobs right now?"</em></td></tr>
+            <tr><td><strong>Rahul</strong><br><span class="mono">supply</span></td><td>31, Mumbai, senior SWE, Seattle, 3 years in, I-140 approved</td><td><em>"I would have paid anything for someone to just tell me how things actually work here — not the official answer, the real answer."</em></td></tr>
+            <tr><td><strong>Ankit</strong><br><span class="mono">edge</span></td><td>24, OPT, San Jose, 60-day unemployment clock</td><td><em>"I've asked 10 people and got 10 different answers."</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><span class="tag">Analysis</span><p>Rahul is the whole business. Priya's problem is solved the moment Rahul exists nearby; Rahul's motivation is reciprocity, not money, and reciprocity is fragile — it survives about three unanswered notifications. <strong>Treat supply-side retention as a primary metric, not a secondary one.</strong> The deck's "trained category leads" is the same instinct expressed as an org chart; the honest version is that you will personally recruit the first 50 Rahuls, and they will stay because of you, not the product.</p></div>
+    </section>
+
+    <section id="s6">
+      <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title">What we build</h2></div>
+
+      <h3>v1 scope <span class="src src-brief">brief</span> — unchanged, it's right</h3>
+      <p><strong>In:</strong> AI Q&amp;A for visa, daily life and local questions · profile (country, visa type, city, years in US, ≤5 interests) · human matching ("3 people near you answered this recently") · pseudonymous asking · basic city feed, filterable by category.</p>
+      <p><strong>Out, and say it out loud:</strong> no events, no DMs or group chat, no second country, no mobile app until 1,000 users, <strong>no monetization until you know what people would pay for.</strong></p>
+
+      <h3>The agent pipeline <span class="src src-brief">brief</span></h3>
+      <div class="tw">
+        <table>
+          <thead><tr><th class="num">#</th><th>Agent</th><th>Job</th></tr></thead>
+          <tbody>
+            <tr><td class="rank">1</td><td><strong>Classifier</strong></td><td>Question → <span class="mono">{category, risk, confidence, route}</span>. Risk high = wrong advice could harm status, legal standing or finances.</td></tr>
+            <tr><td class="rank">2</td><td><strong>Router</strong></td><td>Pure orchestration, no LLM call of its own. <span class="mono">ai</span> → answer only · <span class="mono">human</span> → matching only · <span class="mono">both</span> → fast context plus a notified human.</td></tr>
+            <tr><td class="rank">3</td><td><strong>Answer</strong></td><td>Generates the factual response where the AI can be relied on.</td></tr>
+            <tr><td class="rank">4</td><td><strong>Safety</strong></td><td>Attaches disclaimers to anything legal-adjacent.</td></tr>
+            <tr><td class="rank">5</td><td><strong>Matching</strong></td><td>Scores helpers by same visa type, same city, recency of the same experience, track record — then notifies the best one.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Plus a <strong>feedback loop</strong> logging whether the answer helped and whether the human replied, which tunes routing over time.</p>
+
+      <div class="note"><span class="tag">Analysis</span><p>The strongest design decision in the whole folder is storing the classifier's reasoning — <span class="mono">category, risk, confidence, route</span> — on the question row, not just the text. That turns the agent's judgment into an auditable dataset, and it's the only thing that will let you answer, six months in, <em>"which categories should we stop letting the AI answer?"</em> That dataset is also the closest thing this product has to a durable moat.</p></div>
+
+      <h3>Stack <span class="src src-brief">brief</span></h3>
+      <p>Next.js 14 + TypeScript on Vercel → FastAPI on Railway → Supabase (Postgres + pgvector + auth) → Claude API. Langfuse for tracing, Resend for email. Seven tables, UUID keys, <span class="mono">created_at</span> everywhere; AI answers and human answers deliberately kept in separate tables because they have different shapes and lifecycles.</p>
+    </section>
+
+    <section id="s7">
+      <div class="sec-head"><span class="sec-num">07</span><h2 class="sec-title">Market opportunity</h2></div>
+
+      <div class="note"><span class="tag">Analysis</span><p><strong>51.9M is a population, not a market.</strong> It's the right number for a mission statement and the wrong one for a revenue model — it implies nothing about willingness to pay, and community products convert at a fraction of a percent, not at SaaS rates. The number that decides this business is the deck's own <strong>$52–$58 contribution margin per subscriber</strong> — quoted without a CAC beside it. If blended CAC exceeds $52, the model inverts no matter how large the population is.</p></div>
+
+      <h3>Bottom-up, for the wedge actually being built <span class="src src-an">analysis</span></h3>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Layer</th><th>Basis</th><th class="num">Estimate</th></tr></thead>
+          <tbody>
+            <tr><td>Indian-born immigrants in the US</td><td>MPI / Pew order of magnitude</td><td class="num">~2.9M</td></tr>
+            <tr><td>Working-age professionals + students</td><td>Share of the above</td><td class="num">~1.2M</td></tr>
+            <tr><td>Bay Area Indian-origin tech workers</td><td>Beachhead</td><td class="num">~150k–250k</td></tr>
+            <tr class="total"><td>Density threshold for the product to work <span class="src src-brief">brief</span></td><td>Active users in one metro</td><td class="num">500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The first target isn't a market size — it's <strong>500 people in one metro</strong>. Everything above that line is Year 2+ and should be treated as unearned until the matching loop demonstrably works.</p>
+      <p><strong>Revenue-relevant SAM</strong>, once the loop works: if the wedge generalises to ~1.2M working-age Indian immigrants nationally, and a community product converts 2–4% to a $60–96/yr tier, that's <strong>$1.4M–$4.6M</strong> of in-segment subscription revenue. Reaching the deck's Year 5 numbers therefore <em>requires</em> the expansion to all-immigrant, all-metro, plus B2B. <strong>That expansion is an assumption, not a projection</strong> — say so before someone else does.</p>
+    </section>
+
+    <section id="s8">
+      <div class="sec-head"><span class="sec-num">08</span><h2 class="sec-title">Business model — and the model that disagrees with itself</h2></div>
+      <p>Two-sided freemium <span class="src src-deck">deck</span>. Demand: new arrivals and students. Supply: established immigrants and verified professionals. Revenue: Connect+ subscriptions, directory listings, B2B partnerships, verified-professional subscriptions. Partners: immigration law firms, resettlement nonprofits, universities, fintechs.</p>
+
+      <h3>The numbers don't reconcile — fix this first <span class="src src-an">analysis</span></h3>
+      <p>The deck carries <strong>two financial models</strong>, built in different weeks and never merged. The roadmap slide names both out loud (<em>"$21.0M net revenue (Wk3 model) / $10.5M (Wk7 model)"</em>), so this is known — but it's currently sitting inside a presented deck.</p>
+      <div class="tw">
+        <table>
+          <thead><tr><th></th><th class="num">Business-model slide (Wk3)</th><th class="num">Financial-plan slide (Wk7)</th><th class="num">Gap</th></tr></thead>
+          <tbody>
+            <tr><td>Year 1 net revenue</td><td class="num">$1.2M</td><td class="num">$310K</td><td class="num"><strong>3.9×</strong></td></tr>
+            <tr><td>Year 5 net revenue</td><td class="num">$21M</td><td class="num">$10.52M</td><td class="num"><strong>2.0×</strong></td></tr>
+            <tr><td>Total funding</td><td class="num">$17M (Seed + A + B)</td><td class="num">$2.0M (SAFE + A + SBA)</td><td class="num"><strong>8.5×</strong></td></tr>
+            <tr><td>Year 3</td><td class="num">EBITDA break-even</td><td class="num">Profitable, $180K net</td><td class="num">consistent</td></tr>
+            <tr><td>Revenue streams</td><td class="num">Connect+, listings, B2B, pro subs</td><td class="num">Premium subs, listings, sponsorships, consultation fees</td><td class="num">named differently</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Recommendation:</strong> keep the <strong>Wk7 model</strong> — $2.0M raised, $310K Year 1, $10.5M Year 5. It's the more defensible of the two, its funding ask matches a pre-PMF community product, and a $17M raise is not credible against 100 active users. Rebuild the business-model slide from it and retire the old figures everywhere they appear.</p>
+
+      <h3>Two more model problems <span class="src src-an">analysis</span></h3>
+      <ul>
+        <li><strong>"Service remains free" versus subscription-led revenue.</strong> Strategic objective 5 commits to the service staying free; the revenue model is led by subscriptions. Both can be true — free core, paid Connect+ — but the deck never says which parts are which. Write the line: <em>what is free forever, and what is paid.</em></li>
+        <li><strong>"Consultation fees" and law-firm partnerships need a lawyer before they need a spreadsheet.</strong> Revenue arrangements between a non-lawyer platform and immigration attorneys run into state bar rules on fee-splitting with non-lawyers and paying for referrals (ABA Model Rules 5.4 and 7.2, as adopted state by state). Flat-fee directory listings are the conventional structure; per-referral or revenue-share fees are the structure that gets platforms in trouble. Get an opinion before this line item goes in front of an investor. <em>This flags a risk; it isn't a legal conclusion.</em></li>
+      </ul>
     </section>
 
     <section id="s9">
-      <div class="sec-head"><span class="sec-num">09</span><h2 class="sec-title">Competitive landscape</h2></div>
-      <div class="tw">
-        <table>
-          <thead><tr><th>Player</th><th>Where they're strong</th><th>The gap we exploit</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Alma</strong></td><td>Attorney-led + AI on employment-based visas; YC/Techstars/Pear preferred-provider deals; startup tier for 0–25 foreign nationals</td><td>Transaction-scoped — engaged per matter, absent between them</td></tr>
-            <tr><td><strong>Boundless</strong></td><td>Family-based leader; acquired Bridge (2023) for business immigration and Localyze for European mobility</td><td>Family DNA plus an employer-mobility motion; the individual's lifetime file isn't the product</td></tr>
-            <tr><td><strong>Envoy Global</strong></td><td>Established corporate platform with an attached law firm</td><td>Employer-owned — nothing survives a job change</td></tr>
-            <tr><td><strong>Deel / Rippling</strong></td><td>HRIS bundling: the most dangerous distribution in the category</td><td>Same structural limit — scoped to employment. Also the reason speed matters.</td></tr>
-            <tr><td><strong>Lawfully</strong></td><td>Consumer case tracking at scale</td><td>Tracking without execution — a widget, not a record</td></tr>
-            <tr><td><strong>Docketwise / Casebase</strong></td><td>Attorney-side workflow software</td><td>Sells to the firm; the immigrant is the object, not the user</td></tr>
-            <tr><td><strong>Fragomen, BAL</strong></td><td>Enterprise trust and depth</td><td>Priced and staffed for the enterprise; the individual is not the client</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <blockquote><p>Everyone else is organised around a filing or an employer. We are organised around a person.</p></blockquote>
+      <div class="sec-head"><span class="sec-num">09</span><h2 class="sec-title">Competition — and the ghost in the room</h2></div>
+      <p>Combined from both documents: Facebook and WhatsApp groups (no verification, no structure) · Nextdoor (hyperlocal, no immigrant categories) · USAHello and Settle In (resources, no peer channel) · Meetup (events, no visa matching) · FindHello (directory) · Boundless (visa legal) · Tarjimly (translation) · Google and Reddit (generic).</p>
+
+      <h3>Homeis — the most important competitor is the one that's already dead <span class="src src-an">analysis</span></h3>
+      <p>The deck lists Homeis as a live competitor with "limited language support, narrow ethnic focus." The more useful fact: <strong>Homeis shut down in July 2021</strong>, after raising a <strong>$12M Series A</strong> from Canaan Partners and Spark Capital for precisely this product — a language- and location-based immigrant community network. It grew during COVID, then failed to hold retention or find monetization. The domain went up for sale. (<a href="https://finder.startupnationcentral.org/company_page/homeis?section=news">Startup Nation Central</a>; <a href="https://grokipedia.com/page/homeis">summary</a>)</p>
+      <p>This turns the competitive slide from a list into a thesis. <strong>A well-funded, well-staffed version of this idea has already been tried, and it died on the two exact risks named in your own SWOT: retention and monetization.</strong> Any version of this plan that doesn't answer <em>"why doesn't this end like Homeis?"</em> is incomplete.</p>
+      <div class="note"><span class="tag">The answer, and it's a good one</span><p><strong>Homeis was a social network. Landed is a question-answering utility with a social supply side.</strong> Social networks need constant novelty to retain. A utility needs only to be there when the question arrives — retention is measured in questions answered, not daily sessions. That distinction deserves a slide of its own, and it's why the brief's "no events, no DMs, no feed-scrolling" discipline is a strategic choice rather than a scoping shortcut.</p></div>
     </section>
 
     <section id="s10">
-      <div class="sec-head"><span class="sec-num">10</span><h2 class="sec-title">Regulatory, ethical and trust constraints</h2></div>
-      <p>Not a compliance appendix. In this category these are product architecture.</p>
+      <div class="sec-head"><span class="sec-num">10</span><h2 class="sec-title">Trust, legal and ethics</h2></div>
+      <p><span class="src src-deck">deck</span> GDPR/CCPA-aligned multilingual privacy policy · layered IP · ToS/EULA and vendor DPAs · governance board including immigrant-advocacy expertise · free core access · <strong>fair labour and wellbeing protections for moderators</strong> · independent audits · ethical review board with a member reporting channel. Hybrid AI and human moderation, supported by research that AI moderation is trusted comparably to human moderation <em>when paired with transparency and appeal</em> (Molina &amp; Sundar, 2022).</p>
+      <p><span class="src src-brief">brief</span> Encryption at rest and in transit · <strong>never train on user data, and say so plainly</strong> · one-click delete-all · user-scoped storage, no cross-user leakage by design · report and block before launch.</p>
+      <h3>Three additions <span class="src src-an">analysis</span></h3>
       <ol>
-        <li><strong>Unauthorized practice of law.</strong> A non-lawyer product giving case-specific legal advice is illegal in every state, and is the failure mode behind decades of <em>notario</em> harm. Architecture: information and document assembly are ours; advice requires a licensed attorney of record; the copilot refuses rather than approximates, and the refusal routes to a human. Get a state-by-state opinion before launch, not after.</li>
-        <li><strong>Model error in a high-stakes domain.</strong> A hallucinated deadline can end someone's status. Retrieval-only answers with dated citations; refusal outside the corpus; human review on anything filed; an eval suite built from real historical cases with known outcomes; a published error-and-correction policy.</li>
-        <li><strong>Data sensitivity is existential.</strong> Immigration status data is among the most sensitive a person can hand over, and in the current climate users are right to be cautious. Commit in writing and in architecture: data minimisation, encryption, defined retention, one-click export and delete, no sale or sharing, and a published policy on responding to government requests. <strong>If we are ever the reason someone's data was used against them, no version of this company survives it.</strong> Design as though that is the only failure that matters.</li>
-        <li><strong>Accuracy of policy content.</strong> The corpus must be versioned and dated, and every answer must show which version it relied on. The $100k-fee whiplash is the standing example: correct advice in October 2025 was wrong advice by July 2026.</li>
+        <li><strong>Say what you do when the government asks.</strong> Both documents cover privacy from a GDPR/CCPA angle — compliance with commercial regulation. Neither addresses the fear this population actually has, which is not marketing spam. Publish a plain-language policy on how you respond to government data requests, and minimise what you hold so the answer stays short. This is a feature, and it's the strongest trust differentiator available to you.</li>
+        <li><strong>The safety agent is a legal control, not a UX nicety.</strong> Routing high-risk visa questions to humans with disclaimers is what keeps the platform on the right side of unauthorised-practice-of-law lines. Treat a mis-route on a <span class="mono">risk: high</span> question as a Sev-1, with a written escalation path.</li>
+        <li><strong>Moderator wellbeing is already in the deck — keep it.</strong> It's unusual, it's correct, and it signals a team that has thought past the demo.</li>
       </ol>
     </section>
 
     <section id="s11">
-      <div class="sec-head"><span class="sec-num">11</span><h2 class="sec-title">Success metrics</h2></div>
-      <p><strong>North Star:</strong> case milestones completed on time and approved on first submission, per active user, per year. It moves only if the product is used, correct, and consequential.</p>
+      <div class="sec-head"><span class="sec-num">11</span><h2 class="sec-title">Risks</h2></div>
+      <p>The deck maps four categories: financial, managerial, product/market, legal. Reordered here by what will actually kill it <span class="src src-an">analysis</span>:</p>
       <div class="tw">
         <table>
-          <thead><tr><th>Layer</th><th>Metric</th><th class="num">Beta target</th></tr></thead>
+          <thead><tr><th class="num">Rank</th><th>Risk</th><th>Why it's ranked here</th><th>Mitigation</th></tr></thead>
           <tbody>
-            <tr><td>Adoption</td><td>New users with ≥3 documents extracted in week 1</td><td class="num">≥45%</td></tr>
-            <tr><td>Quality</td><td>Extraction field accuracy, human-audited</td><td class="num">≥97%</td></tr>
-            <tr><td>Quality</td><td>Copilot answers fully grounded in a cited source</td><td class="num">100%</td></tr>
-            <tr><td>Value</td><td>Deadline capture vs. reconstructed ground truth</td><td class="num">≥95%</td></tr>
-            <tr><td>Outcome</td><td>RFE rate vs. category benchmark</td><td class="num">−30%</td></tr>
-            <tr><td>Business</td><td>Free → Plus conversion</td><td class="num">6–9%</td></tr>
-            <tr><td>Business</td><td>Plus → filing conversion</td><td class="num">≥12%</td></tr>
-            <tr><td>Business</td><td>Gross margin per partner matter</td><td class="num">≥55%</td></tr>
-            <tr><td>Guardrail</td><td>Unresolved hallucination incidents</td><td class="num">0</td></tr>
-            <tr><td>Guardrail</td><td>UPL escalation misses</td><td class="num">0</td></tr>
+            <tr><td class="rank">1</td><td><strong>Cold start on the supply side</strong></td><td>Priya without Rahul is a chatbot with extra steps. Every marketplace dies here — Homeis had money and still did.</td><td>Hand-recruit 50 Rahuls before launch; measure helper reply rate weekly; density before breadth</td></tr>
+            <tr><td class="rank">2</td><td><strong>Retention</strong></td><td>The named cause of Homeis's death, and the reason a "community" framing is dangerous</td><td>Reframe as a utility: success = questions answered. Re-engage on life events (visa dates), not feed activity</td></tr>
+            <tr><td class="rank">3</td><td><strong>A wrong high-risk answer</strong></td><td>One person losing status because of a mis-routed answer ends the brand permanently</td><td>Conservative routing thresholds, mandatory disclaimers, golden-set evals in CI, Sev-1 process</td></tr>
+            <tr><td class="rank">4</td><td>Trust / verification breach</td><td>The deck's #3, correctly identified</td><td>Multi-level verification, dedicated safety budget, published incident policy</td></tr>
+            <tr><td class="rank">5</td><td>Monetization timing</td><td>Charging too early kills the loop; too late kills the runway</td><td>Free until PMF, then Connect+ — with the free/paid line written down in advance</td></tr>
+            <tr><td class="rank">6</td><td>Policy volatility</td><td>Category-wide, not company-specific (see §4)</td><td>Dated, versioned answers; make the change feed a feature</td></tr>
           </tbody>
         </table>
       </div>
-      <p><strong>Kill criteria.</strong> After 100 beta users: if fewer than 25% upload three or more documents in week one, the system-of-record wedge is wrong and we should reconsider being an execution-only service. If partner matters cannot clear 55% gross margin, the marketplace model is wrong and we should be software-only.</p>
     </section>
 
     <section id="s12">
-      <div class="sec-head"><span class="sec-num">12</span><h2 class="sec-title">Roadmap</h2></div>
+      <div class="sec-head"><span class="sec-num">12</span><h2 class="sec-title">Metrics</h2></div>
+      <p>The brief's targets are right for Phases 1–2: 50+ landing-page signups before building, 100 active users in 30 days, 40% asking a second question within a week. What's missing is the supply side and safety <span class="src src-an">analysis</span>. Together, the v1 scorecard:</p>
       <div class="tw">
         <table>
-          <thead><tr><th>Phase</th><th>Build</th><th>Exit criteria</th></tr></thead>
+          <thead><tr><th>Layer</th><th>Metric</th><th class="num">Target</th></tr></thead>
           <tbody>
-            <tr><td><strong>Months 0–3</strong><br>Prove the wedge</td><td>40 discovery interviews across the four sub-segments. Extraction for the eight highest-frequency document types. Private beta, 100 users. No filings, no advice, no revenue.</td><td>Adoption and deadline-capture targets in section 11</td></tr>
-            <tr><td><strong>Months 3–6</strong><br>Earn the right to charge</td><td>Grounded copilot with citations. Evidence checklists for O-1A / EB-1A / NIW. One attorney partner firm, 25 pilot matters. First revenue.</td><td>RFE rate below benchmark on pilot matters; ≥55% gross margin</td></tr>
-            <tr><td><strong>Months 6–12</strong><br>Make it a business</td><td>Plus tier GA. Employer pilot with five companies in the 10–200 band. Policy change feed shipped.</td><td>Decision point: family-based, second country, or deeper employer compliance</td></tr>
+            <tr><td>Demand</td><td>Second question within 7 days <span class="src src-brief">brief</span></td><td class="num">40%</td></tr>
+            <tr><td><strong>Supply</strong></td><td><strong>Helper reply rate within 24h</strong></td><td class="num"><strong>≥60%</strong></td></tr>
+            <tr><td><strong>Supply</strong></td><td><strong>Helpers answering ≥2 questions in 30 days</strong></td><td class="num"><strong>≥40%</strong></td></tr>
+            <tr><td>Match quality</td><td>Asker marks the match helpful</td><td class="num">≥70%</td></tr>
+            <tr><td>Routing</td><td>High-risk questions correctly routed to a human</td><td class="num">100%</td></tr>
+            <tr><td>Routing</td><td>AI-answered questions later escalated by the asker</td><td class="num">&lt;10%</td></tr>
+            <tr><td>Density</td><td>Active users in launch metro</td><td class="num">500</td></tr>
+            <tr><td>Cost</td><td>Blended cost per answered question</td><td class="num">track from day 1</td></tr>
           </tbody>
         </table>
       </div>
+      <p><strong>North Star:</strong> questions answered well, per active user, per month — where "well" means the asker marked it helpful and no escalation followed. It moves only if routing, supply and demand are all working, which is exactly the property you want from a single number.</p>
     </section>
 
     <section id="s13">
-      <div class="sec-head"><span class="sec-num">13</span><h2 class="sec-title">Open questions for the deck</h2></div>
-      <p>Ordered by how much each changes this document.</p>
+      <div class="sec-head"><span class="sec-num">13</span><h2 class="sec-title">Roadmap</h2></div>
+      <p>Seven phases, roughly nine weekends, validate before you build <span class="src src-brief">brief</span>:</p>
+      <div class="tw">
+        <table>
+          <thead><tr><th class="num">Phase</th><th>Work</th><th>Gate</th></tr></thead>
+          <tbody>
+            <tr><td class="rank">1</td><td>Product foundation — talk to 5 real immigrants, write the brief</td><td>Done; this document extends it</td></tr>
+            <tr><td class="rank">2</td><td>Name, brand, landing page</td><td>50+ signups to continue; under 10, rethink</td></tr>
+            <tr><td class="rank">2.5</td><td><strong>Supply recruitment</strong> <span class="src src-an">added</span></td><td><strong>50 hand-recruited Rahuls before any Priya sees the product</strong></td></tr>
+            <tr><td class="rank">3</td><td>System design and architecture</td><td>Done</td></tr>
+            <tr><td class="rank">4</td><td>Backend triage engine — classifier, answer, matching, safety</td><td>pytest eval harness, 20 golden pairs</td></tr>
+            <tr><td class="rank">5</td><td>Frontend — onboarding, feed, SSE streaming, matches, notifications</td><td>—</td></tr>
+            <tr><td class="rank">6</td><td>Auth, security, privacy <span class="src src-an">+ free/paid line, government-request policy</span></td><td>Non-negotiable before real users</td></tr>
+            <tr><td class="rank">7</td><td>CI/CD, observability, launch</td><td>Email the waitlist</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Phase 2.5 exists because a launch into an empty helper pool burns the waitlist you just built, and you only get one. Immediate next actions, from the folder's own list: talk to 5 real immigrants (<em>listen, don't pitch</em>), settle the name and buy the domain, set up the repo, draft the landing copy.</p>
+    </section>
+
+    <section id="s14">
+      <div class="sec-head"><span class="sec-num">14</span><h2 class="sec-title">Open decisions — for Sharad &amp; Prathma</h2></div>
+      <p>Ordered by how much each unblocks.</p>
       <ol>
-        <li><strong>What is the product, in Prathma's framing?</strong> Marketplace, copilot, employer tool, or student service? <em>(Rewrites 5–8.)</em></li>
-        <li><strong>Which segment does the deck start with?</strong> <em>(Rewrites 7, resizes 4.)</em></li>
-        <li><strong>Is there primary research in the folder</strong> — survey data, interview notes, a customer-discovery deliverable? Primary data replaces every assumption marker with evidence, and is the highest-value thing in that folder.</li>
-        <li><strong>What is the real product name</strong>, and is there brand work already?</li>
-        <li><strong>Is a financial model already built?</strong> If so, section 4.3 should be replaced by it, not reconciled with it.</li>
-        <li><strong>What did the class push back on?</strong> Recorded objections are worth more than the deck.</li>
-        <li><strong>Is this a company, a course project, or a side project?</strong> A company needs the UPL opinion in month one. A course project does not.</li>
+        <li><strong>One name.</strong> Landed or ImmigrantConnect. Recommendation in §2 — decide it this week and retire the other everywhere.</li>
+        <li><strong>One financial model.</strong> Recommendation: the Wk7 model. Rebuild the business-model slide from it. <em>(§8)</em></li>
+        <li><strong>Whose venture is this?</strong> A capstone, a startup, or a portfolio project? The deck asks for a seed round and a founding team; the brief is a solo nine-weekend build. Both are legitimate; they are not the same commitment, and the answer changes everything from Phase 2 on.</li>
+        <li><strong>Beachhead: Indian tech workers, or all immigrants?</strong> The density argument is strong and I'd take it — but it narrows the mission the deck is built on, and Prathma should agree to that narrowing explicitly rather than discover it later.</li>
+        <li><strong>Toronto: in or out of Year 1?</strong> Recommendation: out. <em>(§1)</em></li>
+        <li><strong>What's free forever?</strong> Write the line before the first paying user, not after. <em>(§8)</em></li>
+        <li><strong>Legal opinion on the law-firm revenue streams</strong> before they appear in an investor deck. <em>(§8)</em></li>
       </ol>
     </section>
 
     <section id="src" class="sources">
       <div class="sec-head"><span class="sec-num">—</span><h2 class="sec-title">Sources</h2></div>
 
-      <h3>Backlog and processing</h3>
+      <h3>Primary — the folder</h3>
+      <p><span class="mono">ImmigrantConnect_Venture_Plan_Presentation.pptx</span> and its PDF export · <span class="mono">Landed_Product_Brief</span> · <span class="mono">Landed_System_Design</span> · <span class="mono">Landed_Agent_Architecture</span> · <span class="mono">Action Items</span> — all in <em>Immigrants Idea WORK</em>.</p>
+
+      <h3>Cited in the deck</h3>
+      <ul>
+        <li><a href="https://www.pewresearch.org/short-reads/2025/08/21/key-findings-about-us-immigrants/">Pew Research Center (2025) — Key findings about U.S. immigrants</a></li>
+        <li><a href="https://www.migrationpolicy.org/article/frequently-requested-statistics-immigrants-and-immigration-united-states">Migration Policy Institute (2025) — Frequently requested statistics</a></li>
+        <li>Molina &amp; Sundar (2022), <em>When AI Moderates Online Content</em>, JCMC 27(4) · Ma &amp; Agarwal (2007), <em>Identity Verification and Knowledge Contribution</em>, ISR 18(1) · Rochet &amp; Tirole (2003) · Adedeji (2021, 2024) · Akter et al. (2024) · Safari &amp; Das (2023), plus the deck's full reference slide</li>
+      </ul>
+
+      <h3>Added in this document</h3>
       <ul>
         <li><a href="https://www.americanimmigrationcouncil.org/blog/uscis-immigration-processing-trends-2026/">American Immigration Council — USCIS filing trends, FY2026</a></li>
         <li><a href="https://www.americanimmigrationcouncil.org/blog/uscis-backlogs-processing-trends-dashboard/">American Immigration Council — USCIS backlog dashboard</a></li>
-        <li><a href="https://www.niskanencenter.org/immigrationdata/">Niskanen Center — Legal immigration in numbers, June 2026</a></li>
-        <li><a href="https://www.uscis.gov/newsroom/alerts/uscis-to-reduce-frivolous-immigration-benefits-requests-by-reinforcing-evidence-standards">USCIS — Evidence standards and RFE-optional denials</a></li>
-      </ul>
-
-      <h3>Market size</h3>
-      <ul>
-        <li><a href="https://www.ibisworld.com/united-states/market-size/immigration-lawyers-attorneys/4808/">IBISWorld — Immigration lawyers &amp; attorneys in the US</a></li>
-        <li><a href="https://www.thebusinessresearchcompany.com/report/immigration-legal-services-global-market-report">The Business Research Company — Immigration legal services, 2026</a></li>
-        <li><a href="https://natlawreview.com/press-releases/immigration-legal-services-market-projected-attain-value-us-2971-billion">National Law Review — $29.71B by 2030</a></li>
-        <li><a href="https://www.precedenceresearch.com/us-legal-services-market">Precedence Research — US legal services market</a></li>
-      </ul>
-
-      <h3>Policy</h3>
-      <ul>
         <li><a href="https://www.uscis.gov/newsroom/alerts/fy-2027-h-1b-initial-registration-selection-process-completed">USCIS — FY2027 H-1B registration selection completed</a></li>
-        <li><a href="https://www.uscis.gov/newsroom/alerts/fy-2027-h-1b-cap-initial-registration-period-opens-on-march-4">USCIS — FY2027 H-1B cap registration period</a></li>
+        <li><a href="https://www.vorys.com/publication-court-strikes-down-100-000-h-1b-entry-fee-but-fee-still-applies-pending-appeal">Vorys — Court strikes down the $100,000 H-1B fee</a></li>
         <li><a href="https://www.gtlaw.com/en/insights/2025/9/the-new-100000-h1b-filing-fee-employer-considerations">Greenberg Traurig — The $100,000 H-1B filing fee</a></li>
-        <li><a href="https://www.vorys.com/publication-court-strikes-down-100-000-h-1b-entry-fee-but-fee-still-applies-pending-appeal">Vorys — Court strikes down the $100,000 fee</a></li>
-        <li><a href="https://www.grossmanyoung.com/blog/h1b-litigation-update/">Grossman Young &amp; Hammond — H-1B litigation update</a></li>
-        <li><a href="https://wolfsdorf.com/united-states-eb-2-india-unavailable-through-september-30-2026-what-employers-and-indian-nationals-need-to-know/">WR Immigration — EB-2 India unavailable through 30 Sept 2026</a></li>
-        <li><a href="https://www.beyondborderglobal.com/resources/eb2-india-green-card-wait-time-2025-predictions-backlogs-and-timeline-forecast">Beyond Border Global — EB-2 India wait times</a></li>
-        <li><a href="https://manifestlaw.com/blog/eb3-visa-statistics">Manifest Law — EB-3 statistics, 2026</a></li>
-      </ul>
-
-      <h3>Cost and behaviour</h3>
-      <ul>
-        <li><a href="https://lawofficeimmigration.com/pricing.html">Modern Law Group — Immigration lawyer cost, 2026</a></li>
-        <li><a href="https://lawofficeimmigration.com/blog/hr1-immigration-fees-2026.html">Modern Law Group — 2026 USCIS filing fee guide</a></li>
-        <li><a href="https://www.boundless.com/immigration-resources/what-is-a-request-for-evidence-rfe-and-what-should-i-do-about-it">Boundless — Request for Evidence explained</a></li>
-        <li><a href="https://ayuda.com/wp-content/uploads/2019/01/Notario-Fraud-Remedies_A-Practical-Manual-for-Immigration-Practitioners.pdf">Ayuda — Notario fraud remedies manual</a></li>
-      </ul>
-
-      <h3>Competition</h3>
-      <ul>
-        <li><a href="https://blog.laborless.io/immigration-tech-in-2025-serious-ai-funding-and-a-big-immigration-tech-rebrand/">Laborless — Immigration tech in 2025</a></li>
-        <li><a href="https://www.tryalma.com/learn/alma-vs-boundless-vs-envoy-global">Alma vs Boundless vs Envoy Global</a></li>
-        <li><a href="https://www.tryalma.com/learn/alma-vs-bal-vs-boundless">Alma vs BAL vs Boundless</a></li>
+        <li><a href="https://finder.startupnationcentral.org/company_page/homeis?section=news">Startup Nation Central — Homeis</a> · <a href="https://grokipedia.com/page/homeis">Homeis history and shutdown</a></li>
+        <li><a href="https://www.ibisworld.com/united-states/market-size/immigration-lawyers-attorneys/4808/">IBISWorld — Immigration lawyers &amp; attorneys in the US</a></li>
       </ul>
     </section>
 
     <footer>
-      <p>Draft v0.1 · 19 August 2026 · Assembled without access to the source folder; see section 00. Population figures are public-source estimates, pricing and conversion figures are modelled assumptions with named drivers.</p>
+      <p>Draft v0.2 · 19 August 2026 · Written from the source folder. Provenance is tagged throughout: <span class="src src-deck">deck</span> ImmigrantConnect venture plan · <span class="src src-brief">brief</span> Landed product brief and architecture · <span class="src src-an">analysis</span> added here. Population and conversion figures outside the deck are estimates with stated assumptions.</p>
     </footer>
 
   </main>
