@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix My Itch — USA edition</title>
+  <meta
+    name="description"
+    content="A US-localized homage to Razorpay's Fix My Itch: a database of real everyday problems Americans face, scored by the Itch Index and curated for founders to build."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============================= HEADER / NAV ============================= -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Fix My Itch USA home">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- Simple inline SVG spark logo -->
+          <svg viewBox="0 0 24 24" width="24" height="24" role="img" aria-hidden="true">
+            <path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">Fix My Itch <span class="brand-flag">🇺🇸</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#itch-index">Itch Index</a>
+        <a href="#database">Database</a>
+        <a href="#share" class="nav-cta">Share your itch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================ HERO ================================ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">USA edition · An open database of problems worth solving</p>
+        <h1 class="hero-title">
+          America is full of problems worth&nbsp;solving.
+          <span class="hero-accent">Now they're all in one place.</span>
+        </h1>
+        <p class="hero-sub">
+          Founders don't just notice problems. They carry them. We listened across X, Reddit,
+          a nationwide survey, and street-level conversations in NYC, SF, Austin, Chicago, and beyond —
+          then scored every itch so you can find the one worth building.
+        </p>
+
+        <div class="hero-stats" role="list">
+          <div class="stat" role="listitem">
+            <span class="stat-num">40,000+</span>
+            <span class="stat-label">real problems</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">100,000+</span>
+            <span class="stat-label">Americans heard</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">16</span>
+            <span class="stat-label">industries</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#database" class="btn btn-primary">Explore the itches</a>
+          <a href="#share" class="btn btn-ghost">Share your itch</a>
+        </div>
+        <p class="hero-note">
+          A curated shortlist of <strong id="hero-count">56</strong> build-worthy problems, scored by the Itch Index.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ HOW IT WORKS ============================ -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-lead">
+          From raw American frustration to a founder-ready shortlist, in four steps.
+        </p>
+
+        <ol class="steps">
+          <li class="step-card">
+            <span class="step-num">01</span>
+            <h3>Listen everywhere</h3>
+            <p>
+              AI scrapes X and Reddit, a Typeform-style survey collects thousands of responses, and we
+              have on-the-ground conversations in major US cities — from Brooklyn to the Bay to the Sun Belt.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">02</span>
+            <h3>Score with the Itch Index</h3>
+            <p>
+              Every problem is rated on Severity, Frequency, Market Whitespace, and TAM, then blended
+              into a single Itch Score so the biggest opportunities rise to the top.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">03</span>
+            <h3>Surface build-worthy problems</h3>
+            <p>
+              We filter noise from signal, dedupe the 40,000+ raw inputs, and keep the itches with real
+              severity, real frequency, and real room for a new company.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">04</span>
+            <h3>Founders build</h3>
+            <p>
+              Browse, filter, and sort. Pick an itch that keeps you up at night — and go scratch it for
+              millions of Americans.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================== ITCH INDEX ============================= -->
+    <section class="section section-alt" id="itch-index">
+      <div class="container">
+        <h2 class="section-title">The Itch Index</h2>
+        <p class="section-lead">
+          A proprietary score that turns a messy complaint into a rankable opportunity. Four dimensions,
+          one number from <strong>55&nbsp;to&nbsp;100</strong>.
+        </p>
+
+        <div class="dims-grid">
+          <article class="dim-card">
+            <div class="dim-icon dim-icon--sev" aria-hidden="true">🔥</div>
+            <h3>Severity</h3>
+            <p>How much does this problem <em>hurt</em> when it hits? A surprise medical bill stings more than a slow app.</p>
+            <span class="dim-scale">Scale 4–10 · weight 30%</span>
+          </article>
+          <article class="dim-card">
+            <div class="dim-icon dim-icon--freq" aria-hidden="true">🔁</div>
+            <h3>Frequency</h3>
+            <p>How often does it bite? Daily delivery fees beat a once-a-decade mortgage headache on volume.</p>
+            <span class="dim-scale">Scale 2–10 · weight 25%</span>
+          </article>
+          <article class="dim-card">
+            <div class="dim-icon dim-icon--white" aria-hidden="true">🕳️</div>
+            <h3>Market Whitespace</h3>
+            <p>How underserved is it today? A crowded category scores low; a wide-open one scores high.</p>
+            <span class="dim-scale">Scale 4–9 · weight 20%</span>
+          </article>
+          <article class="dim-card">
+            <div class="dim-icon dim-icon--tam" aria-hidden="true">💵</div>
+            <h3>TAM</h3>
+            <p>How big is the US total addressable market in dollars and people? Bigger prize, bigger itch.</p>
+            <span class="dim-scale">Scale 6–10 · weight 25%</span>
+          </article>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula">
+            <span class="f-pill f-sev">Severity ×30%</span>
+            <span class="f-op">+</span>
+            <span class="f-pill f-freq">Frequency ×25%</span>
+            <span class="f-op">+</span>
+            <span class="f-pill f-white">Whitespace ×20%</span>
+            <span class="f-op">+</span>
+            <span class="f-pill f-tam">TAM ×25%</span>
+            <span class="f-op">=</span>
+            <span class="f-result">Itch Score</span>
+          </div>
+          <div class="tier-legend" aria-label="Itch Score color tiers">
+            <span class="tier tier-hot">90+ Scorching</span>
+            <span class="tier tier-warm">80–89 Hot</span>
+            <span class="tier tier-good">70–79 Worth it</span>
+            <span class="tier tier-mild">&lt;70 Simmering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ DATABASE =============================== -->
+    <section class="section" id="database">
+      <div class="container">
+        <h2 class="section-title">The problem database</h2>
+        <p class="section-lead">
+          Filter by industry, sort by what matters to you, and search for the itch you were born to scratch.
+        </p>
+
+        <!-- Controls -->
+        <div class="controls">
+          <div class="control-row">
+            <label class="field">
+              <span class="field-label">Search</span>
+              <input
+                type="search"
+                id="search"
+                placeholder="Search itches, e.g. 'insurance', 'rent', 'freelance'…"
+                autocomplete="off"
+              />
+            </label>
+            <label class="field field-sort">
+              <span class="field-label">Sort by</span>
+              <select id="sort">
+                <option value="itch">Itch Score (high → low)</option>
+                <option value="severity">Severity</option>
+                <option value="tam">TAM</option>
+                <option value="frequency">Frequency</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Category filter chips (populated by app.js) -->
+          <div class="chips" id="chips" role="group" aria-label="Filter by industry"></div>
+
+          <p class="count-line">
+            Showing <strong id="count">0</strong> <span id="count-word">itches</span>
+            <span id="active-filter"></span>
+          </p>
+        </div>
+
+        <!-- Cards grid (populated by app.js) -->
+        <div class="grid" id="grid" aria-live="polite"></div>
+
+        <!-- Empty state -->
+        <p class="empty" id="empty" hidden>
+          No itches match that. Try clearing the search or picking a different industry.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ SHARE CTA ============================== -->
+    <section class="section section-cta" id="share">
+      <div class="container narrow">
+        <h2 class="section-title">Share your itch</h2>
+        <p class="section-lead">
+          Carrying a problem no one has solved? Add it to the database. Great companies start as
+          someone's specific, personal frustration.
+        </p>
+
+        <form id="share-form" class="share-form" novalidate>
+          <div class="form-row">
+            <label class="field">
+              <span class="field-label">Your name <span class="optional">(optional)</span></span>
+              <input type="text" id="f-name" name="name" placeholder="Alex from Austin" autocomplete="name" />
+            </label>
+            <label class="field">
+              <span class="field-label">Industry</span>
+              <select id="f-category" name="category" required></select>
+            </label>
+          </div>
+          <label class="field">
+            <span class="field-label">The itch <span class="req">*</span></span>
+            <textarea
+              id="f-itch"
+              name="itch"
+              rows="4"
+              required
+              placeholder="Phrase it as a question — e.g. 'Why is it so hard to…?'"
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Add my itch</button>
+          <p class="form-confirm" id="form-confirm" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-text footer-brand">Fix My Itch <span class="brand-flag">🇺🇸</span></span>
+        <p class="footer-tagline">Problems worth solving, all in one place.</p>
+      </div>
+      <div class="footer-legal">
+        <p>
+          Inspired by and a homage to Razorpay's original
+          <em>Fix My Itch</em>. This is an independent, US-localized demo built for illustration only.
+        </p>
+        <p>
+          Not affiliated with, endorsed by, or connected to Razorpay. All problems, scores, and figures
+          shown here are illustrative. © <span id="year">2026</span> Fix My Itch — USA edition.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Data first, then app logic. No modules, no CDNs — works offline. -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
