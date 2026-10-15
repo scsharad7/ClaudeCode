@@ -26,8 +26,20 @@ into a browser tab). Everything runs client-side and works fully offline.
 | `index.html` | Page structure: hero, how-it-works, Itch Index, database, share, footer. |
 | `styles.css` | All styling — premium startup aesthetic, fully responsive.        |
 | `data.js`    | The problem dataset (56 problems) + the 16 categories + `computeItch`. |
-| `app.js`     | Client-side filtering, sorting, search, rendering, and the share form. |
+| `research.js`| Deep-dive research for every itch, keyed by problem `id`.          |
+| `app.js`     | Filtering, sorting, search, rendering, the itch detail view, and the share form. |
 | `README.md`  | This file.                                                        |
+
+## Research entries
+
+`research.js` holds one entry per problem `id` with these fields: `why`,
+`who`, `evidence`, `players` (`{ name, note }`), `gap`, `wedges`, `model`,
+`validate`, and `risks`. To add an itch, add a record to `data.js` and a
+matching entry to `research.js`. Itches without research (including
+community submissions) show a do-it-yourself research plan instead.
+
+The research is illustrative desk research to give founders a head start.
+Figures are approximate and should be verified before relying on them.
 
 ## The data & the Itch Index model
 
@@ -75,6 +87,18 @@ color-coded by tier:
 - **Problem database** — responsive card grid with a live client-side
   **category filter**, **sort** (Itch Score / Severity / TAM / Frequency),
   **keyword search**, and a live **count**.
+- **Itch detail view** — click any card to open its research in three tabs:
+  - *Overview*: why it itches, who feels it, signals the pain is real
+  - *Market & gap*: who's working on it, the gap they leave, what could kill it
+  - *Build plan*: startup wedges, business model, a "test it this week"
+    checklist, and private notes
+
+  Each itch has its own shareable link (`#itch/<id>`). Prev/next buttons and
+  ←/→ keys step through the current filtered list, related itches link
+  across, and Esc or the browser back button closes it.
+- **Personal shortlist** — save itches, tick off validation steps, and keep
+  notes. All of it is stored in the browser (`localStorage`) and never uploaded;
+  the "My shortlist" toggle filters the grid to saved itches.
 - **Share your itch** — a simple, backend-free form; on submit it confirms and
   prepends the new itch to the top of the database.
 - **Responsive & accessible** — works down to ~375px, semantic HTML, labeled

@@ -181,6 +181,7 @@
         <h2 class="section-title">The problem database</h2>
         <p class="section-lead">
           Filter by industry, sort by what matters to you, and search for the itch you were born to scratch.
+          Open any itch for the full research: who feels it, who's building, the gap, and how to test it this week.
         </p>
 
         <!-- Controls -->
@@ -204,6 +205,12 @@
                 <option value="frequency">Frequency</option>
               </select>
             </label>
+            <div class="field field-toggle">
+              <span class="field-label">Your picks</span>
+              <button type="button" class="toggle" id="shortlist-toggle" aria-pressed="false">
+                <span aria-hidden="true">★</span> My shortlist <span class="toggle-count" id="shortlist-count">0</span>
+              </button>
+            </div>
           </div>
 
           <!-- Category filter chips (populated by app.js) -->
@@ -220,7 +227,7 @@
 
         <!-- Empty state -->
         <p class="empty" id="empty" hidden>
-          No itches match that. Try clearing the search or picking a different industry.
+          No itches match that. Try clearing the search, picking a different industry, or turning off "My shortlist".
         </p>
       </div>
     </section>
@@ -282,8 +289,28 @@
     </div>
   </footer>
 
-  <!-- Data first, then app logic. No modules, no CDNs — works offline. -->
+  <!-- ============================ DETAIL VIEW ============================ -->
+  <dialog class="detail" id="detail" aria-labelledby="d-title">
+    <div class="detail-bar">
+      <div class="detail-nav">
+        <button type="button" class="icon-btn" id="d-prev" aria-label="Previous itch" title="Previous (←)">←</button>
+        <span class="detail-pos" id="d-pos"></span>
+        <button type="button" class="icon-btn" id="d-next" aria-label="Next itch" title="Next (→)">→</button>
+      </div>
+      <div class="detail-actions">
+        <button type="button" class="pill-btn" id="d-save" aria-pressed="false">☆ Save</button>
+        <button type="button" class="pill-btn" id="d-share">Share link</button>
+        <button type="button" class="icon-btn" id="d-close" aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="detail-body" id="d-body"></div>
+  </dialog>
+
+  <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
+
+  <!-- Data first, then research, then app logic. No modules, no CDNs — works offline. -->
   <script src="data.js"></script>
+  <script src="research.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
