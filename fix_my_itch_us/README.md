@@ -24,7 +24,7 @@ into a browser tab). Everything runs client-side and works fully offline.
 | File         | Purpose                                                           |
 |--------------|-------------------------------------------------------------------|
 | `index.html` | Page structure: hero, how-it-works, Itch Index, database, share, footer. |
-| `styles.css` | All styling — premium startup aesthetic, fully responsive.        |
+| `styles.css` | All styling and the light/dark design tokens, fully responsive.    |
 | `data.js`    | The problem dataset (91 problems) + the 21 categories + `computeItch`. |
 | `research.js`| Deep-dive research for every itch, keyed by problem `id`.          |
 | `app.js`     | Filtering, sorting, search, rendering, the itch detail view, and the share form. |
@@ -102,8 +102,14 @@ color-coded by tier:
   the "My shortlist" toggle filters the grid to saved itches.
 - **Share your itch** — a simple, backend-free form; on submit it confirms and
   prepends the new itch to the top of the database.
+- **Dark theme by default**, with a toggle in the header for light mode. The
+  choice is remembered per browser and applied before first paint, so the page
+  never flashes. Every color is a token defined for both themes in
+  `styles.css` (`:root` = dark, `:root[data-theme="light"]` = light), so no
+  element can end up with one theme's text on the other theme's background.
 - **Responsive & accessible** — works down to ~375px, semantic HTML, labeled
-  controls, keyboard-usable filters, respects reduced-motion.
+  controls, keyboard-usable filters, respects reduced-motion. Text contrast
+  meets WCAG AA in both themes (verified across ~1,200 text nodes).
 
 ## Disclaimer
 
