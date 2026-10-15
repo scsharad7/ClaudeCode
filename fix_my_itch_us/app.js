@@ -41,6 +41,7 @@
     activeFilter: document.getElementById("active-filter"),
     empty: document.getElementById("empty"),
     heroCount: document.getElementById("hero-count"),
+    heroCats: document.getElementById("hero-cats"),
     year: document.getElementById("year"),
     formCat: document.getElementById("f-category"),
     form: document.getElementById("share-form"),
@@ -741,6 +742,7 @@
   function init() {
     if (els.year) els.year.textContent = String(new Date().getFullYear());
     if (els.heroCount) els.heroCount.textContent = String(PROBLEMS.length);
+    if (els.heroCats) els.heroCats.textContent = String(CATEGORIES.length);
     buildChips();
     buildFormCategories();
     wireControls();

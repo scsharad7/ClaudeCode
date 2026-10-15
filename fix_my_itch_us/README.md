@@ -25,7 +25,7 @@ into a browser tab). Everything runs client-side and works fully offline.
 |--------------|-------------------------------------------------------------------|
 | `index.html` | Page structure: hero, how-it-works, Itch Index, database, share, footer. |
 | `styles.css` | All styling — premium startup aesthetic, fully responsive.        |
-| `data.js`    | The problem dataset (56 problems) + the 16 categories + `computeItch`. |
+| `data.js`    | The problem dataset (91 problems) + the 21 categories + `computeItch`. |
 | `research.js`| Deep-dive research for every itch, keyed by problem `id`.          |
 | `app.js`     | Filtering, sorting, search, rendering, the itch detail view, and the share form. |
 | `README.md`  | This file.                                                        |
@@ -43,12 +43,13 @@ Figures are approximate and should be verified before relying on them.
 
 ## The data & the Itch Index model
 
-The dataset holds **56 US problem statements** across **16 industry
+The dataset holds **91 US problem statements** across **21 industry
 categories** (Fintech & Payments, Healthcare & Insurance, Housing & Real Estate,
 Logistics & Delivery, Education & Student Debt, Gig & Freelance Work, Retail &
 Commerce, Food & Restaurants, Travel & Mobility, Family & Childcare, Government &
 Bureaucracy, Climate & Energy, SMB Operations, Legal & Compliance, Media &
-Subscriptions, Personal Finance).
+Subscriptions, Personal Finance, Insurance & Claims, Auto & Repair, Fees & Junk
+Pricing, Pets & Veterinary, Immigration & Relocation).
 
 Each record has:
 
@@ -80,7 +81,7 @@ color-coded by tier:
 ## Features
 
 - **Hero** with US-localized messaging and headline stats
-  (40,000+ problems · 100,000+ Americans · 16 industries).
+  (40,000+ problems · 100,000+ Americans · 21 industries).
 - **How it works** — Listen everywhere → Score with the Itch Index → Surface
   build-worthy problems → Founders build.
 - **The Itch Index explainer** — the four dimensions and the composite formula.
