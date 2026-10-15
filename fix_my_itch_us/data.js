@@ -30,7 +30,12 @@ const CATEGORIES = [
   "SMB Operations",
   "Legal & Compliance",
   "Media & Subscriptions",
-  "Personal Finance"
+  "Personal Finance",
+  "Insurance & Claims",
+  "Auto & Repair",
+  "Fees & Junk Pricing",
+  "Pets & Veterinary",
+  "Immigration & Relocation"
 ];
 
 /*
@@ -532,6 +537,299 @@ const RAW_PROBLEMS = [
       "Booster clubs, PTAs, and small nonprofits handle dues, donations, and reimbursements on paper and personal apps that flag them. Purpose-built money tooling for micro-organizations is thin. It's a wide, underserved slice of community finance.",
     category: "SMB Operations",
     severity: 5, frequency: 5, whitespace: 7, tam: 6
+  },
+  // --- Insurance & Claims ---
+  {
+    id: 57,
+    title: "Why does filing a home insurance claim feel like a fight you're expected to lose?",
+    description:
+      "Homeowners pay premiums for decades, then face adjusters, depreciation math and partial denials when they finally file. Most people have no idea what their policy actually owes them. Claim advocacy for ordinary homeowners is thin outside of catastrophe-chasing public adjusters.",
+    category: "Insurance & Claims",
+    severity: 9, frequency: 3, whitespace: 8, tam: 9
+  },
+  {
+    id: 58,
+    title: "Why does car insurance go up at renewal even with a spotless driving record?",
+    description:
+      "Rates jump at renewal for reasons insurers rarely explain, and shopping around means re-entering the same data on a dozen sites. Loyalty is quietly penalized. Automatic re-shopping that moves your policy when a better price appears is still mostly manual work.",
+    category: "Insurance & Claims",
+    severity: 7, frequency: 5, whitespace: 7, tam: 9
+  },
+  {
+    id: 59,
+    title: "Why is comparing insurance policies impossible when every exclusion is buried?",
+    description:
+      "Two policies can look identical on price and differ wildly on what they actually cover: water damage, roof age, replacement cost versus actual cash value. Buyers compare premiums because exclusions are unreadable. Plain-language coverage comparison is a real gap.",
+    category: "Insurance & Claims",
+    severity: 7, frequency: 4, whitespace: 8, tam: 9
+  },
+  {
+    id: 60,
+    title: "Why do most renters skip the cheapest insurance they'd actually use?",
+    description:
+      "Renters insurance often costs less than a streaming subscription and covers theft, water damage and liability, yet a majority of renters go without. The product is badly explained and sold at the wrong moment. Embedding it into the lease signing flow is underexploited.",
+    category: "Insurance & Claims",
+    severity: 6, frequency: 3, whitespace: 6, tam: 7
+  },
+  {
+    id: 61,
+    title: "Why does buying life insurance still mean a medical exam and six weeks of waiting?",
+    description:
+      "Term life is a simple product sold through a slow, invasive process built for an earlier era. Young families postpone it for years because the process is unpleasant. Instant-underwriting products exist but trust, education and distribution remain weak.",
+    category: "Insurance & Claims",
+    severity: 6, frequency: 2, whitespace: 7, tam: 8
+  },
+  {
+    id: 62,
+    title: "Why can't you tell whether a total-loss car payout is actually fair?",
+    description:
+      "When a car is totaled, the insurer picks the valuation method and the comparables. Drivers rarely have the data to challenge a lowball offer and often owe more than the payout. Independent valuation and appraisal-clause help for ordinary drivers barely exists.",
+    category: "Insurance & Claims",
+    severity: 8, frequency: 3, whitespace: 8, tam: 7
+  },
+  {
+    id: 63,
+    title: "Why is disability insurance the most important policy almost nobody understands?",
+    description:
+      "A working-age adult is far more likely to be disabled than to die, yet disability coverage is confusing, inconsistently offered and full of definitions that decide whether a claim pays. Most people don't know what their employer policy actually covers until they need it.",
+    category: "Insurance & Claims",
+    severity: 8, frequency: 2, whitespace: 8, tam: 7
+  },
+
+  // --- Auto & Repair ---
+  {
+    id: 64,
+    title: "Why can't drivers tell whether a repair quote is fair before they pay it?",
+    description:
+      "A check-engine light turns into a four-figure quote with no way to sanity-check parts, labor hours or necessity. Second opinions mean towing the car somewhere else. Price transparency for auto repair lags far behind almost every other category of spending.",
+    category: "Auto & Repair",
+    severity: 7, frequency: 6, whitespace: 7, tam: 8
+  },
+  {
+    id: 65,
+    title: "Why do dealership service departments recommend work you may not need?",
+    description:
+      "Service advisors are often compensated on ticket size, so routine visits turn into upsold flushes, filters and fluids. Owners can't distinguish manufacturer-required maintenance from revenue padding. An independent 'do I actually need this?' check is missing.",
+    category: "Auto & Repair",
+    severity: 6, frequency: 6, whitespace: 7, tam: 8
+  },
+  {
+    id: 66,
+    title: "Why is buying a used car still a gamble on damage you can't see?",
+    description:
+      "History reports miss unreported accidents, flood damage and odometer fraud, and a pre-purchase inspection requires finding a mechanic willing to do one. Buyers commit thousands of dollars on incomplete information. Trustworthy condition verification remains fragmented.",
+    category: "Auto & Repair",
+    severity: 8, frequency: 3, whitespace: 6, tam: 9
+  },
+  {
+    id: 67,
+    title: "Why does an EV or hybrid repair mean weeks of hunting for a qualified shop?",
+    description:
+      "High-voltage systems require certified technicians that most independent shops don't have, so EV owners wait weeks and often face dealer-only pricing. As EVs age out of warranty, the independent repair gap becomes a real ownership cost.",
+    category: "Auto & Repair",
+    severity: 6, frequency: 3, whitespace: 8, tam: 7
+  },
+
+  // --- Travel & Mobility (rentals, flights, hotels) ---
+  {
+    id: 68,
+    title: "Why does a $35-a-day rental car cost $90 a day by the time you leave the counter?",
+    description:
+      "Concession recovery fees, facility charges, tolls, insurance upsells and fuel plans roughly double the advertised rate. The real total is only visible at pickup, after you've committed. All-in rental pricing comparison is still poor.",
+    category: "Travel & Mobility",
+    severity: 6, frequency: 5, whitespace: 7, tam: 8
+  },
+  {
+    id: 69,
+    title: "Why do rental companies bill for damage you can't prove you didn't cause?",
+    description:
+      "Damage claims arrive weeks later for scratches no one documented at pickup, and disputing them means fighting a company that already has your card. Renters lack timestamped evidence and any real appeal path. Dispute tooling for rental damage is nonexistent.",
+    category: "Travel & Mobility",
+    severity: 7, frequency: 4, whitespace: 8, tam: 7
+  },
+  {
+    id: 70,
+    title: "Why is sitting next to your own child now a paid airline add-on?",
+    description:
+      "Unbundling turned seat selection, carry-ons and boarding order into separate charges, so comparing two fares requires modeling each airline's fee menu. Families pay most. True all-in fare comparison across carriers is still unsolved for ordinary travelers.",
+    category: "Travel & Mobility",
+    severity: 5, frequency: 6, whitespace: 6, tam: 8
+  },
+  {
+    id: 71,
+    title: "Why do hotels charge resort fees for amenities nobody uses?",
+    description:
+      "Mandatory destination and resort fees inflate the nightly rate after booking, breaking price comparison across sites. Regulators have pushed for all-in display, but enforcement and coverage are uneven. Honest total-price hotel search is still a gap.",
+    category: "Travel & Mobility",
+    severity: 5, frequency: 5, whitespace: 6, tam: 8
+  },
+  {
+    id: 72,
+    title: "Why does travel insurance deny exactly the claims people actually file?",
+    description:
+      "Policies exclude the common reasons trips fall apart unless you bought a pricier cancel-for-any-reason tier most buyers don't understand. People discover the gap at the worst moment. Plain-language coverage matching at booking time is underbuilt.",
+    category: "Travel & Mobility",
+    severity: 7, frequency: 3, whitespace: 8, tam: 7
+  },
+  {
+    id: 73,
+    title: "Why is rebooking after a cancelled flight still a phone-queue lottery?",
+    description:
+      "When weather or a crew shortage strands thousands at once, the fastest rebooking goes to whoever navigates the phone tree or app best. Compensation rules are poorly known and rarely claimed. Automated rebooking and claim filing is a clear opportunity.",
+    category: "Travel & Mobility",
+    severity: 8, frequency: 4, whitespace: 7, tam: 8
+  },
+
+  // --- Food & Restaurants (groceries, tipping) ---
+  {
+    id: 74,
+    title: "Why do groceries cost so much more than a few years ago with no clear explanation?",
+    description:
+      "Food-at-home prices rose sharply and never came back down, and shoppers can't see which items drove it or where the same basket is cheaper. Unit pricing is inconsistent across stores. Basket-level price intelligence for households barely exists.",
+    category: "Food & Restaurants",
+    severity: 8, frequency: 10, whitespace: 6, tam: 9
+  },
+  {
+    id: 75,
+    title: "Why does a tip screen appear when you buy a bottle of water?",
+    description:
+      "Point-of-sale systems prompt for tips on transactions that never involved service, with preset percentages anchored high. Customers feel pressured and workers see little benefit. Nobody has redesigned the tipping moment to be honest for either side.",
+    category: "Food & Restaurants",
+    severity: 5, frequency: 9, whitespace: 7, tam: 8
+  },
+  {
+    id: 76,
+    title: "Why do packages keep shrinking while the price stays the same?",
+    description:
+      "Shrinkflation hides price increases in smaller counts and volumes, and shelf tags rarely make unit cost comparable. Shoppers can't track it across time or stores. Automatic unit-price and package-size change detection is a genuine whitespace.",
+    category: "Food & Restaurants",
+    severity: 5, frequency: 8, whitespace: 7, tam: 8
+  },
+  {
+    id: 77,
+    title: "Why can't a family plan a week of meals around what's actually on sale?",
+    description:
+      "Weekly deals, loyalty prices and digital coupons live in separate apps that don't connect to meal planning or a shopping list. Budget-conscious families do the cross-referencing by hand. Sale-aware meal planning is a daily, high-frequency need.",
+    category: "Food & Restaurants",
+    severity: 6, frequency: 8, whitespace: 7, tam: 8
+  },
+  {
+    id: 78,
+    title: "Why do restaurant service fees replace tips without reaching the staff?",
+    description:
+      "Mandatory service and kitchen-appreciation charges appear on checks with vague descriptions, and diners can't tell whether the money reaches workers or the house. Rules vary by state. Transparency about where service charges actually go is missing.",
+    category: "Food & Restaurants",
+    severity: 6, frequency: 6, whitespace: 7, tam: 7
+  },
+  {
+    id: 79,
+    title: "Why is eating healthy on a tight budget still a research project?",
+    description:
+      "Nutrition guidance ignores price, and price tools ignore nutrition, so eating well on a fixed budget means manual trade-offs every week. SNAP households face this hardest. Cost-per-nutrition planning tied to real local prices is underserved.",
+    category: "Food & Restaurants",
+    severity: 7, frequency: 8, whitespace: 6, tam: 8
+  },
+
+  // --- Fees & Junk Pricing ---
+  {
+    id: 80,
+    title: "Why does every checkout add fees you only discover on the final screen?",
+    description:
+      "Drip pricing spreads across tickets, travel, food delivery, rentals and utilities: a low headline price, then mandatory fees revealed at the end. It breaks comparison shopping everywhere at once. A cross-category true-price layer is a large, unclaimed position.",
+    category: "Fees & Junk Pricing",
+    severity: 6, frequency: 8, whitespace: 7, tam: 9
+  },
+  {
+    id: 81,
+    title: "Why are the fees you'll actually pay buried in a 40-page PDF?",
+    description:
+      "Banks, airlines, brokers and utilities disclose fee schedules in documents nobody reads, so customers learn about charges after incurring them. Machine-readable fee comparison across providers doesn't exist for consumers.",
+    category: "Fees & Junk Pricing",
+    severity: 6, frequency: 5, whitespace: 8, tam: 8
+  },
+  {
+    id: 82,
+    title: "Why is an early termination fee still a surprise at the worst moment?",
+    description:
+      "Moving, switching providers or ending a lease triggers fees people didn't know they'd agreed to, often hundreds of dollars. The terms were disclosed but never surfaced when it mattered. Contract-obligation tracking for households is unbuilt.",
+    category: "Fees & Junk Pricing",
+    severity: 6, frequency: 4, whitespace: 7, tam: 7
+  },
+  {
+    id: 83,
+    title: "Why do you have to threaten to cancel to get the price new customers get?",
+    description:
+      "Internet, mobile, insurance and streaming providers reserve their best pricing for retention calls, taxing customers who stay put. The savings are real but require time and confrontation. Automated retention negotiation remains thin outside a few apps.",
+    category: "Fees & Junk Pricing",
+    severity: 6, frequency: 5, whitespace: 7, tam: 8
+  },
+  {
+    id: 84,
+    title: "Why are card surcharges different at every counter with no explanation?",
+    description:
+      "Surcharges, cash discounts and minimums vary by merchant and state, and the rules are widely misunderstood by businesses and customers alike. Shoppers can't predict the final price by payment method. Clarity here helps both sides.",
+    category: "Fees & Junk Pricing",
+    severity: 5, frequency: 7, whitespace: 7, tam: 7
+  },
+
+  // --- Pets & Veterinary ---
+  {
+    id: 85,
+    title: "Why does an emergency vet visit cost thousands with no price list anywhere?",
+    description:
+      "Emergency and specialty veterinary care has consolidated under corporate ownership, prices have climbed, and owners make five-figure decisions in a waiting room with no estimates to compare. Price transparency in veterinary care is close to nonexistent.",
+    category: "Pets & Veterinary",
+    severity: 9, frequency: 3, whitespace: 8, tam: 8
+  },
+  {
+    id: 86,
+    title: "Why does pet insurance exclude exactly what your pet ends up getting?",
+    description:
+      "Pre-existing condition definitions, breed exclusions and waiting periods remove coverage for the most likely claims, and buyers only learn this at claim time. Comparing policies on what they actually pay for is nearly impossible today.",
+    category: "Pets & Veterinary",
+    severity: 7, frequency: 3, whitespace: 7, tam: 7
+  },
+  {
+    id: 87,
+    title: "Why is getting a vet appointment harder than seeing your own doctor?",
+    description:
+      "A veterinarian shortage and post-pandemic pet boom pushed routine appointments weeks out, with urgent cases funneled to expensive emergency clinics. Real-time availability, triage and telehealth routing are poorly coordinated.",
+    category: "Pets & Veterinary",
+    severity: 7, frequency: 5, whitespace: 7, tam: 7
+  },
+  {
+    id: 88,
+    title: "Why can't pet owners compare medication prices the way they do their own?",
+    description:
+      "The same prescription can cost very differently at the clinic, an online pet pharmacy or a human pharmacy that stocks the identical drug. Owners rarely know they can shop it. Price comparison and transfer for pet medications is underbuilt.",
+    category: "Pets & Veterinary",
+    severity: 5, frequency: 5, whitespace: 7, tam: 6
+  },
+
+  // --- Immigration & Relocation ---
+  {
+    id: 89,
+    title: "Why does tracking a visa or green card case mean refreshing a government page?",
+    description:
+      "Applicants and employers monitor case status, priority dates and processing times across scattered government pages and forums, with little predictability for life decisions. Immigration status drives housing, jobs and travel, yet tooling is mostly manual.",
+    category: "Immigration & Relocation",
+    severity: 8, frequency: 5, whitespace: 8, tam: 7
+  },
+  {
+    id: 90,
+    title: "Why must skilled immigrants requalify from scratch for licensed professions?",
+    description:
+      "Foreign-trained doctors, nurses, engineers and teachers face state-by-state credential evaluation, exams and residency requirements that can take years, while shortages persist in those same fields. Navigation and evidence-gathering support is scarce.",
+    category: "Immigration & Relocation",
+    severity: 8, frequency: 2, whitespace: 8, tam: 7
+  },
+  {
+    id: 91,
+    title: "Why is moving to another state a dozen separate address changes?",
+    description:
+      "A move means re-registering a car, transferring a license, updating voter registration, insurance, banks, benefits and subscriptions, each on its own portal with its own deadline. Nobody orchestrates the sequence, and missed steps carry penalties.",
+    category: "Immigration & Relocation",
+    severity: 5, frequency: 3, whitespace: 7, tam: 7
   }
 ];
 

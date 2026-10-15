@@ -1699,7 +1699,1057 @@ const RESEARCH = {
       "Very small budgets",
       "Free competitors"
     ]
-  }
+  },
+  57: {
+    why: "Homeowners pay premiums for decades, then meet an adjuster, a depreciation schedule and a partial denial at the one moment they need the policy to work.",
+    who: ["Homeowners after storm, water or fire damage", "Older homeowners with aging roofs", "People in states where insurers are pulling back"],
+    evidence: [
+      "Insurers have raised premiums sharply and withdrawn from parts of California, Florida and Louisiana after catastrophe losses.",
+      "Many policies now pay actual cash value rather than replacement cost on roofs, which sharply reduces payouts.",
+      "Public adjusters exist precisely because claim disputes are common, but they typically take a percentage and focus on large losses."
+    ],
+    players: [
+      { name: "Public adjusters", note: "Represent policyholders for a percentage; concentrated on big claims." },
+      { name: "Insurer claim apps", note: "Fast to file, but the insurer still sets the valuation." },
+      { name: "State insurance departments", note: "Accept complaints; most policyholders never file one." }
+    ],
+    gap: "Affordable, everyday claim advocacy that reads your actual policy, prices the loss independently, and tells you when an offer is low.",
+    wedges: [
+      "Policy reader that explains your real coverage before a loss happens",
+      "Independent damage estimate priced from the same software contractors use",
+      "Appraisal-clause and complaint filing assistant for disputed claims"
+    ],
+    model: "Flat fee per claim review, or a capped success fee; partnerships with contractors and realtors.",
+    validate: [
+      "Review 30 denied or partially paid claims and measure how many were underpaid",
+      "Produce independent estimates for 10 open claims and compare to the insurer's offer",
+      "Interview 5 public adjusters about which claims they turn away"
+    ],
+    risks: [
+      "Public adjusting is licensed in most states, which limits what you can do for a fee",
+      "Insurers control the data and the timeline"
+    ]
+  },
+  58: {
+    why: "Auto premiums jump at renewal for reasons that are never explained, and the only remedy is re-entering the same information across a dozen quote forms.",
+    who: ["Long-tenured policyholders", "Drivers whose rates rose without a claim", "Households with multiple cars and drivers"],
+    evidence: [
+      "Auto insurance costs rose steeply after 2022 as repair, parts and medical costs climbed.",
+      "Regulators in several states have scrutinized price optimization, which charges customers based on how likely they are to shop.",
+      "Shopping around commonly produces meaningful savings, yet most drivers renew without comparing."
+    ],
+    players: [
+      { name: "The Zebra / Insurify", note: "Comparison marketplaces monetized by carrier referrals." },
+      { name: "Jerry", note: "App that re-shops auto policies periodically." },
+      { name: "Independent agents", note: "Shop multiple carriers, paid by commission." }
+    ],
+    gap: "Set-and-forget re-shopping that re-quotes every renewal automatically and switches you when the savings clear a threshold you set.",
+    wedges: [
+      "Automatic renewal re-shopping with one-click switching",
+      "Rate-increase explainer that tells you what actually changed",
+      "Employer or credit-union benefit that audits members' policies annually"
+    ],
+    model: "Commission as a licensed agent, or a flat subscription that avoids carrier conflicts.",
+    validate: [
+      "Re-shop 50 real policies and record the distribution of savings",
+      "Measure how many people switch when handed a cheaper equivalent quote",
+      "Test flat-fee pricing against commission for trust"
+    ],
+    risks: [
+      "Requires insurance producer licensing in each state",
+      "Commission models create pressure to recommend the wrong carrier"
+    ]
+  },
+  59: {
+    why: "Two policies can price within a few dollars of each other and differ enormously in what they pay, because the differences live in exclusions nobody reads.",
+    who: ["First-time homebuyers choosing a policy", "People rebuying after a non-renewal", "Small landlords insuring rentals"],
+    evidence: [
+      "Replacement cost versus actual cash value, roof schedules, and water-damage exclusions can swing a payout by tens of thousands of dollars.",
+      "Standard homeowners policies generally exclude flood, which requires separate NFIP or private coverage.",
+      "Insurers increasingly apply percentage deductibles for wind, hail and hurricane rather than flat amounts."
+    ],
+    players: [
+      { name: "Policygenius", note: "Comparison and brokerage across carriers." },
+      { name: "Carrier quote engines", note: "Compare price far better than coverage." },
+      { name: "Independent agents", note: "Can explain differences, but coverage varies by agent." }
+    ],
+    gap: "Side-by-side comparison of what each policy actually pays in concrete scenarios, not just the premium.",
+    wedges: [
+      "Upload-your-policy analyzer that scores coverage against common loss scenarios",
+      "Scenario comparison: 'here's what each policy pays if your roof fails'",
+      "Mortgage or realtor integration at the moment coverage is chosen"
+    ],
+    model: "Brokerage commission with disclosure, or flat-fee policy reviews.",
+    validate: [
+      "Collect 30 real policies and score them on the same loss scenarios",
+      "Test whether scenario framing changes which policy people choose",
+      "Interview agents about the differences buyers never notice"
+    ],
+    risks: [
+      "Policy language varies by carrier and state",
+      "Saying a policy is worse carries liability"
+    ]
+  },
+  60: {
+    why: "Renters insurance is one of the cheapest useful financial products in America, and most renters still don't have it because nobody explains it at the right moment.",
+    who: ["First-time renters", "Students and young professionals", "Renters whose landlord requires proof of coverage"],
+    evidence: [
+      "Renters insurance commonly costs on the order of $15–25 a month and covers theft, certain water damage, liability and loss of use.",
+      "Industry surveys consistently find homeowners insured at far higher rates than renters.",
+      "Many landlords now require renters insurance, creating a natural purchase moment."
+    ],
+    players: [
+      { name: "Lemonade", note: "App-first renters insurance with fast onboarding." },
+      { name: "Assurant / ePremium", note: "Renters programs distributed through property managers." },
+      { name: "Major carriers", note: "Bundle renters with auto policies." }
+    ],
+    gap: "Embedding coverage into the lease-signing flow for small landlords, who have no program and no software.",
+    wedges: [
+      "One-tap renters coverage at lease signing for small landlords",
+      "Liability-only product priced for students",
+      "Proof-of-coverage tracking for landlords who require it"
+    ],
+    model: "Commission per policy, plus SaaS for landlord compliance tracking.",
+    validate: [
+      "Offer coverage at signing with 10 small landlords and measure attach rate",
+      "Survey uninsured renters about why they skipped it",
+      "Test which single benefit drives purchase"
+    ],
+    risks: [
+      "Low premiums mean thin per-policy economics",
+      "Requires licensing and carrier partnerships"
+    ]
+  },
+  61: {
+    why: "Term life is a simple product sold through a slow process: paper applications, a paramedical exam, and weeks of underwriting that cause young families to give up.",
+    who: ["New parents", "First-time homebuyers with a mortgage", "Primary earners with no coverage outside work"],
+    evidence: [
+      "Industry research consistently finds a large share of Americans say they need more life insurance than they have.",
+      "Accelerated underwriting using data instead of exams expanded substantially in recent years.",
+      "Employer group coverage is usually a multiple of salary and is lost when you change jobs."
+    ],
+    players: [
+      { name: "Ethos / Ladder", note: "Instant-decision term life with no exam for many applicants." },
+      { name: "Haven Life", note: "Digital term life backed by MassMutual." },
+      { name: "Traditional agents", note: "Commission-driven, often steering to whole life." }
+    ],
+    gap: "Reaching people at the life events that trigger the need, with honest education about term versus permanent coverage.",
+    wedges: [
+      "Coverage prompt embedded in mortgage closing or birth-related services",
+      "Portability tool that shows the gap when employer coverage ends",
+      "Honest term-versus-whole-life calculator"
+    ],
+    model: "Commission per policy; employer benefits distribution.",
+    validate: [
+      "Test conversion at mortgage closing with one lender",
+      "Survey new parents about why they haven't bought coverage",
+      "Measure drop-off at each application step"
+    ],
+    risks: [
+      "Customer acquisition costs are high and well-funded incumbents exist",
+      "Licensing and suitability regulation"
+    ]
+  },
+  62: {
+    why: "When a car is totaled the insurer chooses the valuation method and the comparable vehicles, and most drivers have no basis to argue even when the offer is low.",
+    who: ["Drivers after an accident or theft", "Borrowers who owe more than the car is worth", "Owners of modified or low-mileage vehicles"],
+    evidence: [
+      "Total-loss valuations often rely on vendor reports whose comparables and condition adjustments have been challenged in litigation.",
+      "Negative equity is common on auto loans, so a low payout can leave a borrower owing money on a car they no longer have.",
+      "Most policies contain an appraisal clause that few policyholders know exists."
+    ],
+    players: [
+      { name: "CCC / Mitchell valuation reports", note: "Vendor valuations used by many insurers." },
+      { name: "KBB / Edmunds", note: "Consumer pricing references, not claim valuations." },
+      { name: "Appraisal-clause attorneys", note: "Available, but usually only worth it on large disputes." }
+    ],
+    gap: "A cheap independent valuation plus a guided appraisal-clause demand for the ordinary driver facing a few thousand dollars of disagreement.",
+    wedges: [
+      "Independent total-loss valuation with local comparables",
+      "Appraisal-clause demand letter generator",
+      "Gap-insurance and negative-equity checker at claim time"
+    ],
+    model: "Flat fee per valuation, or a share of the increase obtained.",
+    validate: [
+      "Re-value 40 total-loss claims and measure the gap against insurer offers",
+      "Run 10 appraisal-clause demands and track outcomes",
+      "Interview body shops about valuation disputes"
+    ],
+    risks: [
+      "Appraisal rules vary by state and policy",
+      "Insurers may simply hold firm"
+    ]
+  },
+  63: {
+    why: "A working-age adult is far more likely to be disabled for a period than to die, yet disability coverage is confusing, inconsistently offered, and decided by definitions nobody reads until they file.",
+    who: ["Primary earners without private coverage", "Self-employed workers with no group benefits", "Workers facing a long illness or injury"],
+    evidence: [
+      "Social Security's disability program has a strict definition and a lengthy determination process with high initial denial rates.",
+      "Only a minority of private-sector workers have employer-provided long-term disability coverage.",
+      "'Own occupation' versus 'any occupation' definitions decide whether many claims pay at all."
+    ],
+    players: [
+      { name: "Guardian / Principal / Unum", note: "Major group and individual disability carriers." },
+      { name: "Atticus / Social Security advocates", note: "Help with SSDI claims and appeals." },
+      { name: "Breeze", note: "Digital individual disability insurance." }
+    ],
+    gap: "Explaining what someone's existing coverage actually does before they need it, and filling the gap when it falls short.",
+    wedges: [
+      "Benefits reader that decodes your employer's disability policy",
+      "Coverage-gap calculator with a supplemental individual policy",
+      "Claim-support service for people navigating a denial"
+    ],
+    model: "Commission on supplemental policies; employer benefits contracts; fees for claim support.",
+    validate: [
+      "Read 30 employer disability policies and test whether people can predict their coverage",
+      "Survey self-employed workers about income protection",
+      "Interview claimants who were denied"
+    ],
+    risks: [
+      "Long sales cycles and low consumer awareness",
+      "Claims support is labor-intensive"
+    ]
+  },
+  64: {
+    why: "A warning light turns into a four-figure estimate with no way to check parts prices, labor hours or whether the work is needed at all.",
+    who: ["Drivers of out-of-warranty cars", "People without a trusted mechanic after a move", "Lower-income drivers for whom a repair is a crisis"],
+    evidence: [
+      "Surveys repeatedly find many Americans could not cover an unexpected four-figure expense without borrowing.",
+      "Labor time guides and parts catalogs exist but are priced and sold to the trade, not to consumers.",
+      "Undercover investigations by consumer outlets have repeatedly documented unnecessary recommended repairs."
+    ],
+    players: [
+      { name: "RepairPal", note: "Fair-price estimates and a certified shop network." },
+      { name: "YourMechanic", note: "Mobile mechanics with upfront pricing." },
+      { name: "Shop management software", note: "Digital inspections with photos, aimed at shops." }
+    ],
+    gap: "An independent second opinion that reads the actual estimate, line by line, before the customer approves the work.",
+    wedges: [
+      "Upload-your-estimate review that flags unnecessary or overpriced lines",
+      "Fair-price benchmark by job, vehicle and ZIP code",
+      "Fleet and small-business repair auditing"
+    ],
+    model: "Per-review consumer fee, subscription for fleets, or lead fees to vetted shops.",
+    validate: [
+      "Review 50 real estimates against labor guides and parts pricing",
+      "Measure how often a second opinion changes the job",
+      "Test $20–40 pricing for an estimate review"
+    ],
+    risks: [
+      "Access to labor-time and parts data is licensed",
+      "Shops may resist and consumers decide under time pressure"
+    ]
+  },
+  65: {
+    why: "Service advisors are frequently paid on ticket size, so a routine oil change becomes a menu of flushes and filters the owner's manual never required.",
+    who: ["Owners servicing cars under warranty at dealerships", "Drivers unfamiliar with maintenance schedules", "Lease customers required to use dealer service"],
+    evidence: [
+      "Manufacturer maintenance schedules are published in every owner's manual, yet dealer service menus routinely exceed them.",
+      "Service departments are a major profit center for dealerships relative to new-car sales.",
+      "Consumer-protection actions have targeted unnecessary recommended services at national chains."
+    ],
+    players: [
+      { name: "Owner's manual schedules", note: "Authoritative and free, but rarely consulted." },
+      { name: "RepairPal / AAA-approved shops", note: "Vetted alternatives to the dealer." },
+      { name: "Dealer service apps", note: "Built to sell, not to filter." }
+    ],
+    gap: "A simple answer to 'does my car actually need this right now?', based on the manufacturer schedule and real mileage.",
+    wedges: [
+      "Maintenance schedule assistant that filters a dealer quote against the manual",
+      "Warranty-protection checker so owners know what they can decline safely",
+      "Fleet maintenance policy enforcement"
+    ],
+    model: "Consumer subscription, or fleet and employer contracts.",
+    validate: [
+      "Compare 40 dealer service quotes to manufacturer schedules",
+      "Measure the dollars declined after a check",
+      "Interview former service advisors"
+    ],
+    risks: [
+      "Owners worry about voiding warranties if they decline work",
+      "Schedule data must be accurate per model and trim"
+    ]
+  },
+  66: {
+    why: "A used car is one of the largest purchases most people make with the least information: history reports miss unreported damage, and a real inspection requires finding a willing mechanic.",
+    who: ["First-time used-car buyers", "Private-party buyers", "Buyers in regions hit by floods"],
+    evidence: [
+      "Vehicle history reports only capture incidents that were reported to insurers, police or shops, so cash repairs are invisible.",
+      "Flooded vehicles from major storms are routinely resold across state lines, a pattern consumer agencies warn about after every hurricane season.",
+      "Odometer fraud remains a persistent problem tracked by federal regulators."
+    ],
+    players: [
+      { name: "Carfax / AutoCheck", note: "History reports limited to reported events." },
+      { name: "Lemon Squad / mobile inspectors", note: "Pre-purchase inspections, availability varies." },
+      { name: "Carvana / CarMax", note: "Return windows substitute for inspection." }
+    ],
+    gap: "Fast, trustworthy condition verification for private-party sales, where the savings are biggest and the risk is highest.",
+    wedges: [
+      "On-demand pre-purchase inspection booked from a listing",
+      "Guided self-inspection with photo checks and paint-depth readings",
+      "Escrow for private-party sales contingent on inspection"
+    ],
+    model: "Per-inspection fee; marketplace partnerships.",
+    validate: [
+      "Inspect 30 private-party cars and record undisclosed damage",
+      "Measure willingness to pay $150–250 before purchase",
+      "Partner with one local marketplace"
+    ],
+    risks: [
+      "Inspector supply and quality control",
+      "Liability if an inspection misses a defect"
+    ]
+  },
+  67: {
+    why: "EV high-voltage work requires training and equipment most independent shops don't have, so owners get routed to dealers and wait weeks for parts and appointments.",
+    who: ["EV owners past the warranty period", "Rural EV owners far from dealers", "Used-EV buyers facing battery questions"],
+    evidence: [
+      "EV adoption has grown steadily, so a rising share of EVs is aging out of factory warranty.",
+      "High-voltage service requires specific technician certification and equipment, which limits the independent repair network.",
+      "Battery health is the dominant factor in used-EV value, and standardized reporting is still emerging."
+    ],
+    players: [
+      { name: "Dealer service networks", note: "Certified but capacity-constrained and expensive." },
+      { name: "Recurrent", note: "Battery health reports for used EVs." },
+      { name: "Independent EV specialists", note: "Growing, but geographically sparse." }
+    ],
+    gap: "A trusted independent EV service layer: certified technicians, battery diagnostics and transparent pricing outside the dealer channel.",
+    wedges: [
+      "Certified independent EV repair network",
+      "Battery health certification for used-EV transactions",
+      "Mobile EV diagnostics and software-issue triage"
+    ],
+    model: "Service margin, franchise or certification fees, per-report fees for battery certification.",
+    validate: [
+      "Map certified EV repair capacity in 3 metros and measure wait times",
+      "Survey out-of-warranty EV owners about their last repair",
+      "Test demand for battery certification among used-EV buyers"
+    ],
+    risks: [
+      "Technician training is slow and capital intensive",
+      "Manufacturers restrict diagnostic access"
+    ]
+  },
+  68: {
+    why: "The advertised daily rate is roughly half the real one once concession recovery fees, facility charges, tolls, insurance and fuel options land at the counter.",
+    who: ["Leisure travelers renting at airports", "Business travelers expensing rentals", "People renting while their car is repaired"],
+    evidence: [
+      "Airport rentals carry concession recovery fees and facility charges that off-airport locations often avoid.",
+      "Counter upsells for insurance and prepaid fuel are a significant profit center for rental companies.",
+      "Toll transponder programs commonly charge a daily convenience fee on top of the tolls themselves."
+    ],
+    players: [
+      { name: "Kayak / AutoSlash", note: "Comparison and rate re-checking after booking." },
+      { name: "Costco Travel", note: "Negotiated rates that usually include an additional driver." },
+      { name: "Turo", note: "Peer-to-peer alternative with its own fee structure." }
+    ],
+    gap: "All-in rental pricing that models the fees, insurance and tolls you will actually face, including whether your card already covers damage.",
+    wedges: [
+      "True-total rental comparison including airport fees and tolls",
+      "Coverage checker that tells you to decline counter insurance your card duplicates",
+      "Automatic rate re-checking that rebooks when prices fall"
+    ],
+    model: "Affiliate commissions on bookings; premium tier for business travel.",
+    validate: [
+      "Book 30 rentals and compare quoted versus final totals",
+      "Measure how often travelers buy duplicate coverage",
+      "Test rate re-checking savings over a month"
+    ],
+    risks: [
+      "Rental companies restrict rate data access",
+      "Affiliate economics push toward volume, not honesty"
+    ]
+  },
+  69: {
+    why: "Damage claims arrive weeks after the return, for marks nobody documented at pickup, and the renter is disputing with a company that already holds their card.",
+    who: ["Anyone renting without documenting the car", "Travelers who returned a car after hours", "Renters who declined the damage waiver"],
+    evidence: [
+      "Rental companies have faced consumer complaints and regulatory scrutiny over how damage is assessed and billed.",
+      "Credit card rental coverage is often secondary and requires documentation most renters never collect.",
+      "After-hours returns leave no counter inspection and no witness."
+    ],
+    players: [
+      { name: "Credit card benefit administrators", note: "Will cover damage, but the claims process is paperwork-heavy." },
+      { name: "Rental company apps", note: "Some offer photo check-in, inconsistently." },
+      { name: "Consumer complaint channels", note: "Slow and case-by-case." }
+    ],
+    gap: "Timestamped condition evidence captured in two minutes, plus a dispute path when a bogus claim arrives.",
+    wedges: [
+      "Guided photo walkaround that stores dated evidence",
+      "Damage-claim dispute generator citing your own documentation",
+      "Credit-card claim filing assistant"
+    ],
+    model: "Freemium app with paid dispute support; corporate travel contracts.",
+    validate: [
+      "Collect 30 damage-claim stories and classify how they resolved",
+      "Test whether documented renters win disputes more often",
+      "Pitch a corporate travel manager on issuing it to staff"
+    ],
+    risks: [
+      "Low purchase intent until someone has been burned",
+      "Rental contracts are written in the company's favor"
+    ]
+  },
+  70: {
+    why: "Unbundling turned seats, bags and boarding into separate products, so comparing two fares now means modeling each airline's fee menu for your exact party.",
+    who: ["Families who need to sit together", "Budget-carrier passengers", "Travelers comparing basic economy against standard fares"],
+    evidence: [
+      "Ancillary revenue from seats, bags and fees has become a major share of airline earnings.",
+      "The US Department of Transportation has pressed airlines on family seating and fee disclosure.",
+      "Basic economy often costs more than a standard fare once a bag and seat assignment are added."
+    ],
+    players: [
+      { name: "Google Flights / Kayak", note: "Fare search with partial fee awareness." },
+      { name: "Airline apps", note: "Sell the add-ons rather than compare them." },
+      { name: "Corporate travel tools", note: "Model policy, less so family needs." }
+    ],
+    gap: "Fare comparison that prices your actual trip: two adults, a child, two bags, seats together.",
+    wedges: [
+      "Party-aware true-cost fare search",
+      "Family seating planner that flags fares likely to split you up",
+      "Fee-aware booking policy for small companies"
+    ],
+    model: "Affiliate booking commissions; SaaS for travel managers.",
+    validate: [
+      "Price 50 family trips on basic versus standard fares",
+      "Measure how often basic economy ends up more expensive",
+      "Test whether travelers switch when shown true totals"
+    ],
+    risks: [
+      "Airline fare data licensing is restrictive",
+      "Metasearch is dominated by large incumbents"
+    ]
+  },
+  71: {
+    why: "Mandatory resort and destination fees are added after the nightly rate is compared, so the cheapest-looking hotel frequently is not.",
+    who: ["Leisure travelers in Las Vegas, Hawaii and major cities", "Points redeemers who still owe cash fees", "Business travelers reconciling expenses"],
+    evidence: [
+      "Resort fees are charged whether or not a guest uses the bundled amenities.",
+      "State attorneys general have sued major hotel chains over how these fees were displayed.",
+      "Federal and state rules have pushed toward all-in upfront price display."
+    ],
+    players: [
+      { name: "ResortFeeChecker", note: "Crowdsourced fee lookup." },
+      { name: "Booking sites", note: "Display varies; totals often appear late in the flow." },
+      { name: "Hotel loyalty programs", note: "Sometimes waive fees on award stays." }
+    ],
+    gap: "Honest total-price hotel search including fees, parking and taxes, sorted by what you will actually pay.",
+    wedges: [
+      "All-in hotel comparison including parking and fees",
+      "Fee-waiver finder for loyalty members and award stays",
+      "Expense reconciliation for business travelers"
+    ],
+    model: "Affiliate commissions; corporate travel subscriptions.",
+    validate: [
+      "Compare advertised versus final totals for 50 hotels",
+      "Test whether all-in sorting changes which hotel people book",
+      "Interview corporate travel managers about fee surprises"
+    ],
+    risks: [
+      "Regulation may solve the display problem directly",
+      "Booking sites control inventory and data"
+    ]
+  },
+  72: {
+    why: "Travel insurance is bought in a hurry at checkout, and standard policies exclude many of the reasons trips actually fall apart.",
+    who: ["Travelers booking expensive non-refundable trips", "Older travelers needing medical coverage abroad", "Families traveling during storm season"],
+    evidence: [
+      "Standard trip-cancellation policies pay only for listed covered reasons; broader cancel-for-any-reason coverage costs more and reimburses only part of the trip.",
+      "Pre-existing condition waivers typically require buying coverage within a short window after the first trip deposit.",
+      "Domestic health plans often provide little or no coverage outside the United States, which travelers discover too late."
+    ],
+    players: [
+      { name: "Squaremouth / InsureMyTrip", note: "Comparison marketplaces for travel policies." },
+      { name: "Allianz / Travel Guard", note: "Large underwriters sold at checkout." },
+      { name: "Credit card trip protection", note: "Included on some cards, with its own limits." }
+    ],
+    gap: "Matching a policy to the real risks of this specific trip, and telling travelers when the card they already hold is enough.",
+    wedges: [
+      "Trip-specific coverage matcher that reads the itinerary",
+      "Card-benefit checker so travelers do not double-buy",
+      "Claim assistant that assembles the required documentation"
+    ],
+    model: "Commission on policies sold; fees for claim support.",
+    validate: [
+      "Analyze 30 denied travel claims and categorize why they failed",
+      "Test how often existing card benefits would have sufficed",
+      "Measure conversion when coverage is explained in plain language"
+    ],
+    risks: [
+      "Insurance licensing requirements",
+      "The checkout upsell owns the purchase moment"
+    ]
+  },
+  73: {
+    why: "When weather or a crew shortage cancels hundreds of flights at once, rebooking becomes a race won by whoever knows the rules and the right phone number.",
+    who: ["Travelers stranded by cancellations", "Families with connections to miss", "Passengers owed refunds they never claim"],
+    evidence: [
+      "The December 2022 Southwest meltdown stranded hundreds of thousands of passengers and led to a record DOT penalty.",
+      "DOT rules require refunds for cancelled flights, yet many travelers accept vouchers instead.",
+      "US compensation rules for delays are far weaker than the EU's EC261 regime, and awareness is low."
+    ],
+    players: [
+      { name: "AirHelp / Compensair", note: "Claim services focused mainly on EU-regulated flights." },
+      { name: "Airline apps", note: "Offer self-rebooking, with limited options during mass disruptions." },
+      { name: "Travel agents and corporate desks", note: "Effective, but unavailable to most travelers." }
+    ],
+    gap: "Automatic cross-carrier rebooking plus automatic refund and compensation claims for ordinary US travelers.",
+    wedges: [
+      "Disruption agent that rebooks and files refund claims automatically",
+      "Rights explainer that states what you are owed right now",
+      "Duty-of-care tool for companies with stranded employees"
+    ],
+    model: "Subscription, success fee on recovered money, or corporate contracts.",
+    validate: [
+      "Track 50 disrupted itineraries and measure unclaimed refunds",
+      "Test rebooking speed against doing it by phone",
+      "Survey travelers on what they accepted after a cancellation"
+    ],
+    risks: [
+      "Airline systems are hard to integrate with",
+      "US rules cap how much can be recovered"
+    ]
+  },
+  74: {
+    why: "Grocery bills rose sharply and stayed there, and shoppers cannot see which items drove it or where the same basket is cheaper this week.",
+    who: ["Families on a fixed grocery budget", "SNAP households", "Anyone whose bill grew without their list changing"],
+    evidence: [
+      "Federal price data show food-at-home prices rose roughly a quarter in the few years after 2020 and did not revert.",
+      "Unit-pricing rules vary by state and are displayed inconsistently, which makes comparison harder.",
+      "Loyalty-card and digital-only prices mean the shelf tag is often not the price you pay."
+    ],
+    players: [
+      { name: "Flipp", note: "Digital weekly circulars and deal search." },
+      { name: "Instacart", note: "Shows several stores, with its own markups." },
+      { name: "Basket", note: "Crowdsourced grocery price comparison." }
+    ],
+    gap: "Basket-level intelligence: track the items you actually buy over time and show where that exact basket costs less nearby.",
+    wedges: [
+      "Receipt-scanning basket tracker with store-to-store comparison",
+      "Unit-price normalizer across package sizes and brands",
+      "Swap suggestions that keep the meal but cut the bill"
+    ],
+    model: "Retail media and affiliate revenue, or a small subscription that keeps you on the shopper's side.",
+    validate: [
+      "Scan 100 receipts and quantify the spread across nearby stores",
+      "Test whether swap suggestions get accepted",
+      "Measure monthly savings for 20 households"
+    ],
+    risks: [
+      "Collecting price data at scale is operationally hard",
+      "Retailers restrict scraping of loyalty pricing"
+    ]
+  },
+  75: {
+    why: "Tablet checkout turned tipping into a default prompt on transactions that involved no service, with high preset percentages and a line of people watching.",
+    who: ["Customers at counters, kiosks and self-checkout", "Workers who see little of what is prompted", "Small businesses that never chose the defaults"],
+    evidence: [
+      "Tip prompts spread to counter-service and retail transactions as payment tablets became standard.",
+      "Consumer surveys since 2023 consistently report rising tipping fatigue and annoyance.",
+      "Preset tip percentages on screens are often higher than historical norms."
+    ],
+    players: [
+      { name: "Square / Toast / Clover", note: "Payment platforms whose defaults created the pattern." },
+      { name: "Service-charge models", note: "Replace tipping, with their own transparency problems." },
+      { name: "No-tipping restaurants", note: "Tried repeatedly, often reversed." }
+    ],
+    gap: "Nobody has redesigned the tipping moment so that it is honest for the customer and genuinely better for the worker.",
+    wedges: [
+      "Merchant tipping configuration matched to the service actually provided",
+      "Transparent 'where your tip goes' disclosure at the terminal",
+      "Higher-wage, no-tip pricing toolkit for small businesses"
+    ],
+    model: "POS add-on or merchant SaaS.",
+    validate: [
+      "A/B test tip prompts at 5 merchants and measure tips and satisfaction together",
+      "Survey 100 customers on which prompts feel fair",
+      "Interview workers about what they actually receive"
+    ],
+    risks: [
+      "POS platforms control the checkout screen",
+      "Merchants fear reducing tip revenue"
+    ]
+  },
+  76: {
+    why: "Package sizes shrink while prices hold, so a real price increase hides exactly where shelf tags and memory cannot catch it.",
+    who: ["Regular grocery shoppers", "Budget-tracking households", "Shoppers comparing brands against store labels"],
+    evidence: [
+      "Shrinkflation has been documented across snacks, paper goods and household staples by consumer advocates and federal data analyses.",
+      "Unit-price display requirements vary by state and the type is often small or inconsistent.",
+      "Package changes are rarely announced, so shoppers notice the size and miss the per-unit increase."
+    ],
+    players: [
+      { name: "Consumer World", note: "Long-running independent shrinkflation tracking." },
+      { name: "Retailer apps", note: "Show current price, rarely package-size history." },
+      { name: "Online communities", note: "Crowd documentation, not systematic coverage." }
+    ],
+    gap: "Automatic detection: tell me when something in my regular basket shrank, and show the real per-unit change.",
+    wedges: [
+      "Shrinkflation alerts tied to your own purchase history",
+      "Unit-price normalizer built into the shopping list",
+      "Brand-versus-store-label true cost comparison"
+    ],
+    model: "Subscription, or retail media with clear disclosure.",
+    validate: [
+      "Track package sizes for 200 staples over several months",
+      "Test whether alerts change brand choices",
+      "Measure what shoppers would pay for this"
+    ],
+    risks: [
+      "Package size data is hard to collect reliably",
+      "Brands may push back on the framing"
+    ]
+  },
+  77: {
+    why: "Weekly sales, loyalty prices and digital coupons live in apps that do not connect to meal planning, so saving money means cross-referencing by hand every week.",
+    who: ["Families cooking most meals at home", "Budget-conscious shoppers", "People cooking for dietary needs on a budget"],
+    evidence: [
+      "Retailers increasingly gate their best prices behind loyalty accounts and digital coupon clipping.",
+      "Meal-kit and recipe apps optimize for taste and convenience, not this week's local prices.",
+      "Weekly circulars remain a major driver of where households choose to shop."
+    ],
+    players: [
+      { name: "Flipp", note: "Aggregates circulars but does not plan meals." },
+      { name: "Mealime / Paprika", note: "Meal planning without local price awareness." },
+      { name: "Retailer apps", note: "Deals for a single chain only." }
+    ],
+    gap: "Meal plans built from what is actually discounted this week at the stores you already use.",
+    wedges: [
+      "Sale-aware weekly meal planner with an auto-built shopping list",
+      "Budget-capped planning: feed four for a set weekly amount",
+      "Coupon auto-clipping tied to the plan"
+    ],
+    model: "Subscription plus retail affiliate revenue.",
+    validate: [
+      "Build sale-aware plans for 20 families and measure real savings",
+      "Test whether people actually cook what was planned",
+      "Compare the result against their normal shop"
+    ],
+    risks: [
+      "Circular and loyalty price data access",
+      "Meal planning has notoriously high abandonment"
+    ]
+  },
+  78: {
+    why: "Mandatory service, kitchen and wellness charges now appear on checks with vague labels, and diners cannot tell whether the money reaches workers or the house.",
+    who: ["Diners facing added charges", "Tipped and back-of-house staff", "Owners trying to raise wages fairly"],
+    evidence: [
+      "Service charges are legally distinct from tips, and in many states the business may keep them.",
+      "Several cities and states have introduced disclosure requirements for mandatory restaurant fees.",
+      "Restaurants adopted these charges partly to raise back-of-house pay under tip-pooling constraints."
+    ],
+    players: [
+      { name: "Toast / Square", note: "Enable the fees; disclosure is left to the restaurant." },
+      { name: "State labor regulators", note: "Set tip-pooling and service-charge rules." },
+      { name: "Fair-wage restaurant groups", note: "Experimenting with transparent models." }
+    ],
+    gap: "A credible way for restaurants to show exactly where a service charge goes, and for diners to see it before they order.",
+    wedges: [
+      "Verified 'where the fee goes' disclosure badge",
+      "All-in menu pricing toolkit for restaurants",
+      "Compliance checker for state service-charge rules"
+    ],
+    model: "Restaurant SaaS or certification fees.",
+    validate: [
+      "Survey 100 diners on how they interpret service charges",
+      "Test whether disclosure affects tipping and repeat visits",
+      "Interview 10 owners about why they added the fee"
+    ],
+    risks: [
+      "Many restaurants will not want this transparency",
+      "Rules differ sharply by state"
+    ]
+  },
+  79: {
+    why: "Nutrition advice ignores price and price tools ignore nutrition, so eating well on a fixed budget becomes a weekly manual optimization problem.",
+    who: ["SNAP and WIC households", "Families managing diabetes or hypertension on a budget", "Students and low-wage workers"],
+    evidence: [
+      "Federal nutrition guidance and food-assistance benefit levels are set separately from local price realities.",
+      "Produce-prescription and food-as-medicine programs have expanded through health plans and Medicaid pilots.",
+      "Diet quality in the US correlates strongly with income across nutrition research."
+    ],
+    players: [
+      { name: "Propel", note: "Serves SNAP households with balance and savings tools." },
+      { name: "Instacart Health", note: "Food-as-medicine initiatives with health plans." },
+      { name: "WIC shopping apps", note: "Benefit-specific support, narrow scope." }
+    ],
+    gap: "Cost-per-nutrition planning anchored to real local prices and actual benefit balances.",
+    wedges: [
+      "Budget-and-nutrition meal planner for benefit households",
+      "Produce-prescription fulfillment for health plans",
+      "Clinic-referred grocery planning for chronic conditions"
+    ],
+    model: "Health-plan and Medicaid contracts, grocery partnerships, philanthropy.",
+    validate: [
+      "Build plans for 20 benefit households and track adherence and cost",
+      "Pitch one Medicaid plan on a produce-prescription pilot",
+      "Measure diet-quality change over 8 weeks"
+    ],
+    risks: [
+      "Healthcare sales cycles are long",
+      "In some areas food access, not planning, is the binding constraint"
+    ]
+  },
+  80: {
+    why: "A low headline price followed by mandatory fees at the final screen now spans tickets, travel, delivery, rentals and utilities, which breaks comparison shopping everywhere at once.",
+    who: ["Anyone comparing prices online", "Event and travel buyers", "Households budgeting against advertised prices"],
+    evidence: [
+      "The FTC finalized a rule effective in 2025 requiring all-in upfront pricing for live events and short-term lodging.",
+      "California's SB 478 banned most drip pricing statewide starting in July 2024.",
+      "Research on drip pricing consistently finds it raises what people pay and degrades comparison."
+    ],
+    players: [
+      { name: "SeatGeek / StubHub all-in toggles", note: "Optional all-in display on some platforms." },
+      { name: "State attorneys general", note: "Enforcement is category by category." },
+      { name: "Browser price extensions", note: "Focused on coupons, not true totals." }
+    ],
+    gap: "One cross-category true-price layer that shows final cost wherever you shop, instead of one rule per industry.",
+    wedges: [
+      "Browser extension that computes the real total before checkout",
+      "True-price comparison API that merchants and comparison sites embed",
+      "Compliance toolkit for merchants facing new all-in pricing laws"
+    ],
+    model: "Affiliate revenue, merchant compliance SaaS, or data licensing.",
+    validate: [
+      "Measure headline-to-final price gaps across 100 checkouts in 5 categories",
+      "Test whether showing true totals changes what people buy",
+      "Interview 5 merchants about complying with the new rules"
+    ],
+    risks: [
+      "Regulation may close the gap before a business is built",
+      "Merchants control their own checkout flows"
+    ]
+  },
+  81: {
+    why: "The fees you will actually pay sit in long disclosure documents nobody reads, so customers learn about charges only after incurring them.",
+    who: ["Bank and brokerage customers", "Small businesses choosing payment processors", "Anyone comparing utility or telecom plans"],
+    evidence: [
+      "The CFPB has pushed banks to publish clearer fee information and targeted so-called junk fees.",
+      "Overdraft, maintenance, wire, and paper-statement fees vary widely between institutions.",
+      "Fee schedules are published as PDFs that are not machine readable or comparable across providers."
+    ],
+    players: [
+      { name: "NerdWallet / Bankrate", note: "Editorial comparisons, partly lead-generation driven." },
+      { name: "CFPB data tools", note: "Useful but not consumer-friendly." },
+      { name: "Bank websites", note: "Disclose fees in PDFs by design." }
+    ],
+    gap: "Machine-readable fee comparison: parse every provider's schedule and show what it costs someone who behaves like you.",
+    wedges: [
+      "Fee-schedule parser that ranks providers by your actual usage pattern",
+      "Small-business processor comparison on effective rate, not headline rate",
+      "Fee-audit service that finds charges you can get refunded"
+    ],
+    model: "Referral fees with disclosure, or subscription for small businesses.",
+    validate: [
+      "Parse fee schedules from 50 institutions and test comparability",
+      "Audit 30 people's statements for refundable fees",
+      "Measure how much the average account pays annually"
+    ],
+    risks: [
+      "Referral models bias recommendations",
+      "Parsing inconsistent PDFs is ongoing work"
+    ]
+  },
+  82: {
+    why: "Terminating a contract triggers fees people agreed to but never saw again, usually at the worst moment: a move, a job change, a tight month.",
+    who: ["People moving mid-lease or mid-contract", "Customers switching internet or mobile providers", "Gym and membership holders"],
+    evidence: [
+      "Early termination fees are standard in telecom, gym, lease and equipment agreements.",
+      "Many providers will waive or prorate fees when asked, but customers rarely know to ask.",
+      "Competitors frequently offer to buy out termination fees as a switching incentive."
+    ],
+    players: [
+      { name: "Carrier switching promotions", note: "Buy out fees to win customers." },
+      { name: "Lease-break marketplaces", note: "Help sublet, mostly in large cities." },
+      { name: "Consumer advice sites", note: "Generic guidance, not personalized." }
+    ],
+    gap: "Nothing tracks the obligations a household has already signed, or surfaces them before a decision triggers a penalty.",
+    wedges: [
+      "Contract vault that tracks termination dates, notice periods and fees",
+      "Move planner that sequences cancellations to minimize penalties",
+      "Fee-waiver negotiation service"
+    ],
+    model: "Subscription, or success fee on waived charges.",
+    validate: [
+      "Collect 50 contracts and count avoidable fees",
+      "Attempt waivers on 20 and measure the success rate",
+      "Test demand at the moment of a move"
+    ],
+    risks: [
+      "Requires users to upload contracts, which is friction",
+      "Savings are episodic rather than recurring"
+    ]
+  },
+  83: {
+    why: "Providers reserve their best pricing for people who call and threaten to leave, which quietly taxes every customer who stays put.",
+    who: ["Long-tenured internet and mobile customers", "Insurance renewers", "Anyone whose promotional rate expired"],
+    evidence: [
+      "Promotional pricing that expires after 12 or 24 months is standard practice in telecom and streaming.",
+      "Retention departments exist specifically to offer discounts not advertised publicly.",
+      "Bill-negotiation services built real businesses on calling providers on customers' behalf."
+    ],
+    players: [
+      { name: "Rocket Money", note: "Bill negotiation for a share of savings." },
+      { name: "BillFixers", note: "Negotiation service for consumers and businesses." },
+      { name: "Provider retention desks", note: "The discount exists, but only if you ask." }
+    ],
+    gap: "Automated, repeatable renegotiation across every recurring provider, rather than a one-off call you forget to repeat.",
+    wedges: [
+      "Annual auto-renegotiation across all recurring bills",
+      "Promo-expiry alerts that tell you exactly when to call and what to ask for",
+      "Small-business version for telecom and utility accounts"
+    ],
+    model: "Share of savings, or flat subscription.",
+    validate: [
+      "Negotiate 50 real bills and record savings per hour of work",
+      "Measure how much is recovered in year two versus year one",
+      "Test flat fee versus savings share"
+    ],
+    risks: [
+      "Providers increasingly resist third-party negotiation",
+      "Savings shrink once everyone is doing it"
+    ]
+  },
+  84: {
+    why: "Surcharges, cash discounts and card minimums vary by merchant and by state, and the rules are widely misunderstood on both sides of the counter.",
+    who: ["Shoppers at small businesses", "Small merchants setting payment policy", "Customers paying rent, tuition or taxes by card"],
+    evidence: [
+      "Card network rules cap surcharges and require disclosure, and some states regulate them further.",
+      "Cash discounts and surcharges are legally distinct, which merchants frequently conflate.",
+      "Processing costs are a significant expense for small merchants, driving the practice."
+    ],
+    players: [
+      { name: "Card networks", note: "Set surcharge rules and disclosure requirements." },
+      { name: "Payment processors", note: "Sell surcharging programs to merchants." },
+      { name: "State regulators", note: "Rules vary and change." }
+    ],
+    gap: "Clarity on both sides: merchants that stay compliant, and customers who can predict final cost by payment method.",
+    wedges: [
+      "Compliance checker and signage generator for small merchants",
+      "Payment-method cost predictor for large recurring payments",
+      "Processing-cost audit that finds cheaper alternatives to surcharging"
+    ],
+    model: "Merchant SaaS and processing referral revenue.",
+    validate: [
+      "Audit surcharge practices at 50 local merchants for compliance",
+      "Interview 15 owners about why they added a surcharge",
+      "Test whether an audit leads to switching processors"
+    ],
+    risks: [
+      "Rules differ by state and network and keep changing",
+      "Processors are entrenched with merchants"
+    ]
+  },
+  85: {
+    why: "Emergency and specialty veterinary care consolidated under corporate ownership, prices climbed, and owners make four- and five-figure decisions in a waiting room with no estimates to compare.",
+    who: ["Pet owners facing an emergency", "Owners of aging pets with chronic conditions", "Households without savings for a surprise bill"],
+    evidence: [
+      "Veterinary prices have risen faster than general inflation for several years, per federal price data.",
+      "Large corporate groups, including Mars Veterinary Health, now own a significant share of specialty and emergency practices.",
+      "Economic euthanasia, where cost drives the decision, is a widely discussed problem within the profession."
+    ],
+    players: [
+      { name: "CareCredit / Scratchpay", note: "Financing at the point of care, not price transparency." },
+      { name: "Vetster / Dutch", note: "Telehealth triage that can avoid some visits." },
+      { name: "Nonprofit and community clinics", note: "Low-cost care with limited capacity." }
+    ],
+    gap: "Price transparency and triage before the emergency room: what this costs here versus there, and whether it is truly an emergency.",
+    wedges: [
+      "Emergency vet price transparency and cost estimates by procedure and metro",
+      "24/7 triage line that routes cases to the right level of care",
+      "Pet health savings product for predictable aging-pet costs"
+    ],
+    model: "Subscription, clinic referral fees, or employer pet-benefit contracts.",
+    validate: [
+      "Call 30 emergency clinics for quotes on the same procedures and map the spread",
+      "Run a triage line and measure how many ER visits it avoids",
+      "Survey owners about their last unexpected vet bill"
+    ],
+    risks: [
+      "Clinics resist publishing prices",
+      "Triage carries clinical liability"
+    ]
+  },
+  86: {
+    why: "Pre-existing condition definitions, breed exclusions and waiting periods strip coverage from exactly the claims most likely to happen, and buyers only find out at claim time.",
+    who: ["New pet owners comparing policies", "Owners of breeds with known conditions", "People who bought coverage after symptoms appeared"],
+    evidence: [
+      "Pet insurance is reimbursement-based: owners pay the vet first and claim afterward.",
+      "Pre-existing conditions are excluded across the industry, and the definition varies by insurer.",
+      "Premiums typically rise as a pet ages, which is when claims become most likely."
+    ],
+    players: [
+      { name: "Trupanion / Healthy Paws / Lemonade", note: "Major pet insurers with differing exclusion terms." },
+      { name: "Pawlicy Advisor", note: "Comparison that accounts for breed-specific risk." },
+      { name: "Wellness plans", note: "Sold by clinics; cover routine care, not emergencies." }
+    ],
+    gap: "Comparison based on what a policy will actually pay for your breed and age, including lifetime premium escalation.",
+    wedges: [
+      "Breed-and-age aware policy comparison with projected lifetime cost",
+      "Claims-outcome database built from real reimbursements",
+      "Direct-pay product that settles with the clinic instead of reimbursing"
+    ],
+    model: "Commission on policies, with transparent disclosure.",
+    validate: [
+      "Compare 20 policies on identical claim scenarios",
+      "Collect 100 real claim outcomes and measure reimbursement rates",
+      "Survey owners on whether coverage matched expectations"
+    ],
+    risks: [
+      "Commission conflicts with honest comparison",
+      "Insurance licensing requirements"
+    ]
+  },
+  87: {
+    why: "A veterinarian shortage met a pandemic pet boom, so routine appointments run weeks out and urgent cases get pushed into expensive emergency clinics.",
+    who: ["Owners needing a same-week appointment", "New pet owners establishing care", "Rural pet owners with few local clinics"],
+    evidence: [
+      "Industry workforce studies have projected a sustained shortage of veterinarians and credentialed technicians.",
+      "US pet ownership rose notably during the pandemic, increasing demand.",
+      "Burnout and attrition among veterinary staff are well documented within the profession."
+    ],
+    players: [
+      { name: "Vetster / Dutch", note: "Telehealth, limited by state VCPR rules." },
+      { name: "Chewy Vet Care / Modern Animal", note: "New clinic models with better scheduling." },
+      { name: "Clinic practice software", note: "Scheduling built for staff, not availability discovery." }
+    ],
+    gap: "Real-time availability across clinics plus triage that sends each case to the right level of care.",
+    wedges: [
+      "Cross-clinic availability and cancellation-fill alerts",
+      "Triage-first routing between telehealth, urgent care and the ER",
+      "Scheduling and efficiency tools that expand clinic capacity"
+    ],
+    model: "Clinic SaaS and booking fees; consumer subscription for triage.",
+    validate: [
+      "Survey wait times at 40 clinics in two metros",
+      "Pilot cancellation alerts with 3 clinics",
+      "Measure how many triaged cases avoid the ER"
+    ],
+    risks: [
+      "Supply of veterinarians is the real constraint",
+      "Telehealth rules vary by state"
+    ]
+  },
+  88: {
+    why: "The same prescription can cost very differently at the clinic, an online pet pharmacy, or a human pharmacy stocking the identical drug, and owners rarely know they can shop it.",
+    who: ["Owners of pets on long-term medication", "Owners of large dogs with weight-based dosing", "Households managing several pets"],
+    evidence: [
+      "Many veterinary drugs are the same molecules used in human medicine and are available at retail pharmacies.",
+      "Federal and state rules generally entitle owners to a written prescription they can fill elsewhere.",
+      "Online pet pharmacies compete aggressively on price for chronic medications."
+    ],
+    players: [
+      { name: "Chewy Pharmacy", note: "Online fulfillment with autoship pricing." },
+      { name: "GoodRx", note: "Discounts that can apply to some pet prescriptions at human pharmacies." },
+      { name: "Clinic dispensaries", note: "Convenient, usually the most expensive option." }
+    ],
+    gap: "Telling owners, at the moment of prescribing, where this exact drug is cheapest and how to get the written prescription.",
+    wedges: [
+      "Pet prescription price comparison across vet, online and retail pharmacies",
+      "Written-prescription request assistant",
+      "Chronic-medication autoship optimizer for multi-pet households"
+    ],
+    model: "Pharmacy referral fees or a small subscription.",
+    validate: [
+      "Price the 20 most common pet medications across all three channels",
+      "Test how often owners successfully obtain a written prescription",
+      "Measure annual savings for chronic-medication households"
+    ],
+    risks: [
+      "Clinics lose dispensary revenue and may resist",
+      "Prescription transfer rules vary by state"
+    ]
+  },
+  89: {
+    why: "Immigration status governs housing, jobs and travel, yet tracking a case means refreshing government pages and reading forum posts for signals.",
+    who: ["Visa holders and green card applicants", "Employers sponsoring workers", "Families waiting on relative petitions"],
+    evidence: [
+      "USCIS publishes case status and processing-time estimates, but they are broad and change without notice.",
+      "Visa Bulletin priority dates move unpredictably month to month, and can retrogress.",
+      "Applicants widely rely on community forums and trackers to interpret their own timelines."
+    ],
+    players: [
+      { name: "USCIS online account", note: "Official status, minimal interpretation." },
+      { name: "Boundless / Legalpad", note: "Application preparation and sponsorship services." },
+      { name: "Community trackers", note: "Crowdsourced timelines with no guarantees." }
+    ],
+    gap: "Predictive, personalized timelines with alerts, so people can make real decisions about jobs, leases and travel.",
+    wedges: [
+      "Case tracker with predicted timelines and priority-date alerts",
+      "Employer dashboard for sponsored employees' statuses and deadlines",
+      "Decision assistant for travel and job changes under a pending case"
+    ],
+    model: "Consumer subscription plus employer SaaS.",
+    validate: [
+      "Model historical processing data and test prediction accuracy",
+      "Interview 20 applicants about decisions they delayed",
+      "Pitch 5 employers who sponsor visas"
+    ],
+    risks: [
+      "Policy changes can invalidate predictions overnight",
+      "Unauthorized practice of immigration law is a real constraint"
+    ]
+  },
+  90: {
+    why: "Foreign-trained doctors, nurses, engineers and teachers face state-by-state credential evaluation, exams and supervised practice that can take years, while shortages persist in those same fields.",
+    who: ["Internationally trained healthcare professionals", "Engineers and architects seeking licensure", "Refugees and immigrant professionals"],
+    evidence: [
+      "Research has repeatedly documented significant numbers of college-educated immigrants working below their skill level, often called brain waste.",
+      "Several states have created alternative licensure pathways for internationally trained physicians in recent years.",
+      "Credential evaluation, exams and supervised practice requirements vary by state and profession."
+    ],
+    players: [
+      { name: "WES / ECE", note: "Credential evaluation services." },
+      { name: "Upwardly Global", note: "Nonprofit helping immigrant professionals re-enter their fields." },
+      { name: "State licensing boards", note: "Rules vary widely by state and profession." }
+    ],
+    gap: "A navigator that maps the exact fastest path to licensure for a given credential, profession and state, and assembles the evidence.",
+    wedges: [
+      "Licensure pathfinder by profession, country of training and state",
+      "Employer tool for recruiting internationally trained staff into shortage roles",
+      "Document and evidence assembly for board applications"
+    ],
+    model: "Employer and health-system contracts; philanthropy; modest consumer fees.",
+    validate: [
+      "Map licensure requirements for 3 professions across 10 states",
+      "Guide 10 professionals through the first steps and measure time saved",
+      "Interview rural hospitals about hiring shortages"
+    ],
+    risks: [
+      "Requirements are set by boards and change slowly",
+      "Long timelines make outcomes hard to attribute"
+    ]
+  },
+  91: {
+    why: "A move means re-registering a car, transferring a license, updating voter registration, insurance, banks, benefits and subscriptions, each on its own portal with its own deadline.",
+    who: ["People relocating across state lines", "Military families with frequent moves", "New arrivals to the US setting up everything at once"],
+    evidence: [
+      "Millions of Americans move between states each year, according to Census data.",
+      "States set their own deadlines for vehicle registration and license transfer, often 30 to 90 days, with penalties for missing them.",
+      "USPS mail forwarding redirects mail but does not update any account of record."
+    ],
+    players: [
+      { name: "USPS change of address", note: "Forwards mail only." },
+      { name: "Updater", note: "Moving-related updates, distributed through real estate and property managers." },
+      { name: "State DMV portals", note: "One state, one task at a time." }
+    ],
+    gap: "A sequenced, deadline-aware checklist that knows your origin and destination states and actually completes the updates.",
+    wedges: [
+      "State-to-state move checklist with legal deadlines and penalties",
+      "Account-update assistant for banks, insurers and subscriptions",
+      "Employer relocation benefit for new hires moving states"
+    ],
+    model: "Employer relocation contracts; partnerships with movers and property managers.",
+    validate: [
+      "Map required updates and deadlines for 10 state pairs",
+      "Run the checklist with 20 movers and count missed items",
+      "Pitch 3 employers that relocate staff"
+    ],
+    risks: [
+      "Low frequency: people move rarely",
+      "Many updates cannot be fully automated"
+    ]
+  },
 };
 
 /* Expose for app.js (loaded via <script>, works offline). */
