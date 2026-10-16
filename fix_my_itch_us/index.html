@@ -8,7 +8,17 @@
     name="description"
     content="A US-localized homage to Razorpay's Fix My Itch: a database of real everyday problems Americans face, scored by the Itch Index and curated for founders to build."
   />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- Apply the saved theme before first paint so the page never flashes. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("fmi-us-theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) { /* storage blocked: fall back to the dark default */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <!-- ============================= HEADER / NAV ============================= -->
@@ -28,6 +38,9 @@
         <a href="#itch-index">Itch Index</a>
         <a href="#database">Database</a>
         <a href="#share" class="nav-cta">Share your itch</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -309,8 +322,8 @@
   <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
 
   <!-- Data first, then research, then app logic. No modules, no CDNs — works offline. -->
-  <script src="data.js?v=3"></script>
-  <script src="research.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="data.js?v=4"></script>
+  <script src="research.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

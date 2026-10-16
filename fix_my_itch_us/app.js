@@ -56,7 +56,8 @@
     dSave: document.getElementById("d-save"),
     dShare: document.getElementById("d-share"),
     dClose: document.getElementById("d-close"),
-    toast: document.getElementById("toast")
+    toast: document.getElementById("toast"),
+    themeToggle: document.getElementById("theme-toggle")
   };
 
   // ---------------- Personal storage (this browser only) ----------------
@@ -92,6 +93,40 @@
   function savedCount() { return Object.keys(store.saved).length; }
   function checksFor(id) { return store.checks[id] || []; }
   function checksDone(id) { return checksFor(id).filter(Boolean).length; }
+
+  // ------------------------- Theme -------------------------
+  // Dark is the default; the choice is remembered per browser. The page
+  // applies a stored theme before first paint via a script in index.html.
+  var THEME_KEY = "fmi-us-theme";
+
+  function currentTheme() {
+    return document.documentElement.dataset.theme === "light" ? "light" : "dark";
+  }
+
+  function applyTheme(theme) {
+    if (theme === "light") document.documentElement.dataset.theme = "light";
+    else delete document.documentElement.dataset.theme; // dark is the :root default
+    var next = theme === "light" ? "dark" : "light";
+    if (els.themeToggle) {
+      els.themeToggle.setAttribute("aria-label", "Switch to " + next + " theme");
+      els.themeToggle.title = "Switch to " + next + " theme";
+      var icon = els.themeToggle.querySelector(".theme-icon");
+      if (icon) icon.textContent = theme === "light" ? "\u263D" : "\u2600"; // moon : sun
+    }
+    try {
+      window.localStorage.setItem(THEME_KEY, theme);
+    } catch (e) {
+      /* Storage blocked: the toggle still works for this visit. */
+    }
+  }
+
+  function wireTheme() {
+    if (!els.themeToggle) return;
+    applyTheme(currentTheme()); // sync icon and label with whatever loaded
+    els.themeToggle.addEventListener("click", function () {
+      applyTheme(currentTheme() === "light" ? "dark" : "light");
+    });
+  }
 
   // ---------------------- Helpers --------------------------
 
@@ -743,6 +778,7 @@
     if (els.year) els.year.textContent = String(new Date().getFullYear());
     if (els.heroCount) els.heroCount.textContent = String(PROBLEMS.length);
     if (els.heroCats) els.heroCats.textContent = String(CATEGORIES.length);
+    wireTheme();
     buildChips();
     buildFormCategories();
     wireControls();
