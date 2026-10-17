@@ -629,6 +629,16 @@ textarea { resize: vertical; }
   font-size: 1.05rem;
 }
 
+/* -------------------------- Community feed -------------------------- */
+.card-community { border-style: dashed; }
+.score.unscored {
+  background: var(--bg-alt);
+  border: 1px dashed var(--line);
+  color: var(--ink-faint);
+  box-shadow: none;
+}
+.score.unscored .score-num { font-size: 1.3rem; }
+
 /* ----------------------------- Share ------------------------------- */
 .section-cta {
   background:

@@ -8,11 +8,14 @@
 (function () {
   "use strict";
 
+  var CONFIG = window.FMI_CONFIG || {};
   var DATA = window.FMI_DATA || { CATEGORIES: [], PROBLEMS: [], computeItch: null };
   var RESEARCH = window.FMI_RESEARCH || {};
   var CATEGORIES = DATA.CATEGORIES;
-  // Working copy so newly-submitted itches can be prepended without touching source.
+  // The curated, researched database. Community submissions are kept separate
+  // so they never get a fabricated Itch Score or pollute the rankings.
   var PROBLEMS = DATA.PROBLEMS.slice();
+  var COMMUNITY = [];
 
   // ------------------------- State -------------------------
   var state = {
@@ -57,7 +60,11 @@
     dShare: document.getElementById("d-share"),
     dClose: document.getElementById("d-close"),
     toast: document.getElementById("toast"),
-    themeToggle: document.getElementById("theme-toggle")
+    themeToggle: document.getElementById("theme-toggle"),
+    community: document.getElementById("community"),
+    communityGrid: document.getElementById("community-grid"),
+    communityCount: document.getElementById("community-count"),
+    communityNote: document.getElementById("community-note")
   };
 
   // ---------------- Personal storage (this browser only) ----------------
@@ -128,6 +135,67 @@
     });
   }
 
+  // ------------------------ Supabase -----------------------
+  // Plain REST calls; no SDK, so the page stays dependency-free.
+  var SB = {
+    ready: function () {
+      return !!(CONFIG.SUPABASE_URL && CONFIG.SUPABASE_ANON_KEY);
+    },
+    url: function (path) {
+      return String(CONFIG.SUPABASE_URL).replace(/\/+$/, "") + path;
+    },
+    headers: function (extra) {
+      var h = {
+        apikey: CONFIG.SUPABASE_ANON_KEY,
+        Authorization: "Bearer " + CONFIG.SUPABASE_ANON_KEY
+      };
+      for (var k in extra) if (Object.prototype.hasOwnProperty.call(extra, k)) h[k] = extra[k];
+      return h;
+    },
+    table: function () {
+      return CONFIG.TABLE || "itches";
+    },
+    list: function () {
+      return fetch(
+        SB.url("/rest/v1/" + SB.table() + "?select=id,created_at,title,category,submitter&order=created_at.desc&limit=200"),
+        { headers: SB.headers() }
+      ).then(function (r) {
+        if (!r.ok) throw new Error("load failed: " + r.status);
+        return r.json();
+      });
+    },
+    insert: function (row) {
+      return fetch(SB.url("/rest/v1/" + SB.table()), {
+        method: "POST",
+        headers: SB.headers({
+          "Content-Type": "application/json",
+          Prefer: "return=representation"
+        }),
+        body: JSON.stringify(row)
+      }).then(function (r) {
+        if (!r.ok) {
+          return r.text().then(function (t) {
+            throw new Error("save failed: " + r.status + " " + t.slice(0, 160));
+          });
+        }
+        return r.json();
+      });
+    }
+  };
+
+  // Turn a Supabase row into a record the rest of the UI understands.
+  // Community itches carry no scores: they have not been researched.
+  function toCommunityRecord(row) {
+    return {
+      id: "c-" + row.id,
+      title: row.title,
+      submitter: row.submitter || "",
+      category: row.category,
+      createdAt: row.created_at,
+      community: true
+    };
+  }
+
   // ---------------------- Helpers --------------------------
 
   // Map an Itch Score to a tier class + label for the badge color.
@@ -149,8 +217,9 @@
   }
 
   function findById(id) {
-    for (var i = 0; i < PROBLEMS.length; i++) {
-      if (String(PROBLEMS[i].id) === String(id)) return PROBLEMS[i];
+    var all = PROBLEMS.concat(COMMUNITY);
+    for (var i = 0; i < all.length; i++) {
+      if (String(all[i].id) === String(id)) return all[i];
     }
     return null;
   }
@@ -176,6 +245,15 @@
   }
 
   function scoreBadge(p, extraCls) {
+    if (p.community) {
+      // No fabricated score: this itch has not been researched or rated.
+      return (
+        '<div class="score unscored' + (extraCls ? " " + extraCls : "") + '" role="img" aria-label="Not yet scored">' +
+          '<span class="score-num">\u2014</span>' +
+          '<span class="score-lbl">New</span>' +
+        "</div>"
+      );
+    }
     var t = tierFor(p.itch);
     return (
       '<div class="score ' + t.cls + (extraCls ? " " + extraCls : "") + '" role="img" aria-label="Itch Score ' + p.itch + ' out of 100, ' + t.label + '">' +
@@ -188,6 +266,27 @@
   // Render a single problem card as an HTML string. The title link is
   // stretched over the whole card so the entire card opens the detail view.
   function cardHTML(p) {
+    if (p.community) {
+      return (
+        '<article class="card card-community">' +
+          '<div class="card-top">' +
+            '<span class="card-cat">' + esc(p.category) + "</span>" +
+            scoreBadge(p) +
+          "</div>" +
+          '<h3 class="card-title"><a class="card-link" href="#itch/' + encodeURIComponent(p.id) + '">' +
+            esc(p.title) +
+          "</a></h3>" +
+          '<p class="card-desc">' +
+            (p.submitter ? "Submitted by " + esc(p.submitter) + "." : "Submitted anonymously.") +
+            " Not yet researched or scored." +
+          "</p>" +
+          '<div class="card-foot">' +
+            '<span class="card-meta">' + (isSaved(p.id) ? '<span class="card-flag saved">\u2605 Saved</span>' : "") + "</span>" +
+            '<span class="card-cta" aria-hidden="true">Open itch \u2192</span>' +
+          "</div>" +
+        "</article>"
+      );
+    }
     var r = RESEARCH[p.id];
     var done = checksDone(p.id);
     var meta = [];
@@ -259,6 +358,34 @@
     els.shortlistToggle.setAttribute("aria-pressed", state.shortlistOnly ? "true" : "false");
   }
 
+  // --------------------- Community feed --------------------
+  function renderCommunity() {
+    if (!els.community) return;
+    if (!COMMUNITY.length) {
+      els.community.hidden = true;
+      return;
+    }
+    els.community.hidden = false;
+    els.communityGrid.innerHTML = COMMUNITY.map(cardHTML).join("");
+    els.communityCount.textContent = String(COMMUNITY.length);
+    els.communityCount.nextSibling; // count label handled in HTML
+  }
+
+  function loadCommunity() {
+    if (!SB.ready()) return;
+    SB.list().then(
+      function (rows) {
+        COMMUNITY = rows.map(toCommunityRecord);
+        renderCommunity();
+        route(); // a shared #itch/c-... link may be waiting on this data
+      },
+      function (err) {
+        // Non-fatal: the curated database still works.
+        if (window.console) console.warn("Community itches unavailable:", err.message);
+      }
+    );
+  }
+
   // ---------------------- Build chips ----------------------
   function buildChips() {
     var cats = ["All"].concat(CATEGORIES);
@@ -320,6 +447,7 @@
   // Neighbours for prev/next: the current filtered list if the itch is in it,
   // otherwise every itch by score (e.g. when arriving from a shared link).
   function navList(p) {
+    if (p.community) return COMMUNITY;
     var list = currentList();
     if (list.indexOf(p) === -1) {
       list = PROBLEMS.slice().sort(function (a, b) { return b.itch - a.itch; });
@@ -329,6 +457,7 @@
 
   // Up to 3 related itches: same industry first, then the closest Itch Scores.
   function relatedTo(p) {
+    // Always relate to curated, researched itches.
     var same = PROBLEMS.filter(function (o) { return o !== p && o.category === p.category; })
       .sort(function (a, b) { return b.itch - a.itch; });
     var others = PROBLEMS.filter(function (o) { return o !== p && o.category !== p.category; })
@@ -464,12 +593,15 @@
         '<div class="d-head-text">' +
           '<span class="card-cat">' + esc(p.category) + "</span>" +
           '<h2 id="d-title" class="d-title">' + esc(p.title) + "</h2>" +
-          '<p class="d-desc">' + esc(p.description) + "</p>" +
+          '<p class="d-desc">' + esc(p.description || ((p.submitter ? "Submitted by " + p.submitter + "." : "Submitted anonymously.") + " A community submission \u2014 not yet researched or scored.")) + "</p>" +
         "</div>" +
-        '<div class="d-score">' + scoreBadge(p, "score-lg") + '<span class="d-tier tier-text-' + t.cls + '">' + t.label + "</span></div>" +
+        '<div class="d-score">' + scoreBadge(p, "score-lg") +
+        (p.community
+          ? '<span class="d-tier tier-text-mild">Unscored</span>'
+          : '<span class="d-tier tier-text-' + t.cls + '">' + t.label + "</span>") +
+      "</div>" +
       "</header>" +
-      '<div class="d-dims">' + dimsHTML(p) + "</div>" +
-      scoreMathHTML(p) +
+      (p.community ? "" : '<div class="d-dims">' + dimsHTML(p) + "</div>" + scoreMathHTML(p)) +
       (r ? tabsHTML() + researchPanels(p, r) : pendingPanels(p)) +
       '<div class="d-section related"><h3>Related itches</h3><div class="related-grid">' +
         relatedTo(p).map(function (o) {
@@ -720,56 +852,78 @@
     hideDetailUI();
   }
 
-  // Handle the "Share your itch" form: no backend — confirm + prepend live.
+  // Handle the "Share your itch" form. With Supabase configured the itch is
+  // saved and shown to everyone; without it, the submitter gets an honest
+  // local preview instead of a false "saved" message.
   function wireForm() {
+    var submitBtn = els.form.querySelector('button[type="submit"]');
+
+    function fail(msg) {
+      els.formConfirm.hidden = false;
+      els.formConfirm.classList.add("is-error");
+      els.formConfirm.textContent = msg;
+    }
+    function succeed(msg) {
+      els.formConfirm.hidden = false;
+      els.formConfirm.classList.remove("is-error");
+      els.formConfirm.textContent = msg;
+    }
+
     els.form.addEventListener("submit", function (e) {
       e.preventDefault();
       var itch = document.getElementById("f-itch").value.trim();
       var category = els.formCat.value;
       var name = document.getElementById("f-name").value.trim();
 
-      if (!itch || !category) {
-        els.formConfirm.hidden = false;
-        els.formConfirm.classList.add("is-error");
-        els.formConfirm.textContent = "Add your itch and pick an industry, then submit again.";
+      if (itch.length < 10 || !category) {
+        fail("Describe the itch in a sentence and pick an industry, then submit again.");
+        return;
+      }
+      if (itch.length > 300) {
+        fail("That is a bit long — trim it to 300 characters or fewer.");
         return;
       }
 
-      // Give the submitted itch mid-range scores so it renders sensibly.
-      var record = {
-        id: "user-" + Date.now(),
-        title: itch,
-        description:
-          (name ? "Submitted by " + name + ". " : "") +
-          "A community-submitted itch awaiting Itch Index scoring by our team.",
-        category: category,
-        severity: 7,
-        frequency: 6,
-        whitespace: 7,
-        tam: 7,
-        _new: true
-      };
-      record.itch = DATA.computeItch ? DATA.computeItch(record) : 78;
+      if (!SB.ready()) {
+        // Not connected yet: show it locally and say so plainly.
+        COMMUNITY = [toCommunityRecord({
+          id: "local-" + Date.now(),
+          created_at: new Date().toISOString(),
+          title: itch,
+          category: category,
+          submitter: name
+        })].concat(COMMUNITY);
+        renderCommunity();
+        els.form.reset();
+        succeed("Submissions are not connected yet, so this was NOT sent. It is showing below on your screen only, and will disappear when you reload.");
+        if (els.community) els.community.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
 
-      // Prepend to working data and jump the view to it.
-      PROBLEMS.unshift(record);
-      state.category = "All";
-      state.query = "";
-      state.sort = "itch";
-      state.shortlistOnly = false;
-      els.search.value = "";
-      els.sort.value = "itch";
-      render();
+      submitBtn.disabled = true;
+      var original = submitBtn.textContent;
+      submitBtn.textContent = "Sending…";
 
-      els.formConfirm.hidden = false;
-      els.formConfirm.classList.remove("is-error");
-      els.formConfirm.textContent =
-        "Got it" + (name ? ", " + name : "") +
-        "! Your itch is now in the database. Open it to start your own research plan.";
-      els.form.reset();
-
-      // Scroll to the database so the user sees their new card.
-      document.getElementById("database").scrollIntoView({ behavior: "smooth" });
+      SB.insert({ title: itch, category: category, submitter: name || null }).then(
+        function (rows) {
+          var row = Array.isArray(rows) ? rows[0] : rows;
+          COMMUNITY = [toCommunityRecord(row)].concat(COMMUNITY);
+          renderCommunity();
+          els.form.reset();
+          succeed(
+            "Thanks" + (name ? ", " + name : "") +
+            "! Your itch is saved and everyone can see it below. It has no score yet — scores come from research."
+          );
+          if (els.community) els.community.scrollIntoView({ behavior: "smooth" });
+        },
+        function (err) {
+          fail("Could not save that — nothing was sent. Please try again in a moment.");
+          if (window.console) console.warn("Submit failed:", err.message);
+        }
+      ).then(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = original;
+      });
     });
   }
 
@@ -785,6 +939,8 @@
     wireDetail();
     wireForm();
     render();
+    renderCommunity();
+    loadCommunity();
     window.addEventListener("hashchange", route);
     route(); // open a shared #itch/<id> link on first load
   }

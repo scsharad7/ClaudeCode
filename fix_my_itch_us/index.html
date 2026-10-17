@@ -18,7 +18,7 @@
       } catch (e) { /* storage blocked: fall back to the dark default */ }
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <!-- ============================= HEADER / NAV ============================= -->
@@ -37,6 +37,7 @@
         <a href="#how">How it works</a>
         <a href="#itch-index">Itch Index</a>
         <a href="#database">Database</a>
+        <a href="#community">Community</a>
         <a href="#share" class="nav-cta">Share your itch</a>
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
           <span class="theme-icon" aria-hidden="true">☀</span>
@@ -280,6 +281,20 @@
         </form>
       </div>
     </section>
+    <!-- ========================== COMMUNITY ============================== -->
+    <section class="section section-alt" id="community" hidden>
+      <div class="container">
+        <h2 class="section-title">Community itches</h2>
+        <p class="section-lead">
+          Problems submitted by visitors. These are unscored and unreviewed — the
+          Itch Index comes from research, which these have not had yet.
+        </p>
+        <p class="count-line">
+          <strong id="community-count">0</strong> submitted <span id="community-note">so far</span>
+        </p>
+        <div class="grid" id="community-grid" aria-live="polite"></div>
+      </div>
+    </section>
   </main>
 
   <!-- ============================== FOOTER =============================== -->
@@ -322,8 +337,9 @@
   <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
 
   <!-- Data first, then research, then app logic. No modules, no CDNs — works offline. -->
-  <script src="data.js?v=4"></script>
-  <script src="research.js?v=4"></script>
-  <script src="app.js?v=4"></script>
+  <script src="config.js?v=5"></script>
+  <script src="data.js?v=5"></script>
+  <script src="research.js?v=5"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
