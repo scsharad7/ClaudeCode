@@ -2750,6 +2750,41 @@ const RESEARCH = {
       "Many updates cannot be fully automated"
     ]
   },
+  92: {
+    why: "The first year in a new country is a dense run of irreversible decisions \u2014 which visa path, which employer, which lease, which credit card \u2014 and the person best placed to advise is someone from the same country, in the same city, who did it two years ago. Finding that person is pure luck.",
+    who: [
+      "International students and first-year work-visa holders",
+      "Families relocating where a spouse must rebuild a career from zero",
+      "Arrivals from smaller communities with no established local network"
+    ],
+    evidence: [
+      "The US foreign-born population is roughly 47 million people, per Census Bureau estimates, and hundreds of thousands arrive on student and work visas each year.",
+      "Newcomers lean on ad-hoc WhatsApp groups, Facebook groups and Reddit threads where advice is anonymous, unverifiable and often out of date.",
+      "USCIS runs a standing public campaign warning immigrants about unauthorized practitioners, the long-documented notario problem, because bad advice in this space is both common and costly."
+    ],
+    players: [
+      { name: "Facebook and WhatsApp community groups", note: "Enormous reach and real generosity, but zero verification: advice quality is a lottery." },
+      { name: "Reddit (r/immigration, r/USCIS)", note: "Useful and candid, yet anonymous and national \u2014 no matching by city or stage." },
+      { name: "InterNations / Meetup", note: "Expat socializing rather than guidance matched to your visa, city and situation." }
+    ],
+    gap: "Verified matching on the three things that actually matter \u2014 same origin, same city, one or two steps ahead \u2014 plus a way to tell a good-faith veteran from someone selling immigration services.",
+    wedges: [
+      "Mentor matching on origin country, city and visa stage, with light verification via school or employer email",
+      "Stage-based playbooks (first 90 days, first lease, first car, first tax return) written by people who just did it",
+      "Employer and university buddy programs for relocating hires and incoming international students"
+    ],
+    model: "Employer and university contracts for onboarding international hires and students, plus sponsorship from the banks, telecoms and insurers that compete hard for new-arrival customers. Charging newcomers directly is the wrong move: they have the least cash and the most at stake.",
+    validate: [
+      "Hand-match 25 new arrivals to someone from their country in their city and measure how many lead to a second conversation",
+      "Ask 50 people who arrived in the last two years what they got wrong and who could have warned them",
+      "Pitch 3 employers or university international offices on a paid buddy program"
+    ],
+    risks: [
+      "Community products monetize poorly, and the people who need this most can pay least",
+      "Trust and safety is the whole product: bad immigration advice carries real consequences, and this format attracts exactly the predators USCIS warns about",
+      "Cold start is per city and per origin country, so the network has to be rebuilt in every pocket"
+    ]
+  }
 };
 
 /* Expose for app.js (loaded via <script>, works offline). */

@@ -830,6 +830,14 @@ const RAW_PROBLEMS = [
       "A move means re-registering a car, transferring a license, updating voter registration, insurance, banks, benefits and subscriptions, each on its own portal with its own deadline. Nobody orchestrates the sequence, and missed steps carry penalties.",
     category: "Immigration & Relocation",
     severity: 5, frequency: 3, whitespace: 7, tam: 7
+  },
+  {
+    id: 92,
+    title: "Why is there no trusted place where new immigrants can find people from their own background, in their own city, who have already been through the same visa, job and housing steps?",
+    description:
+      "New arrivals make high-stakes visa, job and housing decisions in their first months, and the people best placed to advise them \u2014 someone from the same country, in the same city, two years ahead \u2014 are reachable only by luck. Advice today comes from anonymous group chats where nobody can tell a generous veteran from someone selling services.",
+    category: "Immigration & Relocation",
+    severity: 7, frequency: 6, whitespace: 7, tam: 8
   }
 ];
 

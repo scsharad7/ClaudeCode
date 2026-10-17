@@ -25,7 +25,7 @@ into a browser tab). Everything runs client-side and works fully offline.
 |--------------|-------------------------------------------------------------------|
 | `index.html` | Page structure: hero, how-it-works, Itch Index, database, share, footer. |
 | `styles.css` | All styling and the light/dark design tokens, fully responsive.    |
-| `data.js`    | The problem dataset (91 problems) + the 21 categories + `computeItch`. |
+| `data.js`    | The problem dataset (92 problems) + the 21 categories + `computeItch`. |
 | `research.js`| Deep-dive research for every itch, keyed by problem `id`.          |
 | `config.js`  | Supabase keys for community submissions (blank = not connected).  |
 | `app.js`     | Filtering, sorting, search, rendering, the itch detail view, and the share form. |
@@ -94,7 +94,7 @@ submissions.
 
 ### Promoting a submission into the curated database
 
-Community itches are deliberately kept separate from the 91 curated ones and
+Community itches are deliberately kept separate from the 92 curated ones and
 carry **no Itch Score**, because a score means research was done. To promote
 one, add a record to `data.js` and a matching research entry to `research.js`,
 then delete the Supabase row.
@@ -112,7 +112,7 @@ Figures are approximate and should be verified before relying on them.
 
 ## The data & the Itch Index model
 
-The dataset holds **91 US problem statements** across **21 industry
+The dataset holds **92 US problem statements** across **21 industry
 categories** (Fintech & Payments, Healthcare & Insurance, Housing & Real Estate,
 Logistics & Delivery, Education & Student Debt, Gig & Freelance Work, Retail &
 Commerce, Food & Restaurants, Travel & Mobility, Family & Childcare, Government &
