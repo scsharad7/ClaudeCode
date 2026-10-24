@@ -492,9 +492,9 @@ const RAW_PROBLEMS = [
     id: 51,
     title: "Why can't couples manage shared and separate money without a spreadsheet war?",
     description:
-      "Modern couples split bills, keep some accounts separate, and argue over categories. Tools force either full-merge or full-separate. Flexible shared-finance tooling for how couples actually live is an emotionally charged, underserved niche.",
+      "Modern couples split bills, keep some accounts separate, and argue over categories, while tools force either full-merge or full-separate. The pain is real but the graveyard is crowded: three couples-specific apps shut down or were absorbed between 2023 and 2025. The opening is in forced splitting \u2014 co-parenting and divorce \u2014 and in selling to credit unions rather than to couples.",
     category: "Personal Finance",
-    severity: 6, frequency: 6, whitespace: 7, tam: 7
+    severity: 6, frequency: 6, whitespace: 5, tam: 6
   },
   {
     id: 52,

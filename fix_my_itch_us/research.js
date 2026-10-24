@@ -1521,33 +1521,39 @@ const RESEARCH = {
     ]
   },
   51: {
-    why: "Modern couples keep some money joint and some separate, but most finance tools force all-or-nothing sharing, so 'who paid for what' turns into arguments.",
-    who: ["Newlyweds and couples moving in together", "Couples with very different incomes", "Blended families with kids from earlier relationships"],
+    why: "Modern couples keep some money joint and some separate, but most finance tools force all-or-nothing sharing, so 'who paid for what' turns into arguments. The twist: this itch has been scratched at three times and the companies are gone \u2014 the problem is real, the consumer business is the hard part.",
+    who: [
+      "Co-parents and divorcing couples who must document and split by agreement",
+      "Couples with very different incomes who want proportional, not 50/50, splitting",
+      "Newlyweds and couples moving in together, setting the pattern for the first time"
+    ],
     evidence: [
       "Money is consistently ranked among the top sources of conflict in relationships.",
-      "Surveys show more couples now keep a mix of joint and individual accounts.",
-      "Several couple-focused finance apps launched in the last decade, signaling demand."
+      "The couples-specific category has not held: Zeta's couples banking app closed in May 2025, Honeydue was sunset around August 2023, and Tandem was acquired in November 2025 by Reseda Group, the credit-union arm of MSUFCU and one of its early investors, with its founders joining as VPs and terms undisclosed.",
+      "The survivor is not couples software at all: Monarch is general household budgeting at about $100 a year, and its breakout came from Intuit shutting down Mint \u2014 subscribers grew roughly 20x \u2014 rather than from couples positioning. It raised $75M in May 2025 at an $850M valuation. Published ARR estimates conflict by an order of magnitude, so treat them as unverified."
     ],
     players: [
-      { name: "Honeydue", note: "Couples budgeting and bill reminders." },
-      { name: "Zeta", note: "Joint banking designed for couples." },
-      { name: "Monarch Money", note: "Household budgeting with shared access." }
+      { name: "Monarch / Copilot / YNAB", note: "General household budgeting with partner access; the category that actually survived." },
+      { name: "Tandem (now Reseda Group)", note: "Couples expense sharing, acquired by a credit union that wants to move members to joint accounts." },
+      { name: "Splitwise", note: "Still the default ledger for splitting, and still only a tracker: it does not settle or hold money." }
     ],
-    gap: "Flexible rules like splitting by income ratio, tracking each person's contributions, and settling automatically without merging everything.",
+    gap: "Not another couples budgeting app \u2014 that has been tried and buried. The gaps are proportional splitting by income, and serving people for whom splitting is compulsory rather than optional.",
     wedges: [
-      "Proportional bill-splitting tied to each partner's income",
-      "Shared goals funded from separate accounts",
-      "Moving-in-together and pre-marriage money planner"
+      "Co-parenting and post-divorce expense splitting, where the records are court-relevant and giving up is not an option",
+      "Sell to credit unions, banks and employers as a joint-account onboarding product, the path Tandem's acquisition actually validated",
+      "A proportional-split engine (by income share) that layers on existing accounts instead of replacing anyone's bank"
     ],
-    model: "Subscription plus banking partnerships.",
+    model: "B2B2C licensing to credit unions, banks and employers, or a subscription aimed at co-parents rather than happy couples. Ledger-only, settling through existing rails: holding funds turns this into a money-transmission business and a licensing problem.",
     validate: [
-      "Interview 30 couples about how they split costs today",
-      "Pilot proportional splitting with 10 couples for two months",
-      "Measure retention and conflict-reduction self-reports"
+      "Interview 5 couples with very unequal incomes and 5 co-parents, and compare how hard each group has already tried to solve it",
+      "Pitch 3 credit unions on a joint-account onboarding tool and see who takes a second meeting",
+      "Ask the losing group what they currently pay for: if the answer is nothing, that segment is a feature, not a business"
     ],
     risks: [
-      "Privacy and trust inside relationships",
-      "Banks may add similar joint features"
+      "Three companies have already failed or exited here; assume the consumer version does not work until you have evidence it does",
+      "Churn is structural: breakups end the account, and couples who settle into a system stop needing the tool",
+      "Itemizing who paid for what can be weaponized in financially controlling relationships, which is a design responsibility, not an edge case",
+      "Banks, credit unions and general budgeting apps can add joint features as a checkbox"
     ]
   },
   52: {
