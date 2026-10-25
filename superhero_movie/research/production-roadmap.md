@@ -18,7 +18,7 @@
 | Phase | What happens | Key deliverables | Typical indie duration |
 |---|---|---|---|
 | **1. Development** | Turn the idea into a script; secure rights; build the pitch; begin financing | Logline, synopsis, treatment, screenplay drafts, pitch deck, lookbook, top-sheet budget, chain-of-title documents | 3 months to several years (first-timers: plan on 6–12 months) |
-| **2. Pre-production** | Lock the script; hire crew; cast; scout and lock locations; schedule; design costumes and sets; rehearse fights; plan VFX | Shooting script, script breakdown, stripboard/schedule, line-item budget, cast and crew deals, location agreements, insurance certificates, shot lists, storyboards/previs, fight choreography videos | 3–6 months for a feature ([NFI](https://www.nfi.edu/?p=11667)); 4–8 weeks for a short |
+| **2. Pre-production** | Lock the script; hire crew; cast; scout and lock locations; schedule; design costumes and sets; rehearse fights; plan VFX | Shooting script, schedule, line-item budget, cast/crew deals, location agreements, insurance, shot lists, storyboards/previs, fight videos | 3–6 months for a feature ([NFI](https://www.nfi.edu/?p=11667)); 4–8 weeks for a short |
 | **3. Production** | Principal photography | Daily footage (backed up in three places), call sheets, production reports, script supervisor notes | Indie features often shoot in 18–30 days ([IndieTalk](https://indietalk.com/threads/projected-timeline.1109/post-5738)); a 10-minute short in 2–5 days |
 | **4. Post-production** | Edit, VFX, sound design, score, color, mix, deliverables | Picture lock, VFX shots, final mix (stems + M&E), color-graded master, DCP, captions, deliverables package | 6–12 months ([NFI](https://www.nfi.edu/?p=11667)); VFX-heavy films run longer |
 | **5. Distribution** | Festivals, sales agent, distributor/streamer deals, self-release, marketing | Trailer, key art, EPK (press kit), festival strategy, E&O insurance, delivery schedule items | 6–24 months after picture lock |
@@ -62,10 +62,10 @@ Keep it under 15 minutes. Festivals program short shorts more easily, and online
 
 | Tier | Range | What it realistically buys | Superhero approach |
 |---|---|---|---|
-| **No/micro-budget** | < $50k | Mostly volunteer or deferred-pay crew; friends as cast or SAG-AFTRA micro agreements; borrowed or rented prosumer cameras; free or cheap locations; DIY VFX (Blender, After Effects, DaVinci Resolve Fusion) | **Perfect for the proof-of-concept short** (typically $5k–$30k). A feature is possible only with very grounded powers (*Chronicle*-style found footage) |
-| **Low-budget indie** | $50k–$1M | Paid small crew (10–25), SAG-AFTRA Ultra Low Budget cast, a real stunt coordinator, rented cinema cameras, a small VFX vendor or freelance team, insurance, a real sound mix | First feature territory. One or two big action set pieces, practical effects plus targeted VFX |
-| **Indie** | $1M–$10M | Full union or near-union crew, recognizable cast, a stunt team, a professional VFX house for hundreds of shots, tax-incentive locations, sales agent attached | *Code 8* ($2.4M+ crowdfunded plus other financing), *Brightburn* (~$6M per its director, [Post Magazine](https://postmagazine.com/Publications/Post-Magazine/2019/May-June-2019/-I-Brightburn-I-director-David-Yarovesky.aspx); [Wikipedia](https://en.wikipedia.org/wiki/Brightburn) lists $6–12M) |
-| **Studio** | $50M–$250M+ | Stars, thousands of VFX shots, second units, global marketing | Studio superhero tentpoles routinely cost $200M+ before marketing. Not a first-timer tier, but it's the scale audiences compare you to, so don't try to match it shot for shot |
+| **No/micro-budget** | < $50k | Volunteer or deferred crew; friends or SAG-AFTRA micro cast; prosumer cameras; free locations; DIY VFX (Blender, Resolve Fusion) | **Ideal for the proof-of-concept short** ($5k–$30k). A feature only with very grounded powers |
+| **Low-budget indie** | $50k–$1M | Paid crew of 10–25, ULB cast, a stunt coordinator, rented cinema cameras, freelance VFX, insurance, a real mix | First-feature territory: one or two big set pieces, practical effects plus targeted VFX |
+| **Indie** | $1M–$10M | Near-union crew, recognizable cast, a stunt team, a VFX house, tax-incentive locations, a sales agent | *Code 8* ($2.4M+ crowdfunded plus other financing), *Brightburn* (~$6M per its director, [Post Magazine](https://postmagazine.com/Publications/Post-Magazine/2019/May-June-2019/-I-Brightburn-I-director-David-Yarovesky.aspx); [Wikipedia](https://en.wikipedia.org/wiki/Brightburn) lists $6–12M) |
+| **Studio** | $50M–$250M+ | Stars, thousands of VFX shots, second units, global marketing | Tentpoles often cost $200M+. Don't compete on spectacle |
 
 ### What superhero/action costs extra
 - **Stunts:** a coordinator, performers, rehearsal weeks, pads and rigging (wire work is expensive), and a medic.
@@ -275,7 +275,7 @@ Keep it under 15 minutes. Festivals program short shorts more easily, and online
 - [ ] Feature script draft 2 is done; short script locked.
 - [ ] Core team of 4–6 is committed; LLC formed.
 - [ ] Short is budgeted and funded (or the campaign is ready to launch), with a shoot date set **6–10 weeks out**.
-- [ ] **Next 6 months:** shoot the short, then post-produce it (VFX and sound take the longest), then submit to festivals or launch online. Then pitch the feature with the short in hand.
+- [ ] **Next 6 months:** shoot, post (VFX and sound take longest), then submit or launch. After that, pitch the feature with the short in hand.
 
 ---
 

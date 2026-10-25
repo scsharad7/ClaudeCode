@@ -108,13 +108,13 @@ These rules apply at every budget tier.
 
 1. **Hire a qualified stunt coordinator** for any fights, falls, weapons, fire, vehicles, or wires. Their call is final on safety. On SAG-AFTRA low-budget agreements, **a stunt coordinator is required if there are stunts**, paid at Basic Agreement rates ([SAG-AFTRA one-sheet](https://sagaftra.org/sites/default/files/2024-10/Low%20Budget%20Entertainment%20Contracts%20One%20Sheet.pdf)), roughly **$1,246/day** as of mid-2025 per SAG-AFTRA's low-budget rate materials ([SAG-AFTRA](https://www.sagaftra.org/files/LowBudgetTheatricalAgreement.pdf)). Verify current rates.
 2. **SAG-AFTRA micro-budget agreement (≤$20K) does not permit stunts.** If your film is union and has fights, plan on at least the Ultra Low Budget agreement (~$300K cap) or another tier that allows stunts. The Short Project and Student agreements allow stunts under conditions ([SAG-AFTRA](https://sagaftra.org/sites/default/files/sa_documents/low_budget_entertainment_contracts_one_sheet.pdf)).
-3. **Rehearse.** Never debut choreography on the shoot day. No improvised stunts.
-4. **Padding and protection:** crash mats, hidden pads (elbows, knees, hips, back), soft or rubber prop weapons, breakaway glass and furniture, and mouthguards where they won't show.
-5. **Wire work** is done only by qualified riggers using rated hardware, with a rigging plan, a test with sandbags or the stunt performer before the actor, and a dedicated safety person on every line. Never DIY wires.
-6. **Weapons and firearms:** use a licensed armorer and no live ammunition, ever. Use airsoft, rubber, or CG muzzle flashes. Follow the industry [safety bulletins](https://www.csatf.org/production-safety/safety-bulletins/).
-7. **Insurance:** production general liability plus coverage that **declares the stunts**. Many insurers require the stunt coordinator's résumé and a stunt breakdown. Undeclared stunts can void coverage.
-8. **On set:** a medic for every action day, a safety meeting before each stunt, a clear "cut" authority, hydration, and a hard limit on takes for big impacts, because fatigue causes injuries.
-9. **Locations:** get permits, and notify police if a fight is visible from the street or uses prop weapons.
+3. **Rehearse.** Never debut choreography on the day. No improvised stunts.
+4. **Protection:** crash mats, hidden pads, soft or rubber prop weapons, breakaway glass and furniture, mouthguards where unseen.
+5. **Wires:** qualified riggers only, rated hardware, a written rigging plan, a sandbag/stunt-performer test before the actor, a dedicated safety on every line. Never DIY.
+6. **Weapons:** a licensed armorer, never live ammunition. Use rubber/airsoft props and CG muzzle flashes. Follow the industry [safety bulletins](https://www.csatf.org/production-safety/safety-bulletins/).
+7. **Insurance:** general liability that **declares the stunts**. Insurers often want the coordinator's résumé and a stunt breakdown; undeclared stunts can void coverage.
+8. **On set:** a medic every action day, a safety meeting before each stunt, clear "cut" authority, and a take limit on big impacts (fatigue causes injuries).
+9. **Locations:** permits, and notify police if a fight is visible from the street or uses prop weapons.
 
 ---
 
@@ -124,33 +124,26 @@ These rules apply at every budget tier.
 
 | Power | Cheap trick | Upgrade |
 |---|---|---|
-| **Super strength** | Lightweight foam or breakaway props, a performer on a hidden ratchet pull for "thrown" reactions, low angles, a deep bass hit in the sound | Air-ram or ratchet rigs, CG debris |
-| **Speed** | Undercranked or ramped footage, frames removed, a whoosh sound plus wind on the hair and clothes, a blur pass in post | Speed-ramp setups, CG trails |
-| **Flight / leaps** | Cut on the takeoff and land on the landing (jump from an apple box, drop into frame), a trampoline or mini-tramp, shooting from a low angle against the sky | Wires (professional riggers only), a crane |
-| **Energy blasts** | Real light on set (a gelled LED or flash at the impact point), smoke, and a 2D comp | Full CG FX |
-| **Telekinesis** | Fishing line or rods painted out in post, objects run in reverse | Wire-pulled props |
-| **Durability** | The hero barely reacts while the attacker's hand breaks. The *reaction* sells it. | Breakaway weapons, prosthetics |
+| **Super strength** | Foam/breakaway props, hidden ratchet pull for "thrown" reactions, low angles, deep bass hit | Air rams, CG debris |
+| **Speed** | Undercranked or ramped footage, dropped frames, whoosh plus wind on hair and clothes, post blur | CG trails |
+| **Flight / leaps** | Cut on takeoff, land on landing (apple-box jump, drop into frame), mini-tramp, low angle against sky | Wires (pro riggers only), crane |
+| **Energy blasts** | Real light on set (gelled LED or flash at impact), smoke, 2D comp | Full CG FX |
+| **Telekinesis** | Fishing line or rods painted out, objects run in reverse | Wire-pulled props |
+| **Durability** | The hero barely reacts while the attacker's hand breaks | Breakaway weapons, prosthetics |
 
 The cheapest power effect of all is **the other person's reaction plus sound design**.
 
 ### Power set rules (where the tension comes from)
 
-- **Clear rules:** what the power does, its range, how long it lasts. Show it early.
-- **A cost:** pain, exhaustion, a cooldown, memory loss, collateral damage, a moral price. Logan's slowed healing is the model.
-- **A limit or weakness** that the villain or situation can exploit, and that the hero overcomes by growing, not by a new power showing up.
-- **Escalation:** the hero masters the power over the film. Act 1 is clumsy, Act 3 is creative.
-- **Sanderson-style rule:** limitations are more interesting than powers. The audience needs to know what the hero *can't* do.
+- **Clear rules:** what it does, range, duration. Show them early.
+- **A cost:** pain, exhaustion, cooldown, collateral damage, a moral price. Logan's slowed healing is the model.
+- **A weakness** the villain can exploit and the hero overcomes by growing, not by a new power appearing.
+- **Mastery arc:** clumsy in Act 1, creative in Act 3.
+- **Sanderson's rule:** limitations are more interesting than powers. Show what the hero *can't* do.
 
 ### Hero vs. villain style contrast
 
-Design the two fighting styles as opposites so every exchange tells a story:
-
-- Defensive vs. aggressive
-- Improvised and scrappy vs. trained and precise
-- Close range vs. long range
-- Restrained (protects bystanders) vs. reckless (uses them)
-
-Make the villain's style a dark mirror of the hero's power, or of what the hero could become.
+Design the styles as opposites so every exchange tells a story: defensive vs. aggressive, scrappy vs. precise, close vs. long range, protects bystanders vs. uses them. Make the villain a dark mirror of what the hero could become.
 
 ---
 
