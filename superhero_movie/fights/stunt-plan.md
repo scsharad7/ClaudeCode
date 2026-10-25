@@ -13,33 +13,24 @@
 **When:** Phase 2 (weeks 7–10), before the fight is designed, so they can shape it.
 
 **What to look for**
-- **Credits** as *stunt coordinator* (not just performer) on shorts, indies or TV. Check IMDb and ask for references from two directors.
-- **A reel** that shows fights they designed *and* coordinated, ideally on a small budget.
-- **Union status:** if your short is SAG-AFTRA, the coordinator must be a union stunt coordinator. Remember that the SAG-AFTRA **Micro tier (under $20k) does not allow stunts**; you'd need the Short Project tier (cap $50k) or Ultra Low Budget (cap $300k). Confirm the current terms.
-- Experience with **stuntvis**, **ratchet rigs** and working with **first-time actors**.
-- Their own **insurance**, their kit (mats, pads), and a team of performers they trust.
+- **Credits** as *stunt coordinator* (not just performer). Check IMDb and ask two directors for references.
+- **A reel** showing fights they designed *and* coordinated, ideally on a small budget.
+- **Union status:** a SAG-AFTRA short needs a union coordinator. The **Micro tier (under $20k) doesn't allow stunts**, so you'd use Short Project (cap $50k) or Ultra Low Budget (cap $300k). Confirm the current terms.
+- Experience with **stuntvis**, **ratchet rigs** and **first-time actors**; their own insurance, kit (mats, pads) and performers.
 
 **Where to find one**
-- Local stunt teams: search "stunt team reel [your city]" on YouTube and Instagram.
-- Stunt associations: International Stunt Association, Stuntmen's Association of Motion Pictures, Stuntwomen's Association, United Stuntwomen's Association; the SAG-AFTRA stunt directory if you're union.
-- Martial-arts and tricking schools whose instructors have film credits (ask to see them).
-- Your state or city film commission's crew list.
+- Local stunt teams: search "stunt team reel [your city]".
+- Stunt associations: International Stunt Association, Stuntmen's Association, Stuntwomen's Association; the SAG-AFTRA stunt directory if you're union.
+- Martial-arts schools whose instructors have film credits; your film commission's crew list.
 
 **Interview questions**
-1. Walk me through a fight you coordinated on a budget like mine. What went wrong, and how did you fix it?
-2. How do you run stuntvis? Who films it and who cuts it?
-3. What's your safety process on the day? Do you bring a medic, or do I hire one?
-4. What would you cut from my fight to keep it safe *and* inside budget?
-5. Have you had an injury on set? What happened next?
-6. Which performers do you bring, and can you supply doubles who match my leads?
-7. What do you need from me, and by when?
+1. Walk me through a fight you coordinated on a budget like mine. What went wrong?
+2. How do you run stuntvis, and who cuts it?
+3. What's your safety process on the day? Do you bring a medic?
+4. What would you cut from my fight to keep it safe and on budget?
+5. Can you supply doubles who match my leads?
 
-**What they'll need from you**
-- The short script and the fight design doc **[TBD]**
-- Photos and a floor plan of the location, with its floor surface and ceiling height
-- Cast names, heights and fitness levels; whether the leads fight themselves
-- The schedule, the budget line for stunts, and your insurance broker's contact
-- Suit details (how well it moves, whether you have multiples and where pads can hide)
+**What they'll need from you:** the script and fight design doc **[TBD]**; location photos, floor plan, floor surface and ceiling height; cast heights and fitness levels; the schedule and stunt budget; your insurance broker's contact; and suit details (how well it moves, multiples, room for pads).
 
 **Rate ranges (ESTIMATES: confirm with each provider)**
 
@@ -119,19 +110,19 @@ Fill in one row per beat from the fight design doc. Cost lines go into [`../prod
 5. "Hospital: [name, address, drive time]. Medic is stationed at [spot]."
 6. "Questions? If you're not comfortable, say so now. There's no penalty."
 
-**Medic and nearest hospital:** a medic or EMT is on set for every action day and every rehearsal with falls. Before the shoot, write the nearest emergency room **[TBD]** (address and drive time) on the call sheet and agree on who drives.
+**Medic and nearest hospital:** a medic on every action day and every rehearsal with falls. Put the nearest emergency room **[TBD]** (address and drive time) on the call sheet, and agree on who drives.
 
-**Pad and mat plan:** the coordinator specifies crash mats for every fall zone, hidden pads (knees, elbows, hips, back) under the suit, and mouthguards where they won't be seen. Use rated crash mats, never borrowed gym mats. Mark the mat placements during the dress rehearsal **[TBD]**.
+**Pad and mat plan:** the coordinator specifies rated crash mats (never borrowed gym mats) for every fall zone, hidden pads under the suit and mouthguards where they won't be seen. Mark the mat placements at the dress rehearsal **[TBD]**.
 
-**Who can call cut:** the director calls cut for creative reasons. **Anyone** can call cut or hold for safety. The coordinator has the final say on whether a stunt goes ahead, and it can't be overruled.
+**Who can call cut:** the director calls cut for creative reasons. **Anyone** can call cut or hold for safety. The coordinator's no can't be overruled.
 
-**Fatigue limits:** the coordinator sets a take limit for each big impact before the day starts. Schedule the fight early in the week and early in the day. No new or complex action in the last hours of a long day. Plan water and rest breaks.
+**Fatigue limits:** the coordinator sets a take limit for each big impact in advance. Shoot the fight early in the week and early in the day, with no complex action late in a long day.
 
-**Resets:** after each take, call "reset" and wait for the coordinator to call "stunts ready." Re-check mats, replace breakaways, and check performers for injuries. Never roll on a half-reset.
+**Resets:** after each take, call "reset", re-check the mats, replace breakaways and check the performers. Roll only when the coordinator calls "stunts ready."
 
-**No-surprises rule:** nothing that wasn't rehearsed gets filmed. You can't add a kick, speed it up or move a camera into the action area until the coordinator has re-walked it and agreed.
+**No-surprises rule:** nothing gets filmed that wasn't rehearsed. Don't add a kick, speed it up or move a camera into the action area until the coordinator has re-walked it.
 
-**The 1st AD's role:** runs the set and the schedule, calls the safety meetings, protects rehearsal time, enforces the take and fatigue limits, and keeps non-essential people out of the action area. When the schedule slips, the AD cuts shots, never safety.
+**The 1st AD's role:** runs the set and schedule, calls the safety meetings, protects rehearsal time, enforces the take limits and clears the action area. When the schedule slips, the AD cuts shots, never safety.
 
 ---
 
@@ -153,10 +144,10 @@ Undeclared stunts can void your cover. Be ready to tell the insurer or broker:
 
 ## 7. Doubles plan
 
-- **Cast fighters as leads** (martial artists or stunt performers who can act) if you can. You can then shoot wider and longer, and the audience sees it's really them. That matters more in a short than anywhere else.
-- **Use actors with doubles** when the actor is the right choice for the drama. The actor does L1 and close-ups; the double does falls, throws and anything L2 or above.
-- **Matching:** height within about 2 inches, the same build and silhouette, a matching wig or hair, and a similar movement style. Match the double to the performer, too: hire a double of the same gender and a matching ethnicity rather than putting a wig on someone or using make-up to change their skin colour.
-- **Masks help a lot:** a masked hero means a double can do almost everything without face replacement. Ask `film-costume-designer` for a stunt suit (a second suit that can be padded and scuffed) and plan for the reveal shots to use the actor. Whether the hero is masked is **[TBD]**.
+- **Cast fighters as leads** (martial artists or stunt performers who can act) when you can. You can shoot wider and longer, and the audience sees it's really them.
+- **Use actors with doubles** when the drama needs that actor. The actor does L1 and close-ups; the double does L2 and above.
+- **Matching:** height within about 2 inches, the same build, matching hair or a wig, and a similar way of moving. Hire a double who matches the performer's gender and ethnicity; don't put a wig on someone to stand in for a different gender, or use make-up to change their skin colour.
+- **Masks help a lot:** with a masked hero, a double can do almost everything. You'll need a stunt suit (a spare that can be padded and scuffed), and the actor does the reveal shots. Whether the hero is masked is **[TBD]**.
 
 ---
 
@@ -178,14 +169,14 @@ If you only have 6 weeks, compress the schedule and give more beats to doubles.
 ## 9. Never do this on a micro-budget
 
 - Fire, burns, pyro, squibs or explosions
-- High falls, or work at the edge of a rooftop or ledge without professional fall protection
-- Vehicles: car hits, driving stunts, fighting on or near moving vehicles
-- Real weapons, blank-firing guns or sharp blades. Use props only, and get an armorer if any prop gun appears.
-- Wire work without professional riggers, or a homemade rig of any kind
+- High falls, or rooftop and ledge work without professional fall protection
+- Vehicles of any kind: hits, driving stunts, fighting near moving cars
+- Real weapons, blank-firing guns or sharp blades (props only, and an armorer if any prop gun appears)
+- Wire work without professional riggers, or any homemade rig
 - Real glass, or furniture that isn't a breakaway
-- Choking or holds with real pressure, and hits to the head with real contact
-- Water stunts, or minors or animals near the action
-- Any move invented on the day, or action filmed by exhausted performers
+- Choking with real pressure, or real contact to the head
+- Water stunts; minors or animals near the action
+- Moves invented on the day, or action filmed by exhausted performers
 - Fights in public view without permits and without telling the police
 
 ---
@@ -193,38 +184,37 @@ If you only have 6 weeks, compress the schedule and give more beats to doubles.
 **Done:** wrote `superhero_movie/fights/stunt-plan.md`. It's a framework only, with fight specifics marked [TBD].
 
 **Decisions needed:**
-1. **Fight length vs. shoot days.** The rule of thumb says 2–4 minutes of fighting needs 4–12 days. Options:
+1. **Fight length vs. shoot days** (2–4 minutes means 4–12 days by the rule of thumb):
    - (a) about 2 minutes of nonstop fighting in 4–5 days
-   - (b) 3–4 minutes in 7–10 days, at a higher budget
-   - (c) 2 minutes built around one stitched oner (a long take with hidden cuts)
+   - (b) 3–4 minutes in 7–10 days
+   - (c) 2 minutes as one stitched oner (a long take with hidden cuts)
 
    **Recommendation: (a).**
-2. **Who fights?** Options:
-   - (a) cast martial artists or stunt performers as the leads
+2. **Who fights?**
+   - (a) martial artists or stunt performers as the leads
    - (b) actors with doubles
    - (c) a fighter as the masked hero, with an actor plus a double as the villain
 
    **Recommendation: (c)** if the hero is masked; otherwise (a).
-3. **Union or non-union?** Options:
+3. **Union or non-union?**
    - (a) non-union, with a local coordinator
-   - (b) SAG-AFTRA Short Project, which allows stunts and needs a union coordinator at about $1,246/day
-   - (c) Micro tier, which is **not possible** because it doesn't allow stunts
+   - (b) SAG-AFTRA Short Project, which needs a union coordinator (~$1,246/day)
+   - (c) Micro tier: **not possible**, because it doesn't allow stunts
 
    **Recommendation:** (a) for the lean or target tier; (b) if a union lead is attached.
-4. **The one L3 gag.** Options:
-   - (a) no L3 at all
-   - (b) one ratchet gag, done by pro riggers, for the signature moment
+4. **The one L3 gag:**
+   - (a) none
+   - (b) one ratchet gag by pro riggers for the signature moment
 
-   **Recommendation:** (a) at lean or target; (b) only at the ideal tier.
+   **Recommendation:** (a) unless you're at the ideal tier.
 
 **Hand-offs:**
-- `film-fight-choreographer`: write the fight design doc and fill in the beat table.
-- `film-line-producer`: carry the stunt cost lines into `production/budget.md`.
-- `film-first-ad`: schedule the safety meetings, protect rehearsal time and put the hospital on the call sheet.
+- `film-fight-choreographer`: the fight design doc and the beat table.
+- `film-line-producer`: the cost lines in `production/budget.md`.
+- `film-first-ad`: safety meetings, rehearsal time and the hospital on the call sheet.
 - `film-casting-director`: actors who can move, and matched doubles.
-- `film-costume-designer`: stunt suit multiples with room for pads.
-- `film-cinematographer`: shot list from the stuntvis.
-- `film-editor`: cut the stuntvis.
+- `film-costume-designer`: stunt suits with room for pads.
+- `film-cinematographer` and `film-editor`: the stuntvis cut and the shot list.
 - `film-sfx-supervisor`: breakaways.
 - `film-location-manager`: a safe floor and the distance to the hospital.
 - `film-entertainment-lawyer`: the insurance declaration.

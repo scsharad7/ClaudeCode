@@ -62,42 +62,39 @@ Background: [production-roadmap §5](../research/production-roadmap.md#5-legal-a
 
 ## Templates you'll need
 
-| Template | When |
-|---|---|
-| Collaborator / co-writer agreement | Now, if anyone helps develop the story |
-| NDA (non-disclosure agreement) | When sharing the script with potential crew (studios usually won't sign one) |
-| Writer assignment to the LLC | Weeks 9–10 |
-| LLC operating agreement | Weeks 9–10 |
-| Crew deal memo (work-for-hire) | Phase 2–3 hires |
-| Cast deal memo / performer agreement | Casting |
-| Composer agreement | Before scoring |
-| Cast, appearance, location and materials releases | Before the shoot |
-| Music sync + master license | If using any existing track |
-| Injury waiver / assumption of risk (lawyer-reviewed) | Before stunt rehearsals |
-| Crowdfunding rewards terms | Before the campaign |
-| Clearance log (a spreadsheet of every logo, artwork and song on screen) | During the shoot and edit |
+- Collaborator / co-writer agreement
+- NDA (non-disclosure agreement), for crew; studios won't sign one
+- Writer assignment to the LLC
+- LLC operating agreement
+- Crew deal memo (work-for-hire)
+- Cast deal memo / performer agreement
+- Composer agreement
+- Releases: cast, appearance, location, materials
+- Music sync + master license
+- Injury waiver (lawyer-reviewed)
+- Crowdfunding rewards terms
+- Clearance log (every logo, artwork and song on screen)
 
 ## Questions for your one-hour lawyer consult
 
 1. Which state should my LLC be in, and what are the annual costs?
-2. Is my collaborator situation clean? Does anyone have a claim to the story?
-3. Can you review the title and the hero's name, costume and powers for resemblance to existing IP?
-4. Which deal memo and release templates do you recommend, and will you review mine?
-5. Are my crew employees or contractors in this state? Do I need workers' comp even for volunteers?
-6. If friends or family want to invest, what's the simplest compliant structure?
-7. For a fight short: SAG-AFTRA Short Project or Ultra Low Budget, or non-union?
-8. Will my injury waiver mean anything here?
-9. What do I need for festivals vs. an online release, and can the short's rights carry into the feature?
+2. Does anyone have a claim to my story?
+3. Does my title, or my hero's name, costume or powers, risk resembling existing IP?
+4. Which deal memo and release templates should I use, and will you review them?
+5. Are my crew employees or contractors here? Do volunteers need workers' comp?
+6. What's the simplest compliant structure if friends or family invest?
+7. For a fight short: SAG-AFTRA Short Project, Ultra Low Budget, or non-union?
+8. Will an injury waiver hold up in my state?
+9. Do the short's rights carry into the feature? What changes between festivals and online?
 10. What will you charge, and what can I do myself?
 
-*Bring this checklist, the logline, the dated drafts and a list of everyone involved so far.*
+*Bring this checklist, your dated drafts and a list of everyone involved.*
 
 ## Affordable help
 
-- **Volunteer Lawyers for the Arts (VLA):** free or low-cost help for artists, with chapters in many states (for example NYC's VLA and California Lawyers for the Arts). Search "[your state] volunteer lawyers for the arts."
-- **Law school clinics:** many law schools run entertainment, IP or small-business clinics where supervised students help for free. Film schools often share referrals and templates too.
-- **Sundance Institute resources:** Sundance Collab (online courses, some free) and published guides on legal and business topics. Check what's currently offered.
-- **Also:** Film Independent and similar member groups (legal workshops), and your state film office (permit and incentive guidance).
+- **Volunteer Lawyers for the Arts:** free or low-cost help, with chapters in many states (e.g. NYC VLA, California Lawyers for the Arts).
+- **Law school and film school clinics:** supervised students offer free entertainment, IP or small-business help, and many schools share templates.
+- **Sundance Institute resources:** Sundance Collab courses and guides (check what's currently offered).
 
 ---
 
@@ -107,18 +104,18 @@ Background: [production-roadmap §5](../research/production-roadmap.md#5-legal-a
 
 | Question | Options | Recommendation |
 |---|---|---|
-| Who owns the idea now? | (a) Only you (b) You plus co-writers or collaborators (c) Unsure | If (b) or (c), sign collaborator agreements **this week**, before more writing happens |
-| Where to form the LLC? | (a) Your home or shooting state (b) Delaware or Wyoming (c) Wait until the feature | **(a)** in weeks 9–10. Out-of-state LLCs usually still have to register at home, so they add cost |
-| Union or non-union short? | (a) SAG-AFTRA Short Project (b) Ultra Low Budget (c) Non-union | Decide with `film-casting-director` and `film-producer` by week 10. Never the Micro tier, because the short has stunts |
-| How to fund the short? | (a) Self-funded (b) Rewards crowdfunding (c) Investors | **(a) or (b).** Avoid (c) until a lawyer has set up the paperwork |
+| Who owns the idea now? | (a) Only you (b) Co-writers too (c) Unsure | If (b) or (c), sign collaborator agreements **this week** |
+| Where to form the LLC? | (a) Home or shooting state (b) Delaware or Wyoming (c) Wait until the feature | **(a)** in weeks 9–10. An out-of-state LLC usually must also register at home |
+| Union or non-union short? | (a) SAG-AFTRA Short Project (b) Ultra Low Budget (c) Non-union | Decide with `film-producer` by week 10. Never Micro, because the short has stunts |
+| How to fund the short? | (a) Self-funded (b) Rewards crowdfunding (c) Investors | **(a) or (b).** Take (c) only after a lawyer drafts the documents |
 
-Also needed: your country and state (from the *Reality check* section of [`00-my-idea.md`](../story/00-my-idea.md)), and whether you have any investors yet.
+Also needed: your state or country, and whether you have any investors (add both to [`00-my-idea.md`](../story/00-my-idea.md)).
 
 **Hand-offs:**
-- `film-producer`: LLC timing, investor rules, budget lines for legal, insurance and E&O
-- `film-line-producer`: insurance quotes, payroll and workers' comp in the short's budget
+- `film-producer`: LLC timing, investors, legal and insurance budget lines
+- `film-line-producer`: insurance quotes, payroll, workers' comp
 - `film-stunt-coordinator`: written stunt list for the insurer
-- `film-location-manager`: permits, police notice, location releases
-- `film-composer`: composer agreement and original score
-- `film-casting-director`: SAG-AFTRA tier and cast releases
+- `film-location-manager`: permits, police notice, releases
+- `film-composer`: composer agreement
+- `film-casting-director`: SAG-AFTRA tier, cast releases
 - `film-distribution-marketing`: festival vs. online rules, crowdfunding terms
