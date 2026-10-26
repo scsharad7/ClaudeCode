@@ -2,9 +2,7 @@
 
 > **Read this first.** This plan is a briefing document written by an AI crew agent. It is **not** a substitute for a qualified human stunt coordinator. A real coordinator must review, change and sign off this plan before anyone rehearses or films a single move. Their safety call is final.
 
-**Status:** framework only. The fight isn't designed yet: the story ([`../story/00-my-idea.md`](../story/00-my-idea.md)) and the [fight map](fight-map.md) are blank. Every fight detail is marked **[TBD]**. Background is in [the fight research](../research/fight-scene-design.md#4-safety-and-legal-essentials-non-negotiable).
-
-**Scope:** one fight, 2–4 minutes long, in one location, for a $5k–$30k short. Rules differ by country and state; US defaults are used here.
+**Status:** framework only. [`../story/00-my-idea.md`](../story/00-my-idea.md) and the [fight map](fight-map.md) are blank, so every fight detail is **[TBD]**. Background: [fight research](../research/fight-scene-design.md#4-safety-and-legal-essentials-non-negotiable). **Scope:** one 2–4 minute fight in one location, for a $5k–$30k short. US defaults are used here; rules vary by country and state.
 
 ---
 
@@ -46,15 +44,15 @@
 
 | Tier | What it buys | Est. stunt + safety spend |
 |---|---|---|
-| Lean $5k | Coordinator for 3 days, 2 performers, medic on the fight days, L1–L2 only | $2k–$4k (most of the budget: a real warning) |
-| Target $15k | Coordinator for 4–5 days, 2–4 performers, medic, doubles for leads | $4k–$7k |
-| Ideal $30k | Coordinator for 6+ days, 4 performers, medic, one L3 gag with riggers | $7k–$12k |
+| Lean $5k | Coordinator 3 days, 2 performers, medic, L1–L2 only | $2k–$4k (most of the budget) |
+| Target $15k | Coordinator 4–5 days, 2–4 performers, medic, doubles | $4k–$7k |
+| Ideal $30k | Coordinator 6+ days, 4 performers, medic, one L3 gag | $7k–$12k |
 
 ---
 
 ## 2. The action pipeline for the short
 
-Weeks are project weeks. Assume the shoot is around week 20 (6–10 weeks after the day-90 checkpoint). Cast training runs alongside the other steps.
+Project weeks, assuming a shoot around week 20. Training runs in parallel.
 
 | # | Step | Typical duration | Weeks | Owner |
 |---|---|---|---|---|
@@ -68,7 +66,7 @@ Weeks are project weeks. Assume the shoot is around week 20 (6–10 weeks after 
 | 8 | Dress rehearsal on location, in costume, with the camera | 1 day | 19 | Coordinator + `film-first-ad` |
 | 9 | Shoot | see below | 20 | `film-first-ad` runs set; the coordinator owns safety |
 
-**Shoot-day math:** the rule of thumb is 2–3 shoot days per minute of *nonstop* fighting. A 2–4 minute fight therefore needs **4–12 days**, but the short's plan is 2–5 days in total. Either keep the nonstop fighting to roughly 1.5–2 minutes (breathers and dialogue don't count) or budget more days. See *Decisions needed*.
+**Shoot-day math:** at 2–3 shoot days per minute of *nonstop* fighting, a 2–4 minute fight needs **4–12 days**, but the short is planned for 2–5. Keep the nonstop fighting to about 1.5–2 minutes (breathers don't count) or add days. See *Decisions needed*.
 
 ---
 
@@ -81,13 +79,13 @@ Weeks are project weeks. Assume the shoot is around week 20 (6–10 weeks after 
 | **L3** | Ratchet yank (a cable that pulls a performer backwards), jerk vest, descender, small wire assist | Professional stunt performers only | Professional riggers, rated hardware, a written rigging plan, a sandbag test, a dedicated safety person on each line | Rig tests plus full rehearsal on the actual rig | **At most one gag**, done by pro riggers and declared to the insurer |
 | **L4** | High falls, vehicle hits, fire or burns, pyro, squibs, firearms, flying wire work | Specialist teams with licences and permits | Airbags, licensed pyro and weapons operators, permits, police | Weeks | **No** |
 
-**Recommendation:** keep the short at **L1–L2**, with **no more than one L3 gag** done by professional riggers. The signature moment can be L2 plus sound and VFX accents.
+**Recommendation:** keep the short at **L1–L2**, with **at most one L3 gag** by pro riggers. An L2 signature moment plus good sound usually sells just as well.
 
 ---
 
 ## 4. Per-action-beat planning table (template)
 
-Fill in one row per beat from the fight design doc. Cost lines go into [`../production/budget.md`](../production/budget.md), which `film-line-producer` owns. Don't edit that file from here.
+One row per beat from the fight design doc. Cost lines go into [`../production/budget.md`](../production/budget.md), which `film-line-producer` owns.
 
 | # | Beat | Performer vs. double | Risk level | Rigging / pads | Rehearsal days | Cost line (budget.md) |
 |---|---|---|---|---|---|---|
@@ -102,13 +100,12 @@ Fill in one row per beat from the fight design doc. Cost lines go into [`../prod
 
 ## 5. Safety on the day
 
-**Safety meeting script** (1st AD and coordinator, before the first action shot and again before each new gag; everyone attends):
-1. "This is the safety meeting for [beat]. The coordinator is [name] and the medic is [name]."
-2. Coordinator: "Here's exactly what happens." Walk it through at half speed.
-3. "Camera positions are [x]. Nobody stands inside [marked area]."
-4. "Anyone can call **CUT** or **HOLD** for safety. If you hear it, freeze."
-5. "Hospital: [name, address, drive time]. Medic is stationed at [spot]."
-6. "Questions? If you're not comfortable, say so now. There's no penalty."
+**Safety meeting script** (the 1st AD and coordinator run it before each new gag, and everyone attends):
+1. "Safety meeting for [beat]. The coordinator is [name] and the medic is [name]."
+2. Coordinator walks the action through at half speed.
+3. "Nobody stands inside [marked area]. Anyone can call **CUT** or **HOLD** for safety; if you hear it, freeze."
+4. "Hospital: [name, drive time]. The medic is at [spot]."
+5. "If you're not comfortable, say so now. There's no penalty."
 
 **Medic and nearest hospital:** a medic on every action day and every rehearsal with falls. Put the nearest emergency room **[TBD]** (address and drive time) on the call sheet, and agree on who drives.
 
@@ -128,17 +125,15 @@ Fill in one row per beat from the fight design doc. Cost lines go into [`../prod
 
 ## 6. Insurance declaration checklist
 
-Undeclared stunts can void your cover. Be ready to tell the insurer or broker:
-- [ ] A list of every stunt with its risk level (from section 4)
-- [ ] The coordinator's name, résumé and union status
-- [ ] Whether the actors do any action themselves, and which beats doubles perform
-- [ ] Fall heights, and any rigging, with the riggers' credentials
-- [ ] Any weapons (props only, no firearms), pyro or vehicles. The plan is: **none**.
-- [ ] Location, shoot dates and number of action days
-- [ ] Medic arrangements and the nearest hospital
-- [ ] Workers' comp for cast and crew (rules vary by state)
-- [ ] Any minors or animals near the action (plan: none)
-- [ ] Certificates the location owner needs
+Undeclared stunts can void your cover. The insurer will ask for:
+- [ ] Every stunt and its risk level (section 4)
+- [ ] The coordinator's résumé and union status
+- [ ] Which beats the actors do and which the doubles do
+- [ ] Fall heights, and any rigging with the riggers' credentials
+- [ ] Weapons, pyro, vehicles, minors and animals (the plan is **none**)
+- [ ] Location, dates and number of action days
+- [ ] The medic and the nearest hospital
+- [ ] Workers' comp (rules vary by state) and the location owner's certificate requirements
 
 ---
 

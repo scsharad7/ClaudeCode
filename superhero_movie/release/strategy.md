@@ -10,12 +10,7 @@
 
 **The rule that drives everything:** many genre festivals reject films that are already public online. Fantasia rules out any public online release before or during the festival ([call for entry](https://asianfilmfestivals.com/2025/10/24/fantasia-international-film-festival-call-for-entry-2026/)), and Fantastic Fest has required at least a regional premiere and no public online availability ([FestAgent](https://festagent.com/en/festivals/fantastic_fest)). Private, password-protected Vimeo links for programmers and producers are normally fine.
 
-**What does and doesn't cost you eligibility:**
-
-| Safe on either route | Ends most premiere eligibility |
-|---|---|
-| Behind-the-scenes clips, stuntvis, training footage, a 30–60 s teaser (check each festival's rules) | Posting the **finished short**, or the full fight, publicly |
-| Crowdfunding **to make the short** with a pitch video | |
+**Safe on either route:** BTS clips, stuntvis, a 30–60 s teaser (check each festival's rules), and crowdfunding *to make* the short. **What ends eligibility:** posting the finished short, or the full fight, publicly.
 
 | | **Festivals first** | **Online + crowdfunding first** |
 |---|---|---|
@@ -55,10 +50,10 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 
 **Planning deadlines**
 - Count back from picture lock, currently [TBD: around month 9]. A short locked in summer 2027 fits that autumn's Screamfest, Sitges and Beyond Fest, then SXSW 2028, then Fantasia and Fantastic Fest 2028. Check the **completion-date limits** (e.g., Screamfest ~1 year, Fantasia ~18 months).
-- Rank the festivals by **premiere value**. The first big festival gets your world premiere, so don't spend it on a small one.
-- Submit at **early-bird** rates. Fees climb $10–$40 per deadline.
-- Use **FilmFreeway** (most festivals) and **Festhome** (many European ones). Fill in one profile with the logline, stills, credits and a private screener link.
-- Every submission needs a **"we got in" plan**: the DCP, a press kit, a poster, a trailer, and a budget for at least one trip.
+- Rank by **premiere value**: don't spend your world premiere on a small festival.
+- Submit at **early-bird** rates; fees climb $10–$40 per deadline.
+- Use **FilmFreeway** (most festivals) and **Festhome** (many European ones), with one profile: logline, stills, credits, private screener link.
+- Have a **"we got in" plan** for every submission: DCP, press kit, poster, trailer, and money for one trip.
 
 **Fee budget (estimates, excluding travel)**
 
@@ -102,13 +97,13 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 | $250 | Name in the end credits as "Hero Backer" + a printed suit-design sketch |
 | $1,000+ | Set visit or background role (safety-cleared, outside the stunt zone) + an associate producer credit (check the credit terms with the lawyer) |
 
-**Pitch video outline (2–3 min)**
-1. A 10 s hook: the best stuntvis or teaser hit.
-2. Who you are and why this hero, in one sentence [TBD: logline].
-3. The world and the power's rule and cost [TBD: from `story/powers.md`].
-4. Proof you can deliver: the team, stuntvis, suit tests.
-5. What the money buys, shown as a simple budget split.
-6. Rewards and the ask, with the deadline on screen.
+**Pitch video (2–3 min):**
+1. A 10 s hook: the best stuntvis hit.
+2. You and the logline [TBD].
+3. The power's rule and cost [TBD: `story/powers.md`].
+4. Proof: the team, stuntvis, suit tests.
+5. What the money buys.
+6. Rewards and the deadline.
 
 ---
 
@@ -143,21 +138,19 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
   5. The title, then a sting.
 
   Don't reveal how the fight ends. Use original music from the composer and the sound designer's power sounds.
-- **Press kit (EPK, a pack for festivals and press):** a logline, a synopsis, the director's statement, bios, stills, the poster and a BTS clip.
+- **EPK (press kit):** the logline, synopsis, director's statement, bios, stills, poster and a BTS clip.
 
 ---
 
 ## 6. If the short gets traction
 
-**Traction signals** (suggested targets, not industry rules): one or more top genre festival selections; or a funded campaign plus a mailing list in the thousands; or a high view count with strong comments and shares.
+**Traction** (suggested targets, not industry rules): a top genre festival selection, or a funded campaign plus a list in the thousands, or strong views and shares.
 
-**Pitch package:** the short, the feature script, the lookbook, the budget topline, and **audience numbers** (views, backers, list size). Build it with `film-producer`.
-
-**Who to approach:**
-- **Producers and managers** who scout genre festivals and viral shorts: *Lights Out*, *Mamá* and *Alive in Joburg* were picked up this way.
-- **Sales agents** who take features to markets (AFM, EFM, Cannes) and can presell territories.
+**Pitch package** (with `film-producer`): the short, the script, the lookbook, the budget topline and **audience numbers** (views, backers, list size). Take it to:
+- **Producers and managers** who scout festivals and viral shorts (*Lights Out*, *Mamá*, *Alive in Joburg*).
+- **Sales agents**, who take features to markets (AFM, EFM, Cannes) and presell territories.
 - **Streamers** (Netflix, Shudder, Tubi, Amazon), which usually buy through festivals or sales agents. *Code 8* went to Netflix.
-- **Your backers:** a second campaign for the feature, using the list you built.
+- **Your backers**, through a second campaign for the feature.
 
 ---
 
