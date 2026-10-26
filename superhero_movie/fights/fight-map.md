@@ -7,13 +7,13 @@
 
 ## The escalation curve
 
-| # | Fight | Act / beat | This fight is about… | Hero wants | Outcome & cost | Signature moment | Scale / budget |
+| # | Fight | Act / beat | This fight is about… | Hero wants | Outcome & cost | Signature moment | Sequence / nonstop / days |
 |---|---|---|---|---|---|---|---|
-| 1 | | Act 1: opening | | | Scrappy win: shows the hero's limits | | 1 location, 1–2 min |
-| 2 | | Act 2: midpoint | | | **Hero loses**, and it costs them | | 2–3 min, 2–3 days |
-| 3 | | Act 3: climax | | | Hero wins **by growth** | | 3–6 min, 3–6 days |
+| 1 | | Act 1: opening | | | Scrappy win: shows the hero's limits | | 1–2 min / 30–60 s / 1–3 days |
+| 2 | | Act 2: midpoint | | | **Hero loses**, and it costs them | | 2–3 min / 1–1.5 min / 2–5 days |
+| 3 | | Act 3: climax | | | Hero wins **by growth** | | 3–6 min / 1.5–3 min / 3–9 days |
 
-Add rows for any other fights. Most indie superhero films have 3–4 major set pieces.
+**Sequence** is the fight's length on screen, and **nonstop** is the continuous contact fighting inside it. Plan 2–3 shoot days per minute of nonstop fighting. Add rows for any other fights; most indie superhero films have 3–4 major set pieces.
 
 ## Callback thread
 
@@ -40,4 +40,5 @@ Add rows for any other fights. Most indie superhero films have 3–4 major set p
 - **Chosen fight:**
 - **Why it works on its own:**
 - **Location:**
-- **Target length:** 2–4 min
+- **Target length:** set by tier. LEAN ~2 min (45–60 s nonstop, 2 fight days); TARGET ~3 min (~90 s nonstop, 3 days); IDEAL 3–4 min (~2 min nonstop, 4 days). See [budget.md §1](../production/budget.md).
+- **Risk level:** LEAN and TARGET use L1–L2 only (no rigs). IDEAL allows at most one professionally rigged gag. See [stunt-plan.md](stunt-plan.md).
