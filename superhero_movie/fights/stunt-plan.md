@@ -2,15 +2,15 @@
 
 > **Read this first.** This plan is a briefing document written by an AI crew agent. It is **not** a substitute for a qualified human stunt coordinator. A real coordinator must review, change and sign off this plan before anyone rehearses or films a single move. Their safety call is final.
 
-**Status:** framework only. [`../story/00-my-idea.md`](../story/00-my-idea.md) and the [fight map](fight-map.md) are blank, so every fight detail is **[TBD]**. Background: [fight research](../research/fight-scene-design.md#4-safety-and-legal-essentials-non-negotiable). **Scope:** one fight in one location, for a $5k–$30k short. US defaults are used here; rules vary by country and state. **Terms:** see [GLOSSARY](../GLOSSARY.md). This plan keeps two lengths apart: the **fight sequence** is the on-screen length of the whole fight, and **nonstop fighting** is only the continuous contact action within it.
+**Status:** framework only. [`../story/00-my-idea.md`](../story/00-my-idea.md) and the [fight map](fight-map.md) are blank, so every fight detail is **[TBD]**. Background: [fight research](../research/fight-scene-design.md#4-safety-and-legal-essentials-non-negotiable). **Scope:** one fight in one location, for a $7k–$34k short. US defaults are used here; rules vary by country and state. **Terms:** see [GLOSSARY](../GLOSSARY.md). This plan keeps two lengths apart: the **fight sequence** is the on-screen length of the whole fight, and **nonstop fighting** is only the continuous contact action within it.
 
 **Days, performers and costs** live in [`production/budget.md` §1](../production/budget.md#1-assumptions-edit-these-first), which `film-line-producer` owns. Where this plan repeats a number, it must match that file.
 
 | Tier | Fight sequence | Nonstop fighting | Fight days | Stunt performers | Rig level |
 |---|---|---|---|---|---|
-| LEAN ~$5k | ~2 min | 45–60 s | 2 | 2 | L1–L2, no rigs |
-| TARGET ~$15k | ~3 min | ~90 s | 3 | 2 | L1–L2, no rigs |
-| IDEAL ~$30k | 3–4 min | ~2 min | 4 | 3 | L1–L2 plus at most one L3 pull-rig gag |
+| LEAN ~$7k | ~2 min | 45–60 s | 2 | 2 | L1–L2, no rigs |
+| TARGET ~$17k | ~3 min | ~90 s | 3 | 2 | L1–L2, no rigs |
+| IDEAL ~$34k | 3–4 min | ~2 min | 4 | 3 | L1–L2 plus at most one L3 pull-rig gag |
 
 ---
 

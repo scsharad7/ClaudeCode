@@ -40,7 +40,7 @@ Terms: see [GLOSSARY](../GLOSSARY.md) · Background: [production-roadmap §5](..
   - [ ] Location: permission from the owner or manager
   - [ ] Materials: visible artwork, logos, posters, branded products (or blur, replace or avoid them)
 - [ ] **Music: any existing song needs two licenses**: **sync** (the composition, from the publisher) and **master** (the recording, from the label). Simpler: **commission an original score** with a rights-assigning composer agreement.
-- [ ] **Choose a SAG-AFTRA agreement** if you use union actors. The **Micro tier (under $20k) doesn't allow stunts**, so a union short uses **Short Project (up to $50k)**, and a union short means the **IDEAL (~$30k) tier at minimum**. Apply about a month ahead.
+- [ ] **Choose a SAG-AFTRA agreement** if you use union actors. The **Micro tier (under $20k) doesn't allow stunts**, so a union short uses **Short Project (up to $50k)**, and a union short means the **IDEAL (~$34k) tier at minimum**. Apply about a month ahead.
   - [ ] **Confirm with SAGindie** the Short Project salary/deferral terms, and which exhibition (festival, YouTube, crowdfunding video) triggers payment or an upgrade.
 - [ ] **Payroll and worker classification.** Employee vs. contractor rules differ by state **(varies)**. Minors need work permits.
 - [ ] **Insurance.** The policy must include:

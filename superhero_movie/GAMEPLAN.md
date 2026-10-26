@@ -82,7 +82,7 @@ Timings assume a first-timer working part-time. They come from the [production r
   - The LLC is formed (at the start of week 9, before any deal memo).
   - You've had a one-hour consult with an entertainment lawyer.
   - The short script (5–15 pages) is written.
-  - The short has a draft budget, with a target of **$5k–$30k**.
+  - The short has a draft budget, with a target of **$7k–$34k**.
 
 ### Phase 3: Pre-production on the short (weeks 11–13), then the day-90 checkpoint
 - **Goal:** the short is ready to shoot.
@@ -177,9 +177,9 @@ Choose **one fight that works on its own**. It should:
 
   | Tier | Fight sequence | Nonstop fighting | Fight days |
   |---|---|---|---|
-  | LEAN ~$5k | ~2 min | 45–60 s | 2 |
-  | TARGET ~$15k | ~3 min | ~90 s | 3 |
-  | IDEAL ~$30k | 3–4 min | ~2 min | 4 |
+  | LEAN ~$7k | ~2 min | 45–60 s | 2 |
+  | TARGET ~$17k | ~3 min | ~90 s | 3 |
+  | IDEAL ~$34k | 3–4 min | ~2 min | 4 |
 
   Each extra ~30 s of nonstop fighting adds about one fight day. Details are in [budget.md §1](production/budget.md);
 - avoid spoiling the climax.
@@ -192,7 +192,7 @@ The Act 1 fight, or a standalone version of the midpoint fight, is usually the r
 - **Use rated crash mats**, never borrowed gym mats.
 - **Insure properly:** general liability, plus workers' comp or accident cover for your own cast, crew and volunteers, with **all stunts declared** to the insurer.
 - **Keep the short at low risk levels.** No rigs at the LEAN and TARGET tiers. At most one pull-rig gag at IDEAL, done by professional riggers. Nothing near roof edges, ledges or stair drops. No weapons, and no pyro.
-- **Union:** SAG-AFTRA's Micro tier (under $20k) bans stunts, so a union short with a fight needs the Short Project agreement. In practice that means the IDEAL tier or more. Confirm terms with SAGindie. Full plan: [stunt-plan.md](fights/stunt-plan.md).
+- **Union:** SAG-AFTRA's Micro tier (under $20k) bans stunts, so a union short with a fight needs the Short Project agreement. In practice that means the IDEAL tier or more, and with union stunt performers at union day minimums the short runs to about $59k+, over the $50k cap, unless SAGindie confirms some pay can be deferred. Confirm terms with SAGindie. Full plan: [stunt-plan.md](fights/stunt-plan.md).
 
 ---
 
@@ -200,7 +200,7 @@ The Act 1 fight, or a standalone version of the midpoint fight, is usually the r
 
 | Tier | Range | What it gets you |
 |---|---|---|
-| Proof-of-concept short | $5k–$30k | One great fight, 2–5 shoot days, a small paid core crew ([three-tier budget](production/budget.md)) |
+| Proof-of-concept short | $7k–$34k | One great fight, 2–5 shoot days, a small paid core crew ([three-tier budget](production/budget.md)) |
 | Micro / low-budget feature | $50k–$1M | Contained story, 3–4 set pieces, mostly practical effects |
 | Indie feature | $1M–$10M | Union cast, a real VFX vendor, bigger set pieces (Brightburn, about $6M) |
 
@@ -213,8 +213,8 @@ Details and what drives superhero costs are in [research/production-roadmap.md](
 | Decision | Options | Recommendation |
 |---|---|---|
 | Path | Short first / straight to feature | **Short first**, built on one fight |
-| Short's tier | LEAN ~$5k / TARGET ~$15k / IDEAL ~$30k | **TARGET**, locked only after an insurance quote with the stunts declared |
-| Union or not | Non-union / SAG-AFTRA Short Project | **Non-union** for the short. A union short means the IDEAL tier or more |
+| Short's tier | LEAN ~$7k / TARGET ~$17k / IDEAL ~$34k | **TARGET** (≈ $17.3k with the safety lines paid properly), locked only after an insurance quote with the stunts declared |
+| Union or not | Non-union / SAG-AFTRA Short Project | **Non-union** for the short. A union short means the IDEAL tier or more (about $59k+ unless SAGindie allows deferrals) |
 | Short release | (a) online + crowdfunding / (b) festivals / (c) festivals with a 12-month time box | Decide by week 8. (a) if you have no industry contacts; (b) if someone in the industry is already interested; (c) if unsure |
 | Hero's power | Anything | Choose one with a **clear cost** that's **cheap to film** (strength, speed, energy bursts read well practically) |
 | Rating | PG-13 / R | Affects how violent and bloody the fights can be. Decide before writing fight docs |

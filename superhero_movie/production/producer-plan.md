@@ -10,11 +10,11 @@
 
 ## 1. Short-tier decision framework
 
-Pick the tier you can **actually fund today**, not the one you hope to raise. The short's budget range is $5k–$30k.
+Pick the tier you can **actually fund today**, not the one you hope to raise. The short's budget range is $7k–$34k.
 
 **Numbers live in one place.** Shoot days, stunt performers, VFX shot counts, suits, crew size and totals for each tier are in [budget.md §1](budget.md#1-assumptions-edit-these-first). That file wins wherever it disagrees with this one. The headline shape:
 
-| | **Lean (~$5k)** | **Target (~$15k)** | **Ideal (~$30k)** |
+| | **Lean (~$7k)** | **Target (~$17k)** | **Ideal (~$34k)** |
 |---|---|---|---|
 | Fight sequence (on-screen length) | ~2 min | ~3 min | 3–4 min |
 | Nonstop fighting (continuous contact) | 45–60 s | ~90 s | ~2 min |
@@ -119,7 +119,7 @@ Crew size per tier is in [budget.md §1](budget.md#1-assumptions-edit-these-firs
 
 - **Done:** wrote `production/producer-plan.md` and `production/hiring-briefs.md`.
 - **Decisions needed:**
-  1. **Short tier and who funds it:** (a) Lean ~$5k, self-funded; (b) Target ~$15k with gifts or pledges, plus crowdfunding; (c) Ideal ~$30k with crowdfunding, which is also the minimum for a union short. *Recommendation: (a) or (b), locked in week 4 after the insurance quote.*
+  1. **Short tier and who funds it:** (a) Lean ~$7k, self-funded; (b) Target ~$17k with gifts or pledges, plus crowdfunding; (c) Ideal ~$34k with crowdfunding, which is also the minimum for a union short. *Recommendation: (a) or (b), locked in week 4 after the insurance quote.*
   2. **Which fight becomes the short:** [TBD after fight-map.md]. The usual default is the Act 1 fight, because it needs one location and doesn't spoil the climax.
   3. **Release route, by week 8:** (a) online plus crowdfunding first; (b) festivals first; (c) festivals first with a ~12-month time box from picture lock, then online. *Recommendation: (c) if unsure.*
   4. **Union cast:** (a) non-union; (b) SAG-AFTRA Short Project, which means the Ideal tier. *Recommendation: (a), unless your leads are union.*
