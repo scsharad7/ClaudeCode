@@ -41,12 +41,12 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 | **Fantastic Fest** | Austin, Sept | Under 30 min; ~$40–$50; deadlines Feb–May; regional premiere, no online ([FestAgent](https://festagent.com/en/festivals/fantastic_fest)) |
 | **Fantasia** | Montreal, Jul–Aug | Under 22 min; ~$55–$100 (2024 schedule); deadline ~Apr 15; no prior online release; via [FilmFreeway](https://filmfreeway.com/FantasiaFilmFestival) |
 | **SXSW** (Midnight Shorts program) | Austin, Mar | Up to 40 min; $55–$90; deadlines Aug–Oct; premiere status weighs heavily ([SXSW FAQ](https://support.sxsw.com/hc/en-us/articles/206421345-SHORTS-What-is-the-SXSW-premiere-and-eligibility-policy-for-short-films)); confirm the program still runs |
-| **Screamfest** | Los Angeles, Oct | Horror-leaning, but takes genre; $37–$67; deadlines Apr–Aug; short must be under ~1 year old ([Screamfest](https://www.screamfestla.com/submissions/submit-film)) |
+| **Screamfest** | Los Angeles, Oct | Horror-leaning; $37–$67; deadlines Apr–Aug; under ~1 year old ([Screamfest](https://www.screamfestla.com/submissions/submit-film)) |
 | **Beyond Fest** | Los Angeles, Oct | Shorts via [FilmFreeway](https://filmfreeway.com/BeyondFest); deadlines Feb–Jul; the Beyond Chicago edition is also open |
 | **Sitges** | Catalonia, Oct | Fantastic genre, up to 30 min, recent production years; ~€60 (2024); deadline ~mid-July ([2026 rules](https://sitgesfilmfestival.com/sites/default/files/2026-02/SIFFFC%202026_Rules_ENG.pdf)) |
 | **Fantasy Filmfest** | Germany (touring), Sept | Has accepted shorts via Festhome; deadline ~July (2024); calls are irregular |
 | **Urban Action Showcase** | New York, Nov | Action-specific; mainstream and no-budget categories ([FilmFreeway](https://filmfreeway.com/UrbanActionShowcase)) |
-| Also | — | Sundance Midnight, TIFF Midnight Madness, Overlook, Popcorn Frights, Lund Fantastic, PIFFF (Paris) |
+| Also | — | Sundance Midnight, TIFF Midnight Madness, Popcorn Frights, PIFFF |
 
 **Planning deadlines**
 - Count back from picture lock, currently [TBD: around month 9]. A short locked in summer 2027 fits that autumn's Screamfest, Sitges and Beyond Fest, then SXSW 2028, then Fantasia and Fantastic Fest 2028. Check the **completion-date limits** (e.g., Screamfest ~1 year, Fantasia ~18 months).
@@ -66,8 +66,8 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 ## 3. Online-first plan
 
 **Two campaigns, two jobs.** Keep them separate:
-- **A. Fund the short (Phase 3).** Pitch with stuntvis and a pitch video. This works on either route.
-- **B. Fund the feature (Phase 5, the *Code 8* move).** Release the short on YouTube on the **same day** the campaign launches, with the campaign link in the first line, the end card and the pinned comment.
+- **A. Fund the short (Phase 3)** with stuntvis and a pitch video. Works on either route.
+- **B. Fund the feature (Phase 5, the *Code 8* move).** Release the short on YouTube the **same day** the campaign launches, linked in the description, end card and pinned comment.
 
 **Platform**
 
@@ -81,10 +81,10 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 **Recommendation:** Kickstarter, all-or-nothing, with a goal you can hit from your mailing list alone. Seed&Spark is a film-only alternative ([research](../research/production-roadmap.md#6-funding-options)).
 
 **Campaign timeline**
-- **Weeks −8 to −1: pre-launch.** Build the email list (aim for enough sign-ups that 5–10% of them backing covers ~30% of the goal; this is a rule of thumb), line up press and creator partners, and preview the page with 20 friends.
-- **Days 1–3: launch.** Email, socials and personal messages to everyone. Aim for ~30% of the goal in 48 hours; momentum attracts strangers.
-- **Days ~8–22: the mid-campaign slump.** Plan new content in advance: an exclusive fight-breakdown clip, a stretch goal reveal, a live Q&A with the stunt coordinator, and one update every 3–4 days.
-- **Last 72 hours:** countdown emails, "final hours" clips, and a thank-you live stream.
+- **Weeks −8 to −1: pre-launch.** Build the email list (rule of thumb: enough that 5–10% of it backing covers ~30% of the goal), line up press, preview the page with 20 friends.
+- **Days 1–3: launch.** Email, socials, personal messages. Aim for ~30% of the goal in 48 hours.
+- **Days ~8–22: the mid-campaign slump.** Pre-plan new content: an exclusive fight-breakdown clip, a stretch goal, a live Q&A with the stunt coordinator; update every 3–4 days.
+- **Last 72 hours:** countdown emails and "final hours" clips.
 
 **Reward tiers (examples; keep physical rewards few, since shipping eats margins)**
 
@@ -109,7 +109,7 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 
 ## 4. Build the audience from week 1
 
-**Platforms:** TikTok, Instagram Reels and YouTube Shorts (vertical fight clips); a YouTube channel (long-form BTS, then the short); a mailing list (any free tier, e.g. Mailchimp or Kit); Reddit and Discord for the process. Reserve a working handle now and change it once the title is cleared (see the lawyer's title check).
+**Platforms:** TikTok, Instagram Reels and YouTube Shorts (vertical fight clips); a YouTube channel (long-form BTS, later the short); a free-tier mailing list (e.g. Mailchimp or Kit). Use a working handle until the title is cleared.
 
 **Comparable audiences to target:** fans of *Code 8*, *Chronicle*, *Brightburn*, *The Boys* and *Invincible*; fight-choreography and stunt-team channels; VFX-breakdown audiences; martial-arts schools near you.
 
@@ -117,7 +117,7 @@ Sources for the examples: [production-roadmap §2](../research/production-roadma
 
 | Weeks | Phase | Content (2–4 posts/week) |
 |---|---|---|
-| 1–2 | Shape the idea | Intro post ("I'm making an original superhero film"), a mood board without plot reveals, a newsletter sign-up page |
+| 1–2 | Shape the idea | Intro post, a mood board without plot reveals, a newsletter sign-up page |
 | 3–8 | Write | "Why this fight works" breakdowns of famous fights (the 7 rules), page-count updates, audience polls on power ideas (polls only; you still decide) |
 | 7–10 | Team | "Meet the crew" posts: the stunt coordinator, DP and costume designer; suit silhouette sketches |
 | 11–13 | Pre-production | **The best content:** fight rehearsal and stuntvis clips, stuntvis vs. storyboard side by side, training montages, suit fittings; the crowdfunding pre-launch if you take route A |
