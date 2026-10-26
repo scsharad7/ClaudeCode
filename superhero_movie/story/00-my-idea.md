@@ -58,10 +58,13 @@ _List any fight you can already picture, even vaguely: where it happens, who fig
 - 1 movie it should **not** feel like:
 - Rating target (PG-13 / R / unsure):
 
-## Reality check
+## Reality check (AI-generated film)
 
-- Rough budget you can actually access (even $0 is a useful answer):
-- Where you live / would shoot:
-- Film experience so far:
-- People you already know who could help (actors, martial artists, camera people):
-- Proof-of-concept short first, or straight to a feature (or unsure):
+- Monthly amount you could spend on AI tools (even $0 is a useful answer):
+- Your computer: laptop or desktop, and graphics card (GPU) if you know it:
+- AI tools you already have accounts for or have tried (Gemini, Meta AI, ChatGPT, Midjourney, others):
+- Visual style you imagine: photoreal / anime / comic-book / stylised 3D / unsure:
+- Experience with any creative software (video editing, Blender, Photoshop, none):
+- Hours per week you can put in:
+- Short first (1–3 min fight short), or straight to something longer (or unsure):
+- Where you live (matters for some legal and platform rules):
