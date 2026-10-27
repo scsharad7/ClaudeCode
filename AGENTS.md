@@ -1,0 +1,62 @@
+# AGENTS.md
+
+Shared instructions for every AI tool working in this repository: Claude Code, Google Antigravity,
+Command Code, Codex, Cursor and others. Claude Code loads this file through `CLAUDE.md`.
+
+## Projects in this repo
+
+| Folder | Project | Notes |
+|---|---|---|
+| `superhero_movie/` | **Original AI-generated superhero film**: the active project | All rules below apply |
+| `fix_my_itch_us/` | Static website | Separate project; the film rules don't apply |
+| `stock_alert_agent/` | Python stock-alert agent | Separate project; the film rules don't apply |
+
+---
+
+## Superhero movie: rules for every tool
+
+### Sources of truth
+
+| What | Where | Who may edit |
+|---|---|---|
+| The filmmaker's idea (fixed points) | `superhero_movie/story/00-my-idea.md` | **Filmmaker only** |
+| Plan, phases, decisions | `superhero_movie/GAMEPLAN.md` | **Filmmaker only** (tools propose changes in their PR or output) |
+| Who does what | `superhero_movie/TASKS.md` | Filmmaker. A tool may change only the **Status** cell of its own task row |
+| These rules | `AGENTS.md` | **Filmmaker only** |
+| Crew roles | `.claude/agents/film-*.md` | Filmmaker. Any copies elsewhere are generated, never hand-edited |
+| Terms | `superhero_movie/GLOSSARY.md` | Any tool, additions only |
+
+### Crew roles
+
+The film's 22 crew roles (screenwriter, fight choreographer, shot generator and so on) are
+defined in `.claude/agents/film-<role>.md`. The roster is in `superhero_movie/CREW.md`.
+**To act as a role in any tool, read that file and follow its body.** Ignore the `tools:` line
+in its header, which is Claude Code-specific.
+
+### Which tool does what
+
+| Tool | Best for | How it gets tasks |
+|---|---|---|
+| **Claude Code** | Story and script, fight design, planning, reviewing other tools' work, keeping documents consistent | Reads this file and `TASKS.md`; runs crew roles as subagents |
+| **Google Antigravity** | Parallel document work, browser research, scripts and asset organisation, Google model calls (Gemini, Veo via Flow or API) | Reads this file natively; pick a row in `TASKS.md` |
+| **Meta Muse** | Concept art, character and location images, style frames (Muse Image); short mood tests (Vibes). Muse Video only once it ships | **Human-dispatched**: the filmmaker copies the task brief into Muse, then saves results to the task's output folder |
+| **Command Code** (later) | Utility scripts and tooling | Reads this file natively; pick a row in `TASKS.md` |
+| **The filmmaker** | Every creative decision, web video tools (Kling, Seedance, Flow), editing in DaVinci Resolve, merging | Owns `TASKS.md` |
+
+### Task protocol
+
+1. **Work only from a row in `superhero_movie/TASKS.md`.** No row means no work. Propose new tasks in your output instead.
+2. **One task, one tool, one output path.** Write only to the paths on your row. If you need to change another role's file, put a note in `<that file's folder>/notes/<task-id>.md`.
+3. **Branch per task**, prefixed by tool: `cc/T-012`, `ag/T-012`, `cmd/T-012`. Use a separate git worktree per tool. Never commit straight to `main`.
+4. **Status flow:** `todo → claimed → in-progress → review → done` (or `blocked`). Claim a task by committing `claimed:<tool>` on its branch first. If two branches claim the same task, the later one stops. Only the filmmaker moves a task to `done`.
+5. **Handoffs live in the repo.** No tool can see another tool's chat. End every task with a short handoff note in your output file: what's done, what's open, which role or tool goes next.
+
+### Hard rules
+
+- **The filmmaker owns the story.** Never invent or overwrite their beginning, middle or end, characters, powers or visual style. Undecided things go back to them as options.
+- **No large media in git.** Video, audio and big image batches live in external storage (see `superhero_movie/production/pipeline-setup.md` once it exists). Commit prompts, small reference images, manifests and logs.
+- **Record human authorship.** Every generated shot gets a `superhero_movie/shots/<scene>/<shot-id>.md` file listing the inputs, prompt, attempts and the human choices and edits. That record is what supports copyright in the human-made parts.
+- **Original characters only.** No lookalikes of existing heroes (Marvel, DC and others), no real people's faces or voices.
+- **Fights stay PG-13:** force, energy and debris, not gore. Tools block blood, and platforms restrict it.
+- **Final shots and audio only on plans whose terms allow commercial use.** Free tiers are for tests.
+- **Respect spending caps.** Monthly caps are set by the filmmaker in `superhero_movie/production/budget.md`. Never start paid generation or API calls without a task row that says so.

@@ -1,8 +1,8 @@
 # AI Fight Workflow: Making Intense Fight Scenes With Generative Video (Late 2026)
 
-Companion to [`fight-scene-design.md`](./fight-scene-design.md). The story rules there still apply: stakes, geography, reversals, losing before winning, a signature moment, sound, and three-act escalation. This file replaces the production pipeline. There is no shoot and no crew. You design the fight, act out slow reference moves on a phone, generate shots, and build the fight in the edit.
+Companion to [`fight-scene-design.md`](./fight-scene-design.md). Its story rules (stakes, geography, reversals, losing before winning, a signature moment, sound, escalation) still apply. This file replaces the production pipeline, since there is no shoot and no crew.
 
-**Core idea:** AI video can't film a fight. It generates a few seconds at a time and invents physics along the way. Design for those limits: short shots, one action per shot, impact sold in the edit, and powers wherever possible.
+**Core idea:** AI video can't film a fight. It generates a few seconds at a time and invents the physics, so design for that: short shots, one action per shot, impact sold in the edit, and powers wherever possible.
 
 ---
 
@@ -28,7 +28,7 @@ Model names change every few months; the workflow doesn't.
 | **Camera** | Push-ins, orbits, crane-ups, tracking, slow motion | Real handheld shake is hard (a VFX artist used this to argue the Cruise/Pitt clip had live reference, [Newsweek](https://newsweek.com/ai-brad-pitt-tom-cruise-fight-may-not-be-ai-11554875)) | One camera move per shot; add shake in post |
 | **Continuity** | Character sheets, reference images, multi-shot modes | Costume damage, props and injuries reset between shots; a new angle is a new generation ([invideo](https://invideo.io/faq/which-ai-video-generator-is-best-for-action-scenes/)) | Lock one master still per character ([Picsart](https://picsart.com/blog/how-to-make-ai-fight-videos/)) and generate shots from start frames |
 
-**Plan for waste.** *Hell Grind*'s first 25 minutes took more than 16,000 generations to get 253 usable shots, about 63 attempts per kept shot, using prompts that averaged around 3,000 words ([AI Weekly](https://aiweekly.co/alerts/higgsfield-ai-feature-film-debuts-at-cannes), [The Location Guide](https://www.thelocationguide.com/industrynews/how-hell-grind-brought-ai-filmmaking-to-cannes)). With a good start frame and a simple action, expect 5–20 attempts per shot.
+**Plan for waste.** *Hell Grind* needed more than 16,000 generations for 253 shots, about 63 per kept shot ([AI Weekly](https://aiweekly.co/alerts/higgsfield-ai-feature-film-debuts-at-cannes), [The Location Guide](https://www.thelocationguide.com/industrynews/how-hell-grind-brought-ai-filmmaking-to-cannes)). With a good start frame and a simple action, expect 5–20.
 
 ---
 
@@ -40,27 +40,27 @@ Model names change every few months; the workflow doesn't.
 
 **Write the fight beat by beat.** Turn the beat table in the design doc into a shot list (Section 4) before generating anything. One beat is usually 3–6 shots: setup, action, impact, reaction, aftermath.
 
-**Sell impact through cuts, reactions and sound.** The editing grammar:
-1. **Shot A:** [HERO] winds up and swings toward the camera, cutting just before contact.
-2. **Shot B (impact):** a 2–6 frame flash or impact frame, with a bass hit.
-3. **Shot C:** [VILLAIN]'s head snaps back and he is thrown into the wall, debris flying.
+**Sell impact through cuts, reactions and sound.**
+1. **Shot A:** [HERO] swings toward the camera; cut just before contact.
+2. **Shot B:** a 2–6 frame flash or impact frame, with a bass hit.
+3. **Shot C:** [VILLAIN] snaps back and is thrown into the wall.
 
-Neither shot shows contact, but the audience sees it anyway. Reaction shots (a pained face, a bystander flinching) are cheap to generate and carry the emotion.
+No shot shows contact, but the audience sees it anyway. Reaction shots (a pained face, a bystander flinching) are cheap to generate and carry the emotion.
 
-**Powers are your advantage.** Energy, debris, shockwaves, collapsing concrete, particles and lighting changes are exactly what these models do best, and nobody can say how a plasma blast is supposed to look. Lean the fight design toward ranged powers, environmental destruction and big body launches, and away from technical martial arts at close range. Keep the power rules and costs from the design doc; the effects are cheap, but the stakes still come from the limits.
+**Powers are your advantage.** Energy, debris, shockwaves and collapsing concrete are what these models do best, and nobody knows what a plasma blast "should" look like. Design toward ranged powers, destruction and body launches, and away from close-range martial arts. Keep the power rules and costs: the effects are cheap, and the stakes still come from the limits.
 
-**Stylisation hides flaws.** The MIT AI Film Hack study found most entries used cartoonish styles, partly because inconsistencies are less noticeable in them ([arXiv](https://arxiv.org/pdf/2504.08296)). Options:
-- **Anime / cel-shaded:** speed lines, smears and impact frames are part of the style, so morphing reads as intentional.
-- **Comic or graphic novel:** heavy inks, halftone, limited palette, freeze-frame panels at the key moments.
-- **Gritty photoreal:** the hardest to get right. Hide it with night, rain, smoke and practical-looking light.
+**Stylisation hides flaws.** Most MIT AI Film Hack entries used cartoonish styles, partly because inconsistencies show less ([arXiv](https://arxiv.org/pdf/2504.08296)).
+- **Anime or cel-shaded:** smears and speed lines make morphing look intentional.
+- **Comic or graphic novel:** inks, halftone and freeze-frame panels on key beats.
+- **Photoreal:** the hardest. Hide it with night, rain and smoke.
 
-Pick one look and keep it, since mixing styles reads as a mistake.
+Pick one look and keep it.
 
 ---
 
 ## 3. Motion and Performance Transfer: You Become the Stunt Team
 
-Text prompts produce generic fighting. Your own filmed movement gives you choreography that is specific and repeatable, and it is the closest thing to the "videovis" in the live-action doc.
+Text prompts produce generic fighting. Filming your own movement gives you specific, repeatable choreography, the AI version of the live-action stuntvis.
 
 > **SAFETY. Read this before filming.** Do every reference move **slowly**, at half speed or slower, **without contact**: strikes stop at least a foot from your partner or hit air. Work on **soft ground** (grass, mats, a mattress) with space cleared around you. **No flips, falls, jumps from height, or real takedowns.** The AI adds the speed and the impacts. Your job is clean, readable poses. Warm up, have someone watching, and stop if anything hurts. Big stunts (a body thrown through a wall, a flip) come from Mixamo or Cascadeur animation, never from your body.
 
@@ -77,28 +77,27 @@ Text prompts produce generic fighting. Your own filmed movement gives you choreo
 
 ### 3D previs and animation (for moves you must not perform)
 
-- **Blender** ([blender.org](https://www.blender.org)): free and open source. Block the fight with grey mannequins on a simple floor plan of your location, then render a viewport video from your planned camera angles. That render becomes the motion and camera reference.
-- **Mixamo**: free with an Adobe ID, royalty-free for films, with hundreds of punches, kicks, hit reactions and knockdowns, humanoids only ([Adobe FAQ](https://helpx.adobe.com/en/creative-cloud/faq/mixamo-faq.html)). It is reportedly in maintenance mode, and the Blender add-on is outdated, but community replacements work ([Cinevva](https://app.cinevva.com/guides/free-character-animations-rigging)).
-- **Cascadeur**: physics-assisted keyframing built for fights; AutoPhysics turns rough poses into physically plausible motion. The free edition is **non-commercial and saves only `.casc` files** ([CG Channel, Aug 2026](https://www.cgchannel.com/2026/08/nekki-releases-cascadeur-2026-2-with-animation-layers/)). It's fine for learning and private previs. Check the licence before using its output in a film you will sell.
-- **AI mocap from phone video**: Rokoko Vision (free single-camera capture, FBX out), DeepMotion (about 60 s/month free, non-commercial) ([Cinevva](https://app.cinevva.com/guides/ai-animation-generators-3d), [CG Channel](https://www.cgchannel.com/2023/09/check-out-free-browser-based-ai-mocap-tool-rokoko-vision/)), and Move AI (check its current free tier). Use these to turn your slow phone moves into 3D, speed them up in Blender, and add a second fighter.
+- **Blender** ([blender.org](https://www.blender.org)): free. Block the fight with grey mannequins on a floor plan of your location, then render a viewport video from your planned angles. That render is the motion and camera reference.
+- **Mixamo**: free with an Adobe ID and royalty-free for films. It has hundreds of punches, kicks, hit reactions and knockdowns ([Adobe FAQ](https://helpx.adobe.com/en/creative-cloud/faq/mixamo-faq.html)). It is reportedly in maintenance mode, with community Blender add-ons ([Cinevva](https://app.cinevva.com/guides/free-character-animations-rigging)).
+- **Cascadeur**: physics-assisted fight animation; AutoPhysics turns rough poses into plausible motion. The free edition is **non-commercial and saves only `.casc` files** ([CG Channel, Aug 2026](https://www.cgchannel.com/2026/08/nekki-releases-cascadeur-2026-2-with-animation-layers/)). Use it for learning and private previs, and check the licence before using its output in a film you sell.
+- **AI mocap from phone video**: Rokoko Vision (free single-camera, FBX out) and DeepMotion (about 60 s a month free, non-commercial) ([Cinevva](https://app.cinevva.com/guides/ai-animation-generators-3d), [CG Channel](https://www.cgchannel.com/2023/09/check-out-free-browser-based-ai-mocap-tool-rokoko-vision/)). For Move AI, check the current free tier. These turn your slow moves into 3D, which you can then speed up in Blender, where you also add the second fighter.
 
-**Free beginner stack:** phone, then Rokoko Vision or Mixamo, then Blender for a grey-box fight video, then a free-tier generator for tests. Pay for one month of a single generator (Kling or Seedance) only when the shot list is locked.
+**Free beginner stack:** phone, then Rokoko Vision or Mixamo, then a Blender grey-box video, then free-tier tests. Pay for one month of one generator only once the shot list is locked.
 
 ---
 
 ## 4. Step-by-Step Pipeline for One Fight
 
-1. **Fight design doc.** Fill in the template from `fight-scene-design.md`: stakes, geography, the beats with their reversals, the signature move, and the ending.
-2. **Look bible.** Make one master still per character (front, side and back turnaround) and per location, with the same style keywords on every image.
-3. **Stuntvis.** Act out the beats slowly on a phone, or block them in Blender with Mixamo moves. Cut that footage into a rough edit at the speed you want, which is how 87Eleven-style stuntvis works.
-4. **Shot list.** Turn the stuntvis cut into numbered 2–5 s shots using the template below.
-5. **Keyframes.** For each shot, generate or paint the start frame, and an end frame for big moves. Start frames are your strongest control over continuity: injuries, torn costume, position in the room.
-6. **Generate.** Use image-to-video with the start frame, the prompt, and the motion reference where you have one. Make 3–4 attempts, then rewrite the prompt instead of hoping the next roll works.
-7. **Selects.** Watch at full and half speed and scrub frame by frame for hands and faces ([FilmDaft](https://filmdaft.com/?p=34430)). Mark in and out points on the clean 1–3 s. A shot is usable if its *best 20 frames* work.
-8. **Assembly edit.** Cut to the stuntvis rhythm and find the holes.
-9. **Pickups.** Regenerate the shots you're missing: reactions, inserts, a cleaner impact.
-10. **Finishing.** Speed ramps, interpolation, upscaling, grade, film grain, camera shake.
-11. **Sound.** Build impacts, whooshes, breath, power sounds, silence, then music.
+1. **Design doc.** Fill in the template from `fight-scene-design.md`: stakes, geography, beats and reversals, the signature move, the ending.
+2. **Look bible.** Make one master still per character (a turnaround) and one per location, with fixed style keywords.
+3. **Stuntvis.** Act out the beats slowly on a phone, or block them in Blender with Mixamo, and cut that into a rough edit at the speed you want.
+4. **Shot list.** Turn the stuntvis cut into numbered 2–5 s shots (template below).
+5. **Keyframes.** Make a start frame for every shot, plus an end frame for big moves. Start frames are how you control continuity: injuries, costume, position in the room.
+6. **Generate.** Use image-to-video with the start frame, prompt and motion reference. After 3–4 failed attempts, rewrite the prompt instead of rerolling.
+7. **Selects.** Watch at full and half speed and scrub for hands and faces ([FilmDaft](https://filmdaft.com/?p=34430)). A shot is usable if its *best 20 frames* work.
+8. **Assembly, then pickups.** Cut to the stuntvis rhythm, then regenerate the missing reactions and inserts.
+9. **Finish.** Speed ramps, interpolation, upscaling, grade, grain, shake.
+10. **Sound.** Impacts, breath, power sounds, silence, then music.
 
 ### AI Fight Shot List (fill-in template)
 
@@ -121,7 +120,7 @@ Status values: Todo / Generating / Select chosen / Locked / Pickup needed.
 - **Camera language:** "low-angle medium shot, 24mm," "slow push-in," "orbit 90° left," "whip pan," "crash zoom," "locked-off wide," "120fps slow motion."
 - **Impact frames:** ask for the *moment before* and the *moment after*, never the contact itself. Use "freeze on impact" or "a moment of contact" when you need the beat ([Seedance fight guide](https://seedance2pro.io/blog/seedance-2-fight-scene-guide)). Make anime-style impact frames (1–3 frames of inverted, high-contrast silhouette; [background](https://knowyourmeme.com/memes/cultures/impact-frames)) in the edit or as stills.
 - **Speed ramps:** generate key moves in slow motion ("slow motion, 120fps look") so the model has time to keep limbs intact, then speed them up in the edit. That gives you a clean ramp from slow to real time.
-- **Content policy:** filters are automated classifiers, so even a bloodless cartoon duel can be blocked ([HackerNoon](https://hackernoon.com/ai-video-generators-flagged-my-anime-duel-as-graphic-violence-it-was-a-cartoon)), and single words like "blood" can trip them ([invideo](https://invideo.io/faq/why-does-my-ai-image-request-get-blocked-or-refused/)). Describe force rather than injury: "is thrown back," "staggers," "dust explodes." Avoid gore words, keep blood stylised (a cut lip, a smear) or off-screen, cut away at the worst moment, and let sound carry it. Never use real people's likenesses; the Cruise/Pitt clip set off immediate MPA and SAG-AFTRA protests ([Let's Data Science](https://letsdatascience.com/blog/bytedances-seedance-2.0-spooked-all-of-hollywood-in-72-hours)).
+- **Content policy:** automated filters block even bloodless cartoon duels ([HackerNoon](https://hackernoon.com/ai-video-generators-flagged-my-anime-duel-as-graphic-violence-it-was-a-cartoon)), and single words like "blood" can trip them ([invideo](https://invideo.io/faq/why-does-my-ai-image-request-get-blocked-or-refused/)). Describe force, not injury ("is thrown back," "staggers"). Keep blood stylised or off-screen, cut away at the worst moment, and let sound carry it. Never use real people's likenesses ([Let's Data Science](https://letsdatascience.com/blog/bytedances-seedance-2.0-spooked-all-of-hollywood-in-72-hours)).
 
 **Example prompts** (replace [HERO] and [VILLAIN] with your locked character descriptions, and attach their reference images):
 
@@ -134,23 +133,29 @@ Status values: Todo / Generating / Select chosen / Locked / Pickup needed.
 
 ## 6. Editing and Sound
 
-**Rhythm.** Fast phrases (shots of 0.5–2 s) separated by breathers (a 4–8 s wide shot or close-up on a face). Leave 4–12 frames after an impact before the reaction, as the live-action guide says. Keep the subject in the centre of frame across cuts, as in Fury Road, so even fast cuts stay readable.
+**Rhythm.** Fast phrases (0.5–2 s shots) separated by 4–8 s breathers. Hold 4–12 frames past impact, and keep the subject centre-frame (Fury Road) so fast cuts stay readable.
 
 **Hiding flaws with cuts.**
-- Cut *before* the frame where the hand morphs. You only need the clean frames.
-- Cut on motion so the eye follows the action instead of checking anatomy.
-- A 2–4 frame overlap on big hits (Hong Kong style), repeated from two different generations, hides weak contact.
-- Use flash frames, whip-pan transitions, debris or smoke wipes, and rain and lens flares as stitch points.
-- Punch in digitally (crop 120–150%) to remove a bad hand at the edge of frame.
+- Cut *before* the hand morphs, and cut on motion so the eye follows the action instead of checking anatomy.
+- Overlap 2–4 frames on big hits (Hong Kong style), using two different generations.
+- Use flash frames, whip pans, debris or smoke wipes, and lens flares as stitch points.
+- Crop in to 120–150% to remove a bad hand at the edge of frame.
 
 **Frame interpolation and speed ramps.** Free options: RIFE through Flowframes ([80.lv](https://80.lv/articles/flowframes-a-new-free-video-interpolation-tool)), and Optical Flow retiming in DaVinci Resolve. Both can produce artifacts in fast action, so test on a hand crossing a face ([WaveSpeed](https://wavespeed.ai/blog/ai-comparisons/best-ai-frame-interpolation-tools/)). Ramp from real time into slow motion on the signature move, then snap back on the impact.
 
 **Upscaling.** Free tiers often render at 360–720p. SeedVR2 in ComfyUI is a free open-source video upscaler with a GPU needed ([ComfyUI docs](https://docs.comfy.org/tutorials/utility/seedvr2)). Upscale only locked selects, then add a little film grain to unify shots from different models.
 
-**Layered impact sound.** Each hit gets 3–5 layers: a **whoosh** (the swing), a **transient** (snap or crack), **body** (low thump, a cabbage or leather hit), **sub** (a 30–60 Hz boom for super-strength), and a **tail** (debris, glass, reverb). Add breath and cloth movement, and drop to near-silence just before the biggest hit.
-- **Free libraries:** [freesound.org](https://freesound.org) (check each sound's licence: CC0 is free to use, CC-BY needs credit, CC-BY-NC rules out selling the film) and [Pixabay sound effects](https://pixabay.com/sound-effects/) (free under the Pixabay licence).
-- **AI SFX:** ElevenLabs Sound Effects generates "metal pipe impact, heavy, reverb" type prompts ([TechCrunch](https://techcrunch.com/2024/05/31/elevenlabs-debuts-ai-powered-tool-to-generate-sound-effects)). The free tier has no commercial licence ([Magic Hour](https://magichour.ai/blog/best-ai-sound-effect-generators)). Native audio from the video model is a useful guide track, but replace it for the final mix.
-- Make a **signature sound** for each power and reuse it so the audience learns it.
+**Layered impact sound.** Each hit gets 3–5 layers:
+- **Whoosh:** the swing.
+- **Transient:** the crack.
+- **Body:** a thump (cabbage or leather).
+- **Sub:** a 30–60 Hz boom for super-strength.
+- **Tail:** debris and reverb.
+
+Add breath and cloth movement, and drop to near-silence before the biggest hit.
+- **Free libraries:** [freesound.org](https://freesound.org) (check each sound's licence: CC0 is free, CC-BY needs credit, CC-BY-NC can't go in a film you sell) and [Pixabay sound effects](https://pixabay.com/sound-effects/).
+- **AI SFX:** ElevenLabs Sound Effects turns text prompts like "metal pipe impact, heavy" into sounds ([TechCrunch](https://techcrunch.com/2024/05/31/elevenlabs-debuts-ai-powered-tool-to-generate-sound-effects)). The free tier has no commercial licence ([Magic Hour](https://magichour.ai/blog/best-ai-sound-effect-generators)). Use the video model's native audio only as a guide track.
+- Give each power a **signature sound** and reuse it.
 
 ---
 
@@ -158,13 +163,13 @@ Status values: Todo / Generating / Select chosen / Locked / Pickup needed.
 
 **1. "Cruise vs. Pitt" rooftop fight (Seedance 2.0, Feb 2026), by Ruairi Robinson.** A 15 s fistfight that alarmed Hollywood. Robinson said it came from a "2-line prompt," but a VFX artist pointed to green-screen stunt-performer fight footage on Seedance's site and to the handheld camera, which suggests per-angle generation driven by live reference ([Newsweek](https://newsweek.com/ai-brad-pitt-tom-cruise-fight-may-not-be-ai-11554875), [The Outpost](https://theoutpost.ai/news-story/tom-cruise-brad-pitt-ai-fight-scene-sparks-hollywood-debate-over-green-screen-footage-controversy-23960/)). **Steal:** human choreography as the motion source, one clip per angle, and short duration. **Avoid:** real faces. It drew immediate MPA and SAG-AFTRA condemnation.
 
-**2. *Hell Grind* (Higgsfield, premiered beside Cannes, May 2026).** A 15-person team made a feature-length action fantasy in about two weeks for under $500K, reportedly using Seedance 2.0. The first 25 minutes took more than 16,000 generations for 253 shots ([AI Weekly](https://aiweekly.co/alerts/higgsfield-ai-feature-film-debuts-at-cannes), [tportal](https://www.tportal.hr/kultura/clanak/video-dovrsen-u-dva-tjedna-za-500-000-dolara-film-nastao-uz-pomoc-ai-a-podigao-prasinu-u-cannesu-foto-20260525)). Reviews were mixed ([JoBlo](https://www.joblo.com/?p=903716)). **Steal:** very detailed prompts locking physics, camera and look, and the attempt ratio as a planning number. **Lesson:** scale doesn't fix story, so keep your fights short and specific.
+**2. *Hell Grind* (Higgsfield, premiered beside Cannes, May 2026).** A 15-person team made a feature-length action fantasy in about two weeks for under $500K, reportedly with Seedance 2.0. The first 25 minutes took more than 16,000 generations for 253 shots ([AI Weekly](https://aiweekly.co/alerts/higgsfield-ai-feature-film-debuts-at-cannes), [tportal](https://www.tportal.hr/kultura/clanak/video-dovrsen-u-dva-tjedna-za-500-000-dolara-film-nastao-uz-pomoc-ai-a-podigao-prasinu-u-cannesu-foto-20260525)). Reviews were mixed ([JoBlo](https://www.joblo.com/?p=903716)). **Steal:** detailed prompts that lock physics, camera and look, and the attempt ratio as a planning number. Scale doesn't fix story.
 
-**3. *Loading…* anthology (Kling AI x Outliers, June 2025).** Seven AI shorts, with Kling used for fight sequences and explosions. Kling's own product head admitted that motion rendering and stability remain challenges and that creators rewrote prompts over and over ([Yicai](https://www2.yicaiglobal.com/news/chinas-kling-ai-debuts-worlds-first-aigc-anthology-series)). **Steal:** genre-specific styles per episode, and treating prompt iteration as normal work, not failure.
+**3. *Loading…* anthology (Kling AI × Outliers, June 2025).** Seven shorts, with Kling handling fights and explosions. Kling's product head admitted that motion rendering and stability remain challenges and that creators rewrote prompts repeatedly ([Yicai](https://www2.yicaiglobal.com/news/chinas-kling-ai-debuts-worlds-first-aigc-anthology-series)). **Steal:** treat prompt iteration as normal work.
 
-**4. *Echo Hunter* (Arcana Labs, dir. Kavan Cardoza, 2025).** A 22–30 min sci-fi thriller with a SAG-AFTRA cast. Real actors' performances and voices drove AI versions of them, through a toolchain built on Veo, Runway, Luma and Pika ([TechRadar](https://www.techradar.com/computing/artificial-intelligence/this-movie-is-fully-ai-generated-and-has-a-fully-sag-aftra-cast-heres-3-things-you-need-to-know-about-echo-hunter), [Resident](https://resident.com/tech-and-gear/2025/06/05/is-sag-aftra-approved-echo-hunter-the-future-of-filmmaking-or-a-glitch)). **Steal:** human performance as input gives the characters intention, and several models for different jobs.
+**4. *Echo Hunter* (Arcana Labs, dir. Kavan Cardoza, 2025).** A sci-fi thriller in which a SAG-AFTRA cast's performances drove their AI versions, through a toolchain built on Veo, Runway, Luma and Pika ([TechRadar](https://www.techradar.com/computing/artificial-intelligence/this-movie-is-fully-ai-generated-and-has-a-fully-sag-aftra-cast-heres-3-things-you-need-to-know-about-echo-hunter)). **Steal:** human performance as input, and different models for different jobs.
 
-**5. "Samurai's Resolve" (Kling 2.5 Turbo, 2025).** A one-minute original anime duel, samurai against dragon ([YouTube](https://www.youtube.com/watch?v=fCiS_aGgBoE)). **Steal:** an anime style that turns smears into style, a monster opponent (no grappling, no hand-to-hand anatomy), and a tight one-minute scope.
+**5. "Samurai's Resolve" (Kling 2.5 Turbo, 2025).** A one-minute original anime duel, samurai against dragon ([YouTube](https://www.youtube.com/watch?v=fCiS_aGgBoE)). **Steal:** anime style, a monster opponent (so no grappling), and a tight scope.
 
 **Precedent:** Corridor Digital's *Anime Rock, Paper, Scissors* (2023) restyled green-screen actors into anime ([ProVideo Coalition](https://www.provideocoalition.com/nab-2023-how-ai-and-puget-systems-helped-corridor-digitals-anime-rock-paper-scissors-come-to-life/)). The principle still holds: **film people, then restyle**.
 

@@ -1,0 +1,22 @@
+# Keep large media out of git. Store it externally and commit prompts, manifests and logs instead.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.m4a
+*.exr
+*.psd
+*.blend
+*.blend1
+*.casc
+*.drp
+# Generated takes and renders
+shots/**/takes/
+renders/
+media/
