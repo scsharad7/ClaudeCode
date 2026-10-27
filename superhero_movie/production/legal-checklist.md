@@ -12,10 +12,11 @@ Terms: [GLOSSARY](../GLOSSARY.md). New jargon is defined where it first appears.
 
 - [ ] **Keep dated drafts.** Commit every draft of the story and script to git. The history is your evidence of independent creation. Don't rename `story/00-my-idea.md`, because other files link to it.
 - [ ] **Sign a collaborator agreement if anyone helps** (story, voice, music), even an unpaid friend. Without one, they may become a **joint author** with equal rights. Cover ownership, credit, any pay, and a later transfer to a company.
+- [ ] **A friend who performs motion reference or a voice signs a release first** (project, uses, term, any pay).
 - [ ] **Turn off "train on my data" settings where you can**, before you paste the script anywhere:
   - [ ] **Meta Muse:** agent queries are reportedly used for training by default and can be switched off. Don't use the cheaper API "Contributor" tier, which lets Meta train on what you send, for any story material.
   - [ ] **Every other tool:** look for a training opt-out in settings and note it in the table below.
-- [ ] **Start the human-authorship record.** Each generated shot gets its own file, `superhero_movie/shots/<scene>/<shot-id>.md` (see `AGENTS.md`). Each file lists:
+- [ ] **Start the human-authorship record.** Each generated shot gets its own file, `superhero_movie/shots/<scene>/<shot-id>.md`, e.g. `shots/F01/F01-010.md` (see `AGENTS.md`). Each file lists:
   - [ ] the tool, model version and **plan/tier** (this proves you had commercial rights that month)
   - [ ] your start frame or reference images and where they came from
   - [ ] the prompt, seed and number of attempts
@@ -29,16 +30,18 @@ Fill the "confirm" cells from each official terms page, dated. **No consumer pla
 
 | Tool | Who owns outputs | Commercial use by tier | Watermark | Attribution | Training on your inputs |
 |---|---|---|---|---|---|
-| **Google AI Pro / Flow / Veo** | Google doesn't claim ownership | Reportedly allowed on paid plans; confirm per tier | Invisible **SynthID** (Google's hidden AI watermark) on every output; visible "Veo" mark except on the top Flow plan (AI Ultra) | None required | confirm (check Gemini activity settings) |
+| **Google AI Pro / Flow / Veo** | Google doesn't claim ownership | Reportedly allowed on paid plans; **unconfirmed**. If the bake-off (T-012) confirms a problem, Flow is for tests and keyframes only and finals move to Seedance | Invisible **SynthID** (Google's hidden AI watermark) on every output; visible "Veo" mark except on the top Flow plan (AI Ultra) | None required | confirm (check Gemini activity settings) |
 | **Kling** | You, but Kling takes a broad licence | **Free: no.** Paid: yes, confirm. Upgrading later doesn't clear old free clips | Visible on free | None | Licence may cover training; confirm opt-out |
 | **Seedance** (Dreamina / CapCut) | confirm | Free daily credits are watermarked; paid commercial use: confirm | Visible on free | confirm | confirm |
 | **Runway** | Runway doesn't claim ownership | Free: sources conflict, confirm. Standard and up: confirm | Free is watermarked; paid is not | None | confirm |
 | **Meta Muse** (Image, Vibes) | Unclear; Meta takes a broad licence | Not clearly granted; confirm before any Muse image goes into the film | Meta "AI info" label plus **C2PA** metadata (an industry "content credentials" tag saying how a file was made) | confirm | On by default for agent queries, can be turned off; the Contributor API tier trains |
-| **Midjourney** | Paid subscribers own assets "to the fullest extent possible" | **Trial: no** (CC BY-NC, non-commercial). Paid: yes. Pro or Mega if your company earns over $1M | None, but images are public unless Stealth mode (Pro and up) | Trial images carry the NC licence | confirm |
+| **Midjourney** | Paid subscribers own assets "to the fullest extent possible" | **No trial currently; older trial images were CC BY-NC, non-commercial (confirm).** Paid: yes. Pro or Mega if your company earns over $1M | None, but images are public unless Stealth mode (Pro and up) | Old trial images carry the NC licence | confirm |
 | **ElevenLabs** | You, on paid plans | **Free: no.** Paid (Starter and up): yes | Not visibly marked | **Free: "elevenlabs.io" or "11.ai" must be in the title** | confirm |
 | **Suno** | A *licence*, not ownership | **Free: no**, and not retroactive. Paid: yes, for songs made while subscribed | None | None | confirm |
 | **DaVinci Resolve** (free) | You (it's an editor, not a generator) | Free version allowed for commercial work; confirm | None on free (reviewer claim; confirm) | None | confirm for any cloud or AI features |
 
+- [ ] **Inputs count too.** Every start frame or reference image that feeds a final shot must also come from a tool whose terms allow commercial use.
+- [ ] **Confirm Muse Image and Gemini image (Nano Banana) commercial terms** before the character and location sheets (T-009, T-010) are approved for finals. This is TASKS row T-015. If Muse or Vibes isn't available where you live, use the Gemini app instead.
 - [ ] Rule out **Sora** (shut down in 2026) and **Udio** (downloads disabled since Oct 2025).
 - [ ] Choose your tools and plans with `film-producer` against the caps in `production/budget.md`.
 
@@ -53,7 +56,9 @@ Fill the "confirm" cells from each official terms page, dated. **No consumer pla
 
 ## 4. Generation phase
 
-- [ ] **Generate finals only on commercial-allowed tiers.** Free tiers are for tests and the animatic; pay only once the shot list is locked.
+- [ ] **Generate finals only on commercial-allowed tiers**, from start frames that are themselves cleared. Free tiers of generators are for tests and the animatic; pay only once the shot list is locked.
+- [ ] **Free software is fine for finals when its licence allows commercial use** (DaVinci Resolve, Whisper). Open models such as MMAudio: licence, confirm commercial use before a final uses them.
+- [ ] **Keep fights PG-13.** Most major tools block blood (confirm per tool), and platforms restrict it.
 - [ ] **Log every shot as you make it** in its `shots/<scene>/<shot-id>.md` file. An unrecorded shot weakens your claim.
 - [ ] **Keep dated copies of each tool's terms of service (ToS).** Save a PDF on the day you sign up and again on each day you generate finals, in a small `production/tos/` folder (or external storage).
 - [ ] **Back up every final asset** outside the tool. Tools vanish (Sora) or lock downloads (Udio).
@@ -64,9 +69,9 @@ Fill the "confirm" cells from each official terms page, dated. **No consumer pla
 - [ ] **No real-person voice clones without written consent.** Tennessee's **ELVIS Act** (2024) bans simulating someone's voice or likeness without consent. California's **AB 2602** (2025) voids vague digital-replica clauses in performer contracts. The federal NO FAKES Act stalled in Oct 2026. **(varies)**
   - [ ] Use stock voices or your own. To clone a friend, get a **signed release** naming the project, uses, term and any pay. Never clone a celebrity.
 - [ ] **Music only from a commercial plan or a royalty-free licence.** Keep the licence PDF for every cue, dated.
-  - [ ] **Suno:** commercial rights only on a paid plan, for songs made while subscribed. Warner settled with Suno (Nov 2025), but **UMG and Sony are still suing**, so the risk is licensed but unresolved.
+  - [ ] **Lowest risk:** a royalty-free library (some competitions require Epidemic Sound) or a human composer under a written agreement that assigns the rights.
+  - [ ] **Fallback: Suno Pro.** Licensed for commercial use, but only for songs made while subscribed. Warner settled (Nov 2025), but **UMG and Sony are still suing**, so it stays a fallback.
   - [ ] **Udio:** don't use it. Downloads have been off since Oct 2025.
-  - [ ] Safer routes: a royalty-free library (some competitions require Epidemic Sound), ElevenLabs Music on a paid plan, or a human composer under a written agreement that assigns the rights.
   - [ ] No existing songs unless you hold **both** a sync licence (the composition) and a master licence (the recording).
 
 ## 6. Copyright registration
@@ -82,8 +87,8 @@ Fill the "confirm" cells from each official terms page, dated. **No consumer pla
 - [ ] **Platform AI labels.** Label voluntarily everywhere, e.g. "Made with generative AI. Story, edit and direction by [you]."
   - [ ] **YouTube:** tick "altered or synthetic content" for anything realistic. Clearly fantastical content is exempt, but tick it if any shot is photoreal. Monetisation is cut for mass-produced or "inauthentic" content, not for AI itself.
   - [ ] **TikTok, Meta (Instagram, Facebook), Vimeo:** they auto-label from **C2PA** data and require you to label realistic AI content.
-- [ ] **EU AI Act:** labelling duties for deepfakes started **2 Aug 2026**; artistic or fictional work has a lighter duty, but it still applies if you release in the EU. **(varies)**
-- [ ] **India:** the 2026 IT Rules (in force 20 Feb 2026) require prominent AI labels and provenance metadata on platforms. **(varies)**
+- [ ] **EU AI Act:** labelling duties for deepfakes started **2 Aug 2026** (confirm); artistic or fictional work has a lighter duty, but it still applies if you release in the EU. **(varies)**
+- [ ] **India:** the 2026 IT Rules (in force 20 Feb 2026, confirm) require prominent AI labels and provenance metadata on platforms. **(varies)**
 - [ ] **Festival AI policies:** read every call's AI clause before paying.
   - [ ] Closed or restricted: Sitges, Cannes (reportedly), the Oscars (human scripts and performers from March 2027).
   - [ ] Realistic route, the AI circuit: WAIFF Cannes (€15 until 15 Nov 2026), the 1 Billion Followers $1M award (expect tool requirements), Runway AI Festival (2027 call ~Jan–Mar; **3 minutes or longer**). Details: [research §5](../research/ai-legal-and-release.md).
@@ -117,7 +122,7 @@ Free help: VLA chapters (e.g. NYC VLA, California Lawyers for the Arts), law-sch
 
 ## Handoff
 
-**Done:** created `superhero_movie/production/legal-checklist.md` (AI version; the live-action checklist stays archived).
+**Done:** created `superhero_movie/production/legal-checklist.md` (AI version; the live-action checklist stays archived), then updated it in the L4 fix round.
 
 **Decisions needed:**
 
@@ -127,12 +132,12 @@ Free help: VLA chapters (e.g. NYC VLA, California Lawyers for the Arts), law-sch
 | Which tools and plans? | (a) Stack A, $0 (tests only) (b) Stack B, ~$58/month (c) Stack C, ~$150–190/month | **(a) until the shot list is locked, then (b)**; fill the "confirm" cells first |
 | Is anyone helping? | (a) No one (b) Unpaid friends (c) Unsure | If (b) or (c), sign agreements **before** they contribute |
 | When to register? | (a) Script now, film at the end (b) Only the film (c) Not at all | **(a)**: the script is cheap and fully human |
-| Music source? | (a) Paid Suno (b) Royalty-free library (c) Human composer | **(b) or (c)** for the lowest risk; (a) is licensed but under litigation |
+| Music source? | (a) Royalty-free library (b) Human composer (c) Suno Pro | **(a) or (b)** for the lowest risk; (c) is licensed but under litigation, so a fallback only |
 
 **Hand-offs:**
 - `film-producer` (Claude Code): tools and tiers against the budget caps; registration fee.
 - `film-shot-generator` (filmmaker in web tools): create a `shots/<scene>/<shot-id>.md` record for every shot; finals on paid tiers only.
 - `film-pipeline-td` (Antigravity): shot-file template and a dated `tos/` folder.
-- `film-character-designer` (Muse or Claude Code): a distinctiveness sheet per character.
+- `film-character-designer` and `film-production-designer` (Muse or Claude Code): a distinctiveness sheet per character; clear Muse/Gemini image terms (T-015) before sheets feed finals.
 - `film-voice-director` and `film-composer`: voice releases and music licences.
 - `film-distribution-marketing`: platform labels and festival AI clauses.

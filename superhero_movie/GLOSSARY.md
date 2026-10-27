@@ -19,16 +19,9 @@ Film terms used across this project, in plain language. Every document links her
 |---|---|
 | **Fight sequence** | The whole fight as the audience sees it on screen, pauses included. |
 | **Nonstop fighting / seconds of fighting** | The action itself inside a fight sequence, not counting setup and aftermath. In an AI film it drives the number of shots and generations. |
-| **Stunt coordinator** | The person responsible for every stunt being safe. They must sign off before anything is rehearsed or filmed. |
-| **Fight choreographer** | The person who designs the fight's moves (often the same person as the stunt coordinator on small films). |
-| **Stuntvis** | The stunt team rehearses the fight and films it on phones, then it's edited. You watch the fight before you shoot it. |
-| **Double** | A stunt performer who stands in for an actor in risky moments. |
-| **Crash mat** | A rated landing mat for falls. Not a gym mat. |
+| **Fight choreographer** | The role that designs a fight's beats and moves. Here it's the `film-fight-choreographer` crew role. |
+| **Stuntvis** | In live action, a stunt team's filmed rehearsal. In this AI film: your slow, safe phone previs of a fight's moves, cut together to test the fight before generating (safety box: [playbook §4](fights/ai-fight-playbook.md#4-motion-reference-safety)). |
 | **Breakaway** | A prop made to break safely (sugar-glass bottle, balsa chair, foam brick). |
-| **Pull rig / ratchet** | A rope or cable system that yanks a performer through the air. Professional riggers only. |
-| **Jerk vest** | The harness a performer wears for a pull rig. |
-| **Descender** | A device that lowers a performer on a cable at a controlled speed. |
-| **Sandbag test** | Running a rig with a weighted bag before a person uses it. |
 | **Oner / stitched oner** | A fight shown as one continuous shot. "Stitched" means several takes joined with hidden cuts. |
 | **Impact frame** | A 2–6 frame flash at the moment of a hit (a freeze, a flash, a distortion), made in the edit. With a cut from wind-up to reaction, it sells contact without ever showing it. |
 | **Signature moment** | The single image from a fight that goes on the poster or in the trailer. |
@@ -37,20 +30,10 @@ Film terms used across this project, in plain language. Every document links her
 
 | Term | Meaning |
 |---|---|
-| **Pre-production** | Everything between the locked script and the first shoot day: hiring, casting, locations, rehearsal. |
-| **1st AD** | First assistant director. Runs the schedule and safety on set. |
 | **DP** | Director of photography, in charge of camera and lighting. |
-| **Gaffer / key grip** | The heads of lighting (gaffer) and rigging/camera support (key grip). |
-| **DIT** | Digital imaging technician. Backs up and checks footage on set. |
 | **Breakdown** | A list of everything each scene needs: cast, props, stunts, effects. |
-| **Stripboard / schedule** | The shooting order, grouped by location and cast. |
-| **Call sheet** | The daily sheet telling everyone when and where to show up. |
 | **Coverage** | The set of shots filmed for a scene (wide, medium, close-ups). |
 | **Previs / techvis** | Rough animated or filmed versions of shots, used to plan them. Techvis adds the technical measurements. |
-| **Practical effect** | A real physical effect on set (dust, debris, haze), as opposed to CG. |
-| **Clean plate** | The same shot filmed without the actors or rigs, so VFX can paint things out. |
-| **Tracking markers** | Small marks placed on set so VFX software can follow camera movement. |
-| **Wire removal** | Digitally erasing safety cables from a shot. |
 
 ## Post-production
 
@@ -68,30 +51,16 @@ Film terms used across this project, in plain language. Every document links her
 
 | Term | Meaning |
 |---|---|
-| **Above / below the line** | Above: writer, director, producers, lead cast. Below: crew, equipment and everything else. |
 | **Contingency** | Money held back (10% or more) for surprises. |
-| **Fringes** | Payroll extras on top of wages (taxes, union pension and health). |
-| **PO** | Purchase order: a written record of approving a purchase. |
 | **Deferred pay** | Pay promised later, usually if the film makes money. |
 | **Points** | A percentage share of the film's profits. |
-| **Deal memo** | A short written agreement with a cast or crew member: role, pay, dates, rights. |
 | **Work-for-hire** | Contract language that makes the production own what someone creates for it. |
 | **Release (form)** | A signed permission to use a person, location or material in the film. |
 | **LLC / EIN** | Limited liability company (the business that owns the film) and its US tax ID number. |
 | **Fiscal sponsorship** | A nonprofit that accepts tax-deductible donations on the film's behalf. |
 | **Title report** | A professional search confirming the film's title doesn't conflict with others. |
-| **GL insurance** | General liability: covers injury or damage to *other* people and property. |
-| **Workers' comp / accident cover** | Covers injuries to your *own* cast, crew and volunteers. Needed separately from GL. |
 | **E&O insurance** | Errors and omissions: covers legal claims about rights and content. Distributors require it. |
 
-## Unions
-
-| Term | Meaning |
-|---|---|
-| **SAG-AFTRA** | The US actors' and performers' union. |
-| **SAGindie** | SAG-AFTRA's office for independent and low-budget productions. Confirm terms with them. |
-| **Micro / Short Project / ULB** | SAG-AFTRA low-budget agreements, chosen by budget cap. Micro (under $20k) bans stunts. Short Project (up to $50k) suits a union short. ULB, Ultra Low Budget (up to $300k), suits a small feature. |
-| **Basic Agreement rates** | The union's standard (non-low-budget) day rates. |
 
 ## Release
 
@@ -140,3 +109,39 @@ Film terms used across this project, in plain language. Every document links her
 | **Task board** | `TASKS.md`: the list of tasks, which tool does each, its status and where its output goes. |
 | **Branch / worktree** | Git's way to keep each task's changes separate until you merge them. A worktree is a separate folder for a branch, so two tools never share files mid-task. |
 | **Merge / PR** | Bringing a task's finished branch into the main project. A pull request (PR) is the reviewable proposal to merge. |
+
+## Tools mentioned in the plan
+
+Tools change monthly; confirm current features and prices on each official page.
+
+| Tool | What it is |
+|---|---|
+| **Kling / Seedance / Veo / Omni Flash** | AI video generators. Veo and Omni Flash are Google's, used through **Flow** or the Gemini app |
+| **Nano Banana** | Google's image model in the Gemini app, used for keyframes and reference images |
+| **Muse Image / Vibes** | Meta's image generator, and the Meta AI app's short-video feed |
+| **Runway (Aleph, Act-Two)** | AI video tools, including performance and motion transfer |
+| **Wan 2.2 / LTX / HunyuanVideo** | Open-weight video models you can run yourself with a strong GPU |
+| **Mixamo** | Free library of 3D character animations (Adobe) |
+| **Rokoko Vision** | Free mocap from ordinary video |
+| **Cascadeur** | Physics-based 3D animation tool for fights (the free edition is non-commercial) |
+| **Blender** | Free 3D software for grey-box previs |
+| **ElevenLabs** | AI voices and sound effects |
+| **Suno** | AI music (commercial use on paid plans; under litigation) |
+| **MMAudio** | An open model that generates sound for video (check its licence before using it in finals) |
+| **DaVinci Resolve** | Free editing, colour and sound software |
+| **Whisper** | Free speech-to-text, used for captions |
+| **Topaz** | Upscaling software |
+
+## Plan terms
+
+| Term | Meaning |
+|---|---|
+| **Gate** | A checkpoint in the schedule where you decide before moving on (e.g. Gate 2: shot list locked, so paid generation can start) |
+| **Pickup** | Regenerating or adding shots that are missing or failed, usually in an extra month |
+| **Assembly / rough cut** | The first edit with every select in order, then the first shaped version |
+| **.fountain** | A plain-text screenplay format that screenwriting apps can open |
+| **SRT** | A standard subtitle file |
+| **eCO** | The US Copyright Office's online registration system |
+| **YPP** | YouTube Partner Program, which lets channels earn ad revenue |
+| **AIF / WAIFF** | Runway's AI Film Festival / World AI Film Festival |
+

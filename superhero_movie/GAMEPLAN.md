@@ -4,8 +4,9 @@
 |---|---|
 | **Project** | Original superhero film (title TBD) |
 | **Approach** | **Fully AI-generated**: no crew, no shoot, no hiring |
-| **First deliverable** | A **2–3 minute AI fight short** |
-| **Budget** | $0 while planning. About $58/month only during 1–3 generation months: roughly **$120–350 total** for the short (estimates) |
+| **First deliverable** | A **~3-minute AI fight short**: a **3:10 main cut** (picture only, credits not counted) plus a **2:50 alternate** for competitions capped at 3 minutes |
+| **Timeline** | **18–22 weeks part-time** (10–15 h/week, ~200–230 h), counted from when your idea file is done. Plan on **~22**: a pickup month to regenerate failed shots is the expected case for a beginner. 18 weeks is possible if generation goes smoothly |
+| **Budget** | $0 while planning, then **plan ~$175** (two paid months plus one pickup month), or **~$295** if Google Flow can't be used for final shots. Hard ceiling $350. Estimates; confirm prices |
 | **Tools** | Claude Code · Google Antigravity · Meta Muse · Command Code (later) · you |
 | **Current phase** | Phase 0: Shape the idea |
 | **Core focus** | Fight scenes: intense, exciting, and driven by the story |
@@ -17,7 +18,7 @@ The earlier live-action plan is [archived](archive/live-action/).
 
 ## The strategy
 
-1. **Make a 2–3 minute AI fight short first.** Even the AI features released in 2026 needed teams and big budgets, and a solo feature would take years. A short is achievable in about **2–4 months part-time**. It's also exactly what wins AI film competitions: a solo creator with no film training won the 2026 Runway AI Festival Grand Prix with an 8-minute film. ([research](research/ai-tool-stack.md#6-realistic-scope-for-a-beginner))
+1. **Make a ~3-minute AI fight short first.** Even the AI features released in 2026 needed teams and big budgets, and a solo feature would take years. A short is achievable in about **18–22 weeks part-time**. Short films are also what AI film competitions reward: a solo creator with no film training won the 2026 Runway AI Festival Grand Prix with an 8-minute film. It took about 240 hours and about $5,000, by their own report; ours is scoped smaller on purpose. ([research](research/ai-tool-stack.md#6-realistic-scope-for-a-beginner))
 2. **Plan everything for free, then pay.** Story, script, character design, shot list and previs cost nothing. Pay for generation only once the fight shot list is locked, and use those paid months fully.
 3. **Build every shot from images, not text.** Lock character and location reference sheets first, then generate each shot from a start frame. Keeping characters looking the same is the hardest problem in AI film. A **masked hero** with bold colours and an emblem makes it much easier.
 4. **Design the fights for what AI does well.**
@@ -35,10 +36,10 @@ The earlier live-action plan is [archived](archive/live-action/).
 ## Your next 3 actions (this week)
 
 1. **Fill in [`story/00-my-idea.md`](story/00-my-idea.md)** (task T-001). It now asks AI-route questions: tool budget, computer, visual style, hours per week.
-2. **Claude Code:** *"Do T-002 in superhero_movie/TASKS.md"*. The screenwriter turns your idea into a logline and synopsis.
+2. **Claude Code:** once T-001 is done, change T-002's status to `todo` in [TASKS.md](TASKS.md), then tell Claude Code *"Do T-002 in superhero_movie/TASKS.md"*. The screenwriter turns your idea into a logline and synopsis.
 3. **Start the parallel work:**
    - **Antigravity:** open this repo and say *"Do T-013"* (pipeline setup). This can start today.
-   - **Meta Muse:** do T-004 (style frames) by hand once your idea file names the hero.
+   - **Meta Muse:** do T-004 (style frames) by hand once your idea file names the hero. If Muse isn't available where you live, use the Gemini app instead.
 
 ---
 
@@ -46,15 +47,17 @@ The earlier live-action plan is [archived](archive/live-action/).
 
 The detailed schedule, tool per stage and "done when" criteria are in [production/ai-pipeline.md](production/ai-pipeline.md). In outline:
 
-| Phase | Weeks (part-time) | What happens | Main tools | Cost |
-|---|---|---|---|---|
-| **0. Shape the idea** | 1–2 | Your idea → logline, synopsis, hero, villain, powers; pick a visual style from style frames | Claude Code, Muse, you | $0 |
-| **1. Short script & fight design** | 2–5 | 2–3 min script; fight map; the short's fight design doc | Claude Code, Antigravity (notes) | $0 |
-| **2. Design bible & tool bake-off** | 4–7 | Character and location sheets, style guide, continuity bible; the same 3 test shots on 2–3 free tiers to choose your video tool | Muse, Claude Code, Antigravity, you | $0 |
-| **3. Shot list, keyframes, previs** | 6–9 | Fight shot list (~20–30 shots), keyframes for every shot, safe motion reference, an animatic | Claude Code, Muse/Antigravity, you | $0 |
-| **4. Generation** | 8–12 | Generate shots, log attempts, choose selects, redesign beats that fail | You in web tools, Antigravity | **paid months** |
-| **5. Post** | 11–14 | Edit, sound design, voices, music, colour matching, upscaling | You in DaVinci Resolve (free) + voice and music tools | voice/music month |
-| **6. Release** | 14+ | AI festivals and competitions, YouTube, behind-the-scenes content | Claude Code, you | entry fees |
+Phases overlap, because some work runs in parallel. Weeks count from the day your idea file (T-001) is done.
+
+| Phase | Weeks | What happens | Main tools | Cost | Gate |
+|---|---|---|---|---|---|
+| **0. Shape the idea** | 1–2 | Your idea → logline, synopsis, hero, villain, powers; pick a visual style from style frames | Claude Code, Muse, you | $0 | |
+| **1. Script & fight design** | 2–4 | ~3-page script; fight map; the short's fight design doc | Claude Code, Antigravity (notes) | $0 | |
+| **2. Design bible & bake-off** | 3–6 | Character and location sheets, style guide, continuity bible; the same 3 test shots on 2–3 free tiers | Muse, Claude Code, Antigravity, you | $0 | **Gate 1** (end of week 6): choose your paid video tool |
+| **3. Shot list, keyframes, previs** | 5–9 | Fight shot list (~20–30 shots), keyframes for every shot, safe motion reference, an animatic | Claude Code, Muse/Antigravity, you | $0 | **Gate 2** (end of week 8): shot list locked; pay only after this |
+| **4. Generation** | 9–16 | Generate shots, log attempts, choose selects, redesign beats that fail | You in web tools, Antigravity | **paid months** | **Gate 3** (end of week 12): at least 80% of fight shots have a select, otherwise add the pickup month |
+| **5. Post** | 10–17 | Edit, sound design, voices, music, colour matching, upscaling | You in DaVinci Resolve (free), plus voice and music tools | voice/music | Picture lock in week 17 (calendar target: by 15 March 2027), or ~week 21 if the pickup month runs. Either way it's ahead of the expected late-April Runway deadline |
+| **6. Release** | 17–18 | AI festivals and competitions, YouTube, behind-the-scenes content | Claude Code, you | entry fees | |
 
 **After the short:** a series of short episodes in the same world, then longer pieces. Use the short as your pitch and portfolio.
 
@@ -73,7 +76,8 @@ The detailed schedule, tool per stage and "done when" criteria are in [productio
 **Rules that keep tools from colliding:**
 - Each task names one tool and one output path.
 - Each task gets its own git branch (`cc/T-002`, `ag/T-013`).
-- Tools never edit this file, your idea file, `TASKS.md` or `AGENTS.md`. They propose changes and you decide.
+- Tools never edit this file, your idea file or `AGENTS.md`. In `TASKS.md` they may change only the Status cell of their own row, on their own branch. They propose any other change, and you decide.
+- Work done in Muse or by hand is saved to the task's output folder and committed on a `you/T-0xx` branch (or ask Claude Code to commit it).
 
 Full protocol: [AGENTS.md](../AGENTS.md#task-protocol).
 
@@ -83,7 +87,7 @@ Full protocol: [AGENTS.md](../AGENTS.md#task-protocol).
 
 ## The fight plan
 
-Practical guide: [fights/ai-fight-playbook.md](fights/ai-fight-playbook.md). Research: [AI fight workflow](research/ai-fight-workflow.md) and [fight design principles](research/fight-scene-design.md).
+Practical guide: [fights/ai-fight-playbook.md](fights/ai-fight-playbook.md). Research: [AI fight workflow](research/ai-fight-workflow.md), and the story principles (§1, §5–§6 only) of the earlier [fight design guide](research/fight-scene-design.md). Its live-action sections don't apply.
 
 ### Story rules (unchanged from live action)
 1. Every fight is about something. If the story doesn't change when you cut it, it isn't finished.
@@ -100,20 +104,21 @@ Practical guide: [fights/ai-fight-playbook.md](fights/ai-fight-playbook.md). Res
 - **Favour powers over grappling.** AI renders energy, debris, launches and destruction well, but breaks on two bodies tangled together.
 - **Open with a wide that shows the whole space,** then return to it.
 - **Choose the visual style deliberately.** Stylised looks (anime, comic, graphic novel) hide AI flaws; photoreal shows them.
-- **PG-13 force, not gore.** Every major tool blocks blood. Describe force, not injury.
+- **PG-13 force, not gore.** Most major tools block blood (confirm per tool). Describe force, not injury.
 - **If a beat fails after about 10 attempts, redesign the beat.** Don't keep paying for it.
 
 ### Motion reference: safety first
 Some tools copy movement from a phone video of you. When you film reference:
-- Move **slowly** and **never make contact**.
-- Use **soft ground** and **clear space**.
-- **No flips, falls, jumps or weapons.**
-- Film **one person per clip**.
+- Move at **half speed or slower**, and **never make contact**: strikes hit air.
+- Use **soft ground** and **clear space**, and have **someone watching**. Stop if anything hurts.
+- **No flips, falls, jumps or weapons.** Big stunts come from Mixamo or Blender animation, never from a person.
+- Film **one person per clip**. A friend who performs signs a release first.
+- Never move faster or riskier for social media content.
 
-The AI adds the speed and power. Nobody needs to get hurt making an AI fight.
+The AI adds the speed and power. Nobody needs to get hurt making an AI fight. The full safety box is in the [fight playbook §4](fights/ai-fight-playbook.md#4-motion-reference-safety).
 
 ### Scale
-- **The short's fight:** about **20–30 shots**, roughly **45–90 seconds of fighting** inside a 2–3 minute short.
+- **The short's fight:** about **20–30 shots**, roughly **45–90 seconds of fighting** inside the ~3-minute short.
 - **For a longer film later:**
   - Act 1 fight: ~20–30 shots
   - Midpoint fight: ~40–60 shots
@@ -126,7 +131,7 @@ The AI adds the speed and power. Nobody needs to get hurt making an AI fight.
 | Stack | Per month | What it gets you |
 |---|---|---|
 | **A: Free** | $0 | Tests and planning; ~1–2 min of footage a month, watermarked and mostly **not** cleared for commercial use |
-| **B: Starter (recommended)** | ~$58 | Google AI Pro + Kling Pro + ElevenLabs Starter + DaVinci Resolve (free); ~50–130 finished seconds a month |
+| **B: Starter (recommended)** | ~$58 | Google AI Pro + Kling Pro + ElevenLabs Starter + DaVinci Resolve (free); ~50–130 finished seconds a month. Caveat: Google Flow output below the top plan may carry a visible watermark, and its commercial terms are unconfirmed. If so, use Flow for tests and keyframes only, and make finals in Seedance (~+$40/month). The bake-off (T-012) decides |
 | **C: Faster** | ~$150–190 | ~1.5–3.5 finished minutes a month |
 
 A beginner usually needs 5–20 attempts per usable shot, and that waste is the real cost. Prices change monthly, so confirm them on each official page. Details, a credit calculator and spending caps: [production/budget.md](production/budget.md).
@@ -136,7 +141,7 @@ A beginner usually needs 5–20 attempts per usable shot, and that waste is the 
 ## Rights and release at a glance
 
 - **What you can own:** prompts alone don't make you an author under current US Copyright Office guidance. You **can** own the script, the characters as written, your edit (selection and arrangement) and anything you change by hand. So **log your human choices per shot** from day one (`shots/<scene>/<shot-id>.md`).
-- **Final shots, voices and music only on paid plans** that allow commercial use. Several free tiers don't.
+- **Final shots, voices and music, and every start frame or reference image that feeds a final shot, only from plans that allow commercial use.** Several free tiers don't. Free software whose licence allows commercial use (such as DaVinci Resolve) is fine.
 - **Original characters only:** no lookalikes of existing heroes, and no real people's faces or voices.
 - **Label the film as AI** on every platform.
 - **Where to release:** the AI film circuit (AI film festivals and competitions) plus YouTube. Some mainstream genre festivals bar fully AI films.
@@ -152,8 +157,8 @@ Details: [production/legal-checklist.md](production/legal-checklist.md) (not leg
 | Visual style | Photoreal / anime / comic-book / stylised 3D | Decide from the T-004 style frames. **Stylised** is more forgiving for fights |
 | Hero's face | Masked or helmeted / face visible | **Masked**: much easier to keep consistent |
 | Tool budget | $0 / ~$58 / ~$150–190 per month | **$0 now; ~$58 for 1–3 months** once the shot list is locked |
-| Main video tool | Decided by the bake-off (T-012) | Test Kling and Seedance for fights, and Google Flow for cheap volume |
-| First target | An AI film competition deadline, or YouTube first | Pick one early: a deadline keeps the project moving. Some competitions set minimum lengths (Runway's is 3 minutes), so check before locking the short's length |
+| Main video tool | Decided by the bake-off (T-012) | Test Kling and Seedance for fights, and Google Flow for cheap tests and keyframes |
+| First target | Runway AI Festival 2027 / WAIFF (stretch) / rolling AI festivals / YouTube first | **Runway AI Festival 2027** (free entry, 3–15 min; call expected Jan–Mar, so confirm). The 3:10 main cut meets its 3-minute minimum. Details in [release/strategy.md](release/strategy.md) |
 
 ---
 
@@ -175,6 +180,6 @@ Details: [production/legal-checklist.md](production/legal-checklist.md) (not leg
 - [AI fight workflow](research/ai-fight-workflow.md): what AI can and can't do in fights, motion transfer, prompts, case studies
 - [AI legal and release](research/ai-legal-and-release.md): copyright, tool terms, platform labels, festivals, funding
 - [Tool orchestration](research/tool-orchestration.md): what Meta Muse, Antigravity and Command Code are, and how to share work
-- Still relevant from before: [story development](research/story-development.md) and [fight scene design](research/fight-scene-design.md)
+- Partly relevant from the live-action research: [story development](research/story-development.md) (development ladder, structure, characters, templates) and [fight scene design](research/fight-scene-design.md) (story principles §1, §5–§6 only)
 
 *Tool features, prices and policies change monthly. All figures are October 2026 estimates; confirm them on official pages before paying.*

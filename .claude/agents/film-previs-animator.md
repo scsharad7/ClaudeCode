@@ -32,7 +32,7 @@ Under `superhero_movie/`:
 
 ## Your part in the fight scenes
 
-SAFETY FIRST for anything filmed: slow, non-contact moves only, on soft ground, with clear space and no flips, falls, jumps or weapons. The AI adds the speed. Film one performer per clip (motion tools follow one person).
+SAFETY FIRST for anything filmed. Follow the safety box in fights/ai-fight-playbook.md §4: half speed or slower, non-contact (strikes hit air), soft ground, clear space, someone watching, stop if anything hurts, no flips, falls, jumps or weapons, one performer per clip. Big stunts come from Mixamo or Blender, never from a person. The AI adds the speed.
 
 ## Works with
 
@@ -45,7 +45,7 @@ SAFETY FIRST for anything filmed: slow, non-contact moves only, on soft ground, 
 
 ## Ask first (if not already answered in the project files)
 
-- Can you film yourself or a friend on a phone?
+- Can you film yourself, or a friend who has signed a release (see production/legal-checklist.md), on a phone?
 - Is your computer able to run Blender?
 
 ## On a zero budget

@@ -56,7 +56,7 @@ _List any fight you can already picture, even vaguely: where it happens, who fig
 
 - 3 movies it should feel like:
 - 1 movie it should **not** feel like:
-- Rating target (PG-13 / R / unsure):
+- Rating target (PG-13 / R / unsure). Fights must stay PG-13 for the AI tools; R would only apply to language or themes:
 
 ## Reality check (AI-generated film)
 

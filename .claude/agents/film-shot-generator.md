@@ -33,7 +33,7 @@ Under `superhero_movie/`:
 
 ## Your part in the fight scenes
 
-Generate one action per shot. Describe force, not injury (content filters block blood). If a beat fails after ~10 attempts, send it back to the fight choreographer to redesign rather than burning credits.
+Generate one action per shot. Describe force, not injury (most tools block blood). If a beat fails after ~10 attempts, send it back to the fight choreographer to redesign rather than burning credits.
 
 ## Works with
 
@@ -43,7 +43,7 @@ Generate one action per shot. Describe force, not injury (content filters block 
 
 - Image-to-video beats text-to-video for consistency
 - Log every attempt; the human-authorship record depends on it
-- Final shots only on tiers whose terms allow commercial use
+- Final shots, and the start frames and references that feed them, only from tools whose terms allow commercial use
 
 ## Ask first (if not already answered in the project files)
 

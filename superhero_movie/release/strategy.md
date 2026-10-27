@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Owner** | `film-distribution-marketing` (Release & Audience Strategist) |
-| **Covers** | The first deliverable: a **2–3 minute fully AI-generated fight short** (2–4 months part-time) |
+| **Covers** | The first deliverable: a **~3-minute fully AI-generated fight short**: a **3:10 main cut** (picture only, credits not counted) plus a **2:50 alternate cut**. **18 weeks part-time** (10–15 h/week) |
 | **Status** | Draft, Oct 2026. Story, tone and comparable films are **[TBD]**: examples below are labelled as examples only |
 | **Sources** | [Platform rules §4](../research/ai-legal-and-release.md#4-platform-rules-for-publishing), [Festivals §5](../research/ai-legal-and-release.md#5-festivals-and-competitions-dates-as-found-confirm-before-paying), [Funding §6](../research/ai-legal-and-release.md#6-monetisation-and-funding-at-zero-budget), [Realistic scope](../research/ai-tool-stack.md#6-realistic-scope-for-a-beginner). Terms: [Glossary](../GLOSSARY.md) |
 
@@ -41,14 +41,19 @@
 
 ## 2. Choosing a target deadline
 
-Counting from now (late Oct 2026), a 2–4 month production lands **picture lock** (the final edit) **between late January and late February 2027**. Allow 2–4 extra weeks for learning and things going wrong.
+The plan is **18 weeks part-time**, counted from the day T-001 is done. With **picture lock** (the final edit) **by 15 Mar 2027 (≈ week 17)**, week 1 starts around mid-November 2026. If generation runs short, the only allowed extension is the pickup month, which stretches the plan to ~22 weeks (around mid-April 2027).
 
 **Recommendation: aim for the Runway AI Festival 2027**, assuming a late-April deadline like 2026's. Free entry, the biggest prize the circuit has, and it fits the schedule with slack.
 
-- **Internal milestones:** shot list locked by **mid-Dec 2026**, picture lock by **15 Mar 2027**, final sound, music and labels by **31 Mar 2027**.
+- **Internal milestones:**
+  - Gate 1, paid stack picked: end of week 6 (~late Dec 2026)
+  - Gate 2, shot list locked: end of week 8 (~mid-Jan 2027)
+  - Gate 3, at least 80% of fight shots have a select: end of week 12 (~early Feb 2027)
+  - Picture lock: by **15 Mar 2027** (≈ week 17)
+  - Release prep: weeks 17–18. Even with the pickup month, the short is finished before a late-April Runway deadline.
 - **Stretch target:** WAIFF Cannes at €30 (31 Jan) or €60 (15 Feb), only if you're ahead of schedule.
 - **Rolling fallback:** the monthly World AI Cinema Festival and the low-fee regional festivals.
-- **Length matters:** Runway needs **3 minutes or more**, and Curious Refuge and Project Odyssey cap at **3 minutes**. So target a **3:00–3:30 main cut (credits included only if the rules count them)** and plan a **sub-3:00 alternate cut** from the start. The extra 30 seconds is about 10 more shots. Tell `film-editor` and `film-producer` now, because it changes the shot count.
+- **Length matters:** Runway needs **3 minutes or more**, and Curious Refuge and Project Odyssey cap at **3 minutes**. So the short is **~3 minutes**: a **3:10 main cut** (picture only, credits not counted; about 190 s finished) for Runway, plus a **2:50 alternate cut** for contests with a 3-minute cap. Plan both cuts from the start, so the 20 seconds between them are trims, not new shots.
 - When the Runway 2027 call opens, re-check: the deadline, the length rule, any tool requirement, and the premiere clause (see §3).
 
 ---
@@ -58,7 +63,7 @@ Counting from now (late Oct 2026), a 2–4 month production lands **picture lock
 ### YouTube (main home)
 - **AI label:** you have to tick "altered or synthetic content" only for realistic content that viewers could mistake for real people, places or events. A clearly fantastical or stylised superhero fight is likely exempt. **Tick it anyway if any shot is photoreal**, because YouTube can add the label itself.
 - **Monetisation:** YouTube doesn't demonetise AI use. It demonetises **"inauthentic content"**: template or mass-produced videos, distressing bait, and AI personas giving advice. Enforcement is reportedly channel-wide.
-- **What keeps you monetisable:** an original story, **your own voice and face** (or on-screen commentary) in the behind-the-scenes (BTS) videos, visible process, and no bulk uploads of near-identical clips. Your human-authorship log ([AGENTS.md](../../AGENTS.md)) helps prove all of this if anyone asks.
+- **What keeps you monetisable:** an original story, **your own voice and face** (or on-screen commentary) in the behind-the-scenes (BTS) videos, visible process, and no bulk uploads of near-identical clips. **Never perform faster or riskier moves for social content; the motion-reference safety box applies ([`../fights/ai-fight-playbook.md` §4](../fights/ai-fight-playbook.md#4-motion-reference-safety)).** Your human-authorship log ([AGENTS.md](../../AGENTS.md)) helps prove all of this if anyone asks.
 
 ### TikTok, Instagram, Facebook, Vimeo
 - TikTok and Meta **auto-label** content that carries C2PA "Content Credentials" (metadata that tools such as Veo embed to mark media as AI-made). Meta shows an "AI info" label, and disclosure is mandatory for photoreal video and realistic audio. Vimeo has an AI checkbox.
@@ -85,15 +90,20 @@ AI-film audiences come for the **process**: how you got it to work, and what bro
 4. **Fight design:** how you fake impact (wind-up, impact frame, reaction, sound) without showing contact.
 5. **Character design:** reference sheets, and how you keep the hero consistent.
 
-### Weekly calendar (about 2 hours a week out of your ~15)
+### Weekly calendar (about 2 hours a week out of your 10–15 hours a week)
+
+The phases are the project's 7 standard phases. They overlap, so in overlap weeks pick whichever row matches what you actually worked on.
 
 | Phase | Weeks | Every week | Every two weeks |
 |---|---|---|---|
-| **Learn and design** | 1–4 | 2 Shorts/Reels (tool tests, first character frames) + 1 community post | 1 YouTube devlog (5–8 min): "I have zero budget and no film experience. Here's my plan" |
-| **Previs and keyframes** | 5–8 | 2–3 Shorts (keyframe → motion reference) + 1 poll ("which suit colour?") | 1 devlog: character sheet and fight design |
-| **Generation** | 9–14 | 3 Shorts (one shot breakdown each, never the full fight) + 1 fail reel | 1 devlog: prompt breakdown, cost and time log |
-| **Edit, sound and finish** | 15–18 | 2 Shorts (sound design before/after, colour grade) | 1 devlog: the edit; teaser drop at picture lock |
-| **Festival hold** | Lock → first result | 1–2 Shorts (BTS only), poster reveal | 1 devlog: "what I'd do differently" |
+| **0 Shape the idea** | 1–2 | 1 community post ("starting an AI superhero short with zero budget") | 1 YouTube devlog (5–8 min): "No budget, no film experience. Here's my plan" |
+| **1 Script & fight design** | 2–4 | 2 Shorts/Reels (fight-design whiteboard, how AI fakes impact) | (devlog every other week continues) |
+| **2 Design bible & bake-off** | 3–6 | 2 Shorts (tool tests: the same shot in Kling, Seedance and Veo; first character frames) + 1 poll ("which suit colour?") | 1 devlog: character sheet and bake-off results |
+| **3 Shot list, keyframes, previs** | 5–9 | 2–3 Shorts (keyframe → motion reference) | 1 devlog: fight previs and shot list |
+| **4 Generation** | 9–16 | 3 Shorts (one shot breakdown each, never the full fight) + 1 fail reel | 1 devlog: prompt breakdown, cost and time log |
+| **5 Post** | 10–17 | 2 Shorts (sound design before/after, colour grade) | 1 devlog: the edit; teaser drop at picture lock (week 17) |
+| **6 Release** | 17–18 | Poster reveal, festival submission post (BTS only) | 1 devlog: "what I'd do differently" |
+| **Festival hold** (after the plan) | Submission → first result | 1–2 Shorts (BTS only) | Monthly devlog |
 | **Public launch** | Release week + 4 | Short, trailer, vertical cut, then the BTS "making of" (10–15 min) | Weekly cut-downs, replies to comments |
 
 Batch-produce content on one day a week. Repurpose each devlog into 2–3 vertical clips, and make each one meaningfully different, to stay clear of "mass-produced".
@@ -134,14 +144,14 @@ Credits from prizes and programs are your cheapest "funding": they replace the ~
 
 ## 7. What comes after the short
 
-1. **Fight short** (2–3 min, ~3:15 for Runway). Proof that you can deliver action.
+1. **Fight short** (~3 min: 3:10 main cut plus 2:50 alternate). Proof that you can deliver action.
 2. **A series of shorts or episodes** (3–5 min each, monthly or every other month) in the same world. They build subscribers toward YPP, feed Patreon, and train your pipeline.
 3. **A 10-minute short** (6–10 months): an Act-1-size story with one full fight, aimed at the Runway AIF 2028 call and similar.
 4. **Longer form** (feature or a full season), only with a partner, a studio deal or prize money. Solo features take 3–5 years ([scope table](../research/ai-tool-stack.md#6-realistic-scope-for-a-beginner)).
 
 ---
 
-**Done:** wrote `superhero_movie/release/strategy.md`. Still open: every date and fee needs checking on the official page. If [`GAMEPLAN.md`](../GAMEPLAN.md) Phase 5 still describes live-action festival routes, this file proposes that the filmmaker replace them with §2–§3 here.
+**Done:** wrote `superhero_movie/release/strategy.md`. Still open: every date and fee needs checking on the official page.
 
 **Decisions needed:**
 1. **First target deadline.**
@@ -151,9 +161,9 @@ Credits from prizes and programs are your cheapest "funding": they replace the ~
 
    **Recommend (a)**, with (b) as a stretch.
 2. **Short length.**
-   - (a) 3:00–3:30 main cut plus a sub-3:00 alternate cut
+   - (a) 3:10 main cut plus a 2:50 alternate cut
    - (b) 2:30–2:59 only, which shuts out Runway
-   - (c) 3:30–5:00
+   - (c) a longer 4–5 min short (more shots, and it breaks the 18-week plan)
 
    **Recommend (a).**
 3. **When to post the finished short online.**
@@ -176,8 +186,8 @@ Credits from prizes and programs are your cheapest "funding": they replace the ~
 6. **Story inputs.** Tone, comparable films and the signature moment are [TBD]: they come from `story/00-my-idea.md` and `fights/fight-map.md`.
 
 **Hand-offs:**
-- **`film-producer` (Claude Code):** build the production schedule backwards from picture lock on 15 Mar 2027 and a 3:00–3:30 runtime.
-- **`film-editor` (filmmaker in DaVinci Resolve):** plan the main cut and the sub-3:00 alternate cut.
+- **`film-producer` (Claude Code):** build the production schedule backwards from picture lock on 15 Mar 2027 (≈ week 17) and a 3:10 runtime.
+- **`film-editor` (filmmaker in DaVinci Resolve):** plan the 3:10 main cut and the 2:50 alternate cut.
 - **`film-entertainment-lawyer` (Claude Code):** check the AI clause and premiere clause for each targeted festival.
 - **Google Antigravity (browser research):** confirm every "Check" and "Unconfirmed" cell in §1 on the official pages, and watch for the Runway AIF 2027 call.
 - **`film-fight-choreographer` (Claude Code):** choose the signature moment once the filmmaker's idea exists.

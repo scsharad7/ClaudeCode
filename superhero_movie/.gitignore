@@ -20,3 +20,5 @@
 shots/**/takes/
 renders/
 media/
+# Big image batches (commit only approved refs, about 20 small stills per task)
+design/**/batches/

@@ -1,5 +1,7 @@
 # Fight Scene Design: A Practical Guide for a First Superhero Feature
 
+> **Note (Oct 2026):** this guide was written for the earlier **live-action** plan. For the AI film, use only its story principles (§1, §5–§6). Everything about stunt teams, shoot days, insurance and on-set safety is superseded by [`../fights/ai-fight-playbook.md`](../fights/ai-fight-playbook.md).
+
 **Budget tiers used throughout:**
 - **Tier 1, micro:** under ~$50K total. Friends, a borrowed location, one or two paid stunt days.
 - **Tier 2, low:** ~$50K–$300K. A small paid stunt team for the action days, light VFX.

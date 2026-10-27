@@ -1,5 +1,7 @@
 # Story Development: From Rough Idea to Shooting Script
 
+> **Note (Oct 2026):** written before the project became an AI film. Its development ladder, structure, character, villain and power-design sections and templates still apply. Mentions of stunt coordinators, shoot days and budgets for live production don't. For scope, see [`../GAMEPLAN.md`](../GAMEPLAN.md).
+
 *A practical guide for a first-time filmmaker writing an original superhero feature where the fights carry the story.*
 
 **The one rule that runs through this whole guide:** a fight scene is only as good as the question it answers. Before every fight, the audience should know what the hero wants, what they stand to lose, and what their power *can't* do. Everything below is a way to set those three things up.

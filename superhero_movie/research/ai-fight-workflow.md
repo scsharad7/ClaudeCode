@@ -62,7 +62,7 @@ Pick one look and keep it.
 
 Text prompts produce generic fighting. Filming your own movement gives you specific, repeatable choreography, the AI version of the live-action stuntvis.
 
-> **SAFETY. Read this before filming.** Do every reference move **slowly**, at half speed or slower, **without contact**: strikes stop at least a foot from your partner or hit air. Work on **soft ground** (grass, mats, a mattress) with space cleared around you. **No flips, falls, jumps from height, or real takedowns.** The AI adds the speed and the impacts. Your job is clean, readable poses. Warm up, have someone watching, and stop if anything hurts. Big stunts (a body thrown through a wall, a flip) come from Mixamo or Cascadeur animation, never from your body.
+> **SAFETY. Read this before filming.** Do every reference move **slowly**, at half speed or slower, **without contact**: strikes hit air, with **one performer per clip** (no partner in frame). Work on **soft ground** (grass, mats, a mattress) with space cleared around you. **No flips, falls, jumps of any height, takedowns or weapons.** The AI adds the speed and the impacts. Your job is clean, readable poses. Warm up, have someone watching, and stop if anything hurts. Big stunts (a body thrown through a wall, a flip) come from Mixamo or Cascadeur animation, never from your body.
 
 ### Video-to-video and motion-control tools
 

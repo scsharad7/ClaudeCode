@@ -6,27 +6,27 @@
 ## How to use it
 
 - **One row per shot** in the whole short: fight and non-fight.
-- **Shot IDs:** `<scene>-<number>`, e.g. `S01-010`. Number in tens so pickups slot in (`S01-015`). Fight scenes can use `F01-010`. Scene names are **[TBD]**.
+- **Shot IDs:** `F01-010` (fight 1, shot 010) and `S01-010` (scene 1, shot 010). Number in tens so pickups get in-between numbers (`F01-015`). Scene names are **[TBD]**.
 - **Update after every generation session.** The `attempts` count feeds the burn tracker in [budget.md](budget.md#burn-tracker-template).
-- **Status flow:** `todo` → `keyframe` → `generating` → `select` → `locked`, plus `pickup` (needs a regeneration after the edit) or `cut`.
+- **Statuses:** `todo · keyframe · generating · select · locked · pickup · redesign · cut`. The normal flow is `todo` → `keyframe` → `generating` → `select` → `locked`. `pickup` means it needs regenerating after the edit; `redesign` means the beat is rewritten after too many failed attempts; `cut` means it's dropped.
 - A shot is **`locked`** when its select is in the edit and its shot file is complete.
 
 ## Tracker
 
 | Shot ID | Scene | Beat | Duration (s) | Status | Tool | Attempts | Select | Shot file |
 |---|---|---|---|---|---|---|---|---|
-| F01-010 | [TBD] | B1 establish | 4 | todo | [TBD] | 0 | — | [shots/F01/F01-010.md](../shots/F01/F01-010.md) |
-| F01-020 | [TBD] | B1 wind-up | 2 | todo | [TBD] | 0 | — | [shots/F01/F01-020.md](../shots/F01/F01-020.md) |
-| F01-030 | [TBD] | B1 impact frame | 0.2 | todo | Edit | — | — | [shots/F01/F01-030.md](../shots/F01/F01-030.md) |
+| F01-010 | [TBD] | B1 establish | 4 | todo | [TBD] | 0 | — | `shots/F01/F01-010.md` |
+| F01-020 | [TBD] | B1 wind-up | 2 | todo | [TBD] | 0 | — | `shots/F01/F01-020.md` |
+| F01-030 | [TBD] | B1 impact frame | 0.2 | todo | Edit | — | — | `shots/F01/F01-030.md` |
 | … | | | | | | | | |
 
-**Totals (update weekly):** shots [ ] · locked [ ] · total attempts [ ] · finished seconds [ ] / ~150 target.
+**Totals (update weekly):** shots [ ] / ~70 · locked [ ] · total attempts [ ] · finished seconds [ ] / ~190 target (3:10 main cut; 2:50 alternate).
 
 ## The per-shot file: `shots/<scene>/<shot-id>.md`
 
 Every generated shot gets its own file. **This is the human-authorship record.** Prompts alone don't make you an author (US Copyright Office, 2025). What you can show is the human work: your script, your characters, your start frames and choices, your selection and arrangement, and your hand edits. This file is the evidence. Keep it honest and current, and disclose the AI material when you register anything ([ai-legal-and-release.md](../research/ai-legal-and-release.md)).
 
-- Commit the `.md` file and small reference stills. **Never commit video.** Takes live in external storage ([pipeline-setup.md](pipeline-setup.md), once it exists); link to them by path.
+- Commit the `.md` file and small reference stills. **Never commit video.** Takes live in external storage (`production/pipeline-setup.md`, once it exists); link to them by path.
 - Write the attempt log as you go, not afterwards.
 
 ### Template
@@ -38,15 +38,15 @@ Every generated shot gets its own file. **This is the human-authorship record.**
 |---|---|
 | Scene / beat | [TBD] / [beat] |
 | Planned duration | [s] |
-| Status | todo / keyframe / generating / select / locked / pickup / cut |
-| Tool and plan | e.g. Kling Pro (paid: commercial use OK, confirm) |
+| Status | todo / keyframe / generating / select / locked / pickup / redesign / cut |
+| Tool and plan | e.g. Kling Pro (paid: commercial use OK, confirm). Free-tier output = test only |
 
 ## Inputs (human-made or human-chosen)
 - Script lines / beat: [quote or link]
-- Start frame: `design/...png`, made with [tool], chosen by [name] from [N] options
+- Start frame: `design/...png`, made with [tool + plan, commercial use allowed?], chosen by [name] from [N] options
 - End frame (if any):
-- Character / location refs: [links into design/]
-- Motion reference: [your phone clip or previs, external path]
+- Character / location refs: [paths into design/], each from a commercial-allowed tool
+- Motion reference: [your phone clip or previs, external path] (filmed per the safety box, ../fights/ai-fight-playbook.md §4)
 
 ## Prompt
 [the exact prompt text, plus the negative prompt if used]

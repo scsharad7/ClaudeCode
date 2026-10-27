@@ -1,5 +1,7 @@
 # Production Roadmap: From "Idea in My Head" to a Superhero Feature
 
+> **Note (Oct 2026):** this roadmap is for the earlier **live-action** plan and is kept for reference only. The current plan is in [`../GAMEPLAN.md`](../GAMEPLAN.md) and [`../production/ai-pipeline.md`](../production/ai-pipeline.md).
+
 *Research brief for a first-time filmmaker. Budget, location and experience are unknown, so this guide assumes a first-timer and scales across budget tiers. Figures are rough planning ranges, not quotes. Check every legal or financial point with a professional before relying on it.*
 
 ---
