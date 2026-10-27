@@ -141,15 +141,7 @@ Credits from prizes and programs are your cheapest "funding": they replace the ~
 
 ---
 
-## Handoff note
-
-- **Done:** release strategy for the AI short: festival calendar, target deadline, release routes, content plan, trailer and key art, funding path.
-- **Open:** every date and fee needs checking on the official page. Story, tone, comparable films and the signature moment are [TBD]. [`GAMEPLAN.md`](../GAMEPLAN.md) Phase 5 still describes live-action festival routes; this file proposes that the filmmaker replace them with §2–§3 here.
-- **Next:** see Hand-offs below.
-
----
-
-**Done:** wrote `superhero_movie/release/strategy.md`.
+**Done:** wrote `superhero_movie/release/strategy.md`. Still open: every date and fee needs checking on the official page. If [`GAMEPLAN.md`](../GAMEPLAN.md) Phase 5 still describes live-action festival routes, this file proposes that the filmmaker replace them with §2–§3 here.
 
 **Decisions needed:**
 1. **First target deadline.**
