@@ -104,3 +104,38 @@ Film terms used across this project, in plain language. Every document links her
 | **EPK** | Electronic press kit: stills, trailer, synopsis and interviews for press. |
 | **Look book** | A visual document showing the film's intended look, used for pitching. |
 | **InDemand** | Indiegogo's mode for continuing to take orders after a campaign ends. |
+
+## AI filmmaking
+
+| Term | Meaning |
+|---|---|
+| **Generation** | One run of an AI tool producing an image or video clip. Most won't be usable. |
+| **Text-to-video / image-to-video** | Making a clip from a written prompt alone, or from a starting image plus a prompt. Image-to-video keeps characters far more consistent. |
+| **Keyframe / start frame** | The still image a shot is generated from. It largely decides the shot. |
+| **Reference image / reference sheet** | Approved images of a character or location (front, side, back, close-up) that you give the tool so it keeps the look. |
+| **Prompt block** | A reusable chunk of prompt text that describes a character, power or look identically every time. |
+| **Seed** | A number some tools use to make a generation repeatable. Log it when available. |
+| **Credits** | The units AI tools charge per generation. A paid plan gives a monthly allowance. |
+| **Attempts per shot** | How many generations it takes to get one usable shot. Expect 5–20 as a beginner. |
+| **Select** | The take you choose to use in the edit. |
+| **Motion transfer / motion control** | Copying movement from a reference video (e.g. you, filmed on a phone) onto a generated character. |
+| **Motion reference** | The video clip of real movement used for motion transfer. Film it slowly and safely; the AI adds the speed. |
+| **Mocap from video** | Software that turns ordinary video of a person into 3D animation data. |
+| **Grey-box** | A rough, untextured 3D scene used to block out movement and camera. |
+| **Animatic** | Keyframes or rough shots timed to temporary sound: a draft of the film before final generation. |
+| **Bake-off** | Running the same test shots through several tools to choose the best one before paying. |
+| **LoRA** | A small add-on trained on your own images so an open-source model draws a character consistently. |
+| **Open weights** | AI models you can download and run on your own computer (needs a strong graphics card). |
+| **Content filter** | A tool's built-in block on certain content (blood, gore, real people, famous characters). |
+| **Watermark / SynthID / C2PA** | Marks showing a video is AI-made. Watermarks are visible; SynthID is Google's invisible one; C2PA is a metadata standard that platforms read to label AI content. |
+| **Upscaling / interpolation / deflicker** | Finishing steps: raising resolution, adding in-between frames for smoother motion, and removing flicker. |
+| **Human-authorship record** | Your per-shot log of what you chose, wrote, directed or changed by hand. It supports your ownership of the human-made parts. |
+
+## Working across tools
+
+| Term | Meaning |
+|---|---|
+| **AGENTS.md** | A shared instructions file that many AI coding tools read automatically (Antigravity, Command Code, Codex, Cursor). Claude Code reads it through `CLAUDE.md`. |
+| **Task board** | `TASKS.md`: the list of tasks, which tool does each, its status and where its output goes. |
+| **Branch / worktree** | Git's way to keep each task's changes separate until you merge them. A worktree is a separate folder for a branch, so two tools never share files mid-task. |
+| **Merge / PR** | Bringing a task's finished branch into the main project. A pull request (PR) is the reviewable proposal to merge. |
