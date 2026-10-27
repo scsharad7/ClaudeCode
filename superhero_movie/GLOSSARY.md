@@ -18,7 +18,7 @@ Film terms used across this project, in plain language. Every document links her
 | Term | Meaning |
 |---|---|
 | **Fight sequence** | The whole fight as the audience sees it on screen, pauses included. |
-| **Nonstop fighting** | Continuous contact action inside a fight sequence. It drives the schedule: about 2–3 shoot days per minute. |
+| **Nonstop fighting / seconds of fighting** | The action itself inside a fight sequence, not counting setup and aftermath. In an AI film it drives the number of shots and generations. |
 | **Stunt coordinator** | The person responsible for every stunt being safe. They must sign off before anything is rehearsed or filmed. |
 | **Fight choreographer** | The person who designs the fight's moves (often the same person as the stunt coordinator on small films). |
 | **Stuntvis** | The stunt team rehearses the fight and films it on phones, then it's edited. You watch the fight before you shoot it. |
@@ -30,6 +30,7 @@ Film terms used across this project, in plain language. Every document links her
 | **Descender** | A device that lowers a performer on a cable at a controlled speed. |
 | **Sandbag test** | Running a rig with a weighted bag before a person uses it. |
 | **Oner / stitched oner** | A fight shown as one continuous shot. "Stitched" means several takes joined with hidden cuts. |
+| **Impact frame** | A 2–6 frame flash at the moment of a hit (a freeze, a flash, a distortion), made in the edit. With a cut from wind-up to reaction, it sells contact without ever showing it. |
 | **Signature moment** | The single image from a fight that goes on the poster or in the trailer. |
 
 ## Production

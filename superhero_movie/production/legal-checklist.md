@@ -25,7 +25,7 @@ Terms: [GLOSSARY](../GLOSSARY.md). New jargon is defined where it first appears.
 
 ## 2. Before choosing tools: tool-terms table
 
-Fill in the "confirm" cells from each tool's official terms page, and date them. **No consumer plan indemnifies you** (indemnity means the vendor pays if you're sued). If a clip infringes, the risk is yours.
+Fill the "confirm" cells from each official terms page, dated. **No consumer plan indemnifies you** (pays if you're sued), so infringement risk is yours.
 
 | Tool | Who owns outputs | Commercial use by tier | Watermark | Attribution | Training on your inputs |
 |---|---|---|---|---|---|
@@ -53,8 +53,8 @@ Fill in the "confirm" cells from each tool's official terms page, and date them.
 
 ## 4. Generation phase
 
-- [ ] **Generate finals only on tiers that allow commercial use.** Free tiers are for tests, previs and the animatic. Plan a paid month only once the shot list is locked.
-- [ ] **Log every shot as you make it** in its `shots/<scene>/<shot-id>.md` file (inputs, prompt, attempts, human choices). A shot without a record can't be part of your copyright claim.
+- [ ] **Generate finals only on commercial-allowed tiers.** Free tiers are for tests and the animatic; pay only once the shot list is locked.
+- [ ] **Log every shot as you make it** in its `shots/<scene>/<shot-id>.md` file. An unrecorded shot weakens your claim.
 - [ ] **Keep dated copies of each tool's terms of service (ToS).** Save a PDF on the day you sign up and again on each day you generate finals, in a small `production/tos/` folder (or external storage).
 - [ ] **Back up every final asset** outside the tool. Tools vanish (Sora) or lock downloads (Udio).
 - [ ] **Don't strip SynthID or C2PA metadata.**
@@ -130,9 +130,9 @@ Free help: VLA chapters (e.g. NYC VLA, California Lawyers for the Arts), law-sch
 | Music source? | (a) Paid Suno (b) Royalty-free library (c) Human composer | **(b) or (c)** for the lowest risk; (a) is licensed but under litigation |
 
 **Hand-offs:**
-- `film-producer` (Claude Code): pick tools and tiers against the budget caps; add the registration fee.
+- `film-producer` (Claude Code): tools and tiers against the budget caps; registration fee.
 - `film-shot-generator` (filmmaker in web tools): create a `shots/<scene>/<shot-id>.md` record for every shot; finals on paid tiers only.
-- `film-pipeline-td` (Antigravity or Command Code): a shot-file template and a dated `tos/` folder in external storage.
+- `film-pipeline-td` (Antigravity): shot-file template and a dated `tos/` folder.
 - `film-character-designer` (Muse or Claude Code): a distinctiveness sheet per character.
 - `film-voice-director` and `film-composer`: voice releases and music licences.
 - `film-distribution-marketing`: platform labels and festival AI clauses.
